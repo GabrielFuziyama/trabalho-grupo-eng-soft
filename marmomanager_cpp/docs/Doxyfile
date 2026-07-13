@@ -1,0 +1,39 @@
+# Doxyfile Completo e Configurado para o MarmoManager (C++)
+
+PROJECT_NAME           = "MarmoManager"
+PROJECT_NUMBER         = "1.0"
+PROJECT_BRIEF          = "Sistema em C++ e Qt de Gerenciamento de Ordens de Serviço"
+
+# Define que a saída será gerada na pasta atual (docs/)
+OUTPUT_DIRECTORY       = .
+
+# Idioma da documentação
+OUTPUT_LANGUAGE        = Portuguese
+
+# Extrair todas as classes e funções (incluindo privadas e estáticas)
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+
+# Permitir a visualização do código-fonte (.cpp) na documentação
+SOURCE_BROWSER         = YES
+
+# Diretórios onde o Doxygen vai procurar os arquivos .h e .cpp
+INPUT                  = ../core/include ../app/include ../core/src ../app/src mainpage.dox
+
+# Procurar recursivamente dentro das pastas INPUT
+RECURSIVE              = YES
+
+# Habilitar saída HTML com menu lateral e barra de busca
+GENERATE_HTML          = YES
+HTML_OUTPUT            = html
+GENERATE_TREEVIEW      = YES
+SEARCHENGINE           = YES
+
+# Desabilitar saída LATEX (Pdf) para focar apenas no HTML e deixar a compilação mais rápida
+GENERATE_LATEX         = NO
+HAVE_DOT               = YES
+UML_LOOK               = YES
+CLASS_GRAPH            = YES
+COLLABORATION_GRAPH    = YES
+INCLUDE_GRAPH          = YES

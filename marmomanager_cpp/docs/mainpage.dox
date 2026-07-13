@@ -1,0 +1,85 @@
+/**
+\mainpage Arquitetura e Diagrama de Classes
+
+## Visão Geral do Sistema MarmoManager
+
+O MarmoManager foi reescrito em **C++** sob rigorosos Padrões de Projeto e separação em camadas (MVC). 
+Como o sistema gráfico C++ não possui dependências nativas como o Graphviz, nós preparamos abaixo um diagrama fluido, vetorial e interativo desenhado via **Mermaid.js**, que detalha perfeitamente a Hierarquia de Classes e os Padrões Arquiteturais:
+
+\mermaid
+classDiagram
+    class Database {
+        <<Singleton>>
+        -QString m_dbName
+        -QSqlDatabase m_db
+        -Database()
+        +getInstance() Database$
+        +getConnection() QSqlDatabase
+        +initDb() void
+    }
+
+    class OSRepository {
+        <<DAO / Model>>
+        +create(...) int
+        +updateStatus(...) void
+        +fetchAll(...) QVector~OSData~
+    }
+
+    class HistoricoRepository {
+        <<DAO / Model>>
+        +create(...) void
+        +getByOsId(...) QVector~HistoricoData~
+    }
+
+    class OSController {
+        <<Controller>>
+        -OSRepository m_osRepo
+        -HistoricoRepository m_histRepo
+        +cadastrarOS(...) int
+        +atualizarStatusOS(...) void
+        +listarOS(...) QVector~OSData~
+        +obterHistorico(...) QVector~HistoricoData~
+    }
+
+    class QMainWindow {
+        <<Qt5>>
+    }
+
+    class QDialog {
+        <<Qt5>>
+    }
+
+    class MarmoManagerApp {
+        <<View>>
+        -OSController m_controller
+        +salvarOS()
+        +loadOSData()
+        +atualizarStatus()
+    }
+
+    class StatusHistoryDialog {
+        <<View>>
+        -OSController* m_controller
+        +loadHistory()
+    }
+
+    %% Hierarquia de Herança do Qt
+    QMainWindow <|-- MarmoManagerApp : Herda
+    QDialog <|-- StatusHistoryDialog : Herda
+
+    %% Relações de Composição e Uso (MVC)
+    MarmoManagerApp --> OSController : Comunica
+    StatusHistoryDialog --> OSController : Comunica
+    
+    OSController *-- OSRepository : Instancia
+    OSController *-- HistoricoRepository : Instancia
+
+    %% Uso do Singleton
+    OSRepository ..> Database : Usa (Singleton)
+    HistoricoRepository ..> Database : Usa (Singleton)
+\endmermaid
+
+### Componentização
+* Toda a lógica de Controllers e Repositories (Model) é compilada como uma biblioteca dinâmica (`libmarmocore.so`).
+* As Views (`MarmoManagerApp` e `StatusHistoryDialog`) são empacotadas no executável final e apenas consomem a biblioteca dinâmica.
+*/

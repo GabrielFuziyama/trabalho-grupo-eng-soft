@@ -1,0 +1,18 @@
+digraph "/home/daniel/Downloads/Engenharia_1/Sprint1-Grupo/marmomanager_cpp/app"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  compound=true
+  subgraph clusterdir_d422163b96683743ed3963d4aac17747 {
+    graph [ bgcolor="#edf0f7", pencolor="grey25", label="", fontname=Helvetica,fontsize=10 style="filled,bold", URL="dir_d422163b96683743ed3963d4aac17747.html",tooltip=""]
+    dir_d422163b96683743ed3963d4aac17747 [shape=plaintext, label="app"];
+  dir_78f5ecd95a37a67589a284a718a0be9c [label="include", fillcolor="#a2b4d6", color="grey25", style="filled", URL="dir_78f5ecd95a37a67589a284a718a0be9c.html",tooltip=""];
+  dir_a8f641299cfea9f7461c2df1141b7786 [label="src", fillcolor="#a2b4d6", color="grey25", style="filled", URL="dir_a8f641299cfea9f7461c2df1141b7786.html",tooltip=""];
+  }
+  dir_4270bfced15e0e73154b13468c7c9ad9 [label="core", fillcolor="#edf0f7", color="red", style="filled", URL="dir_4270bfced15e0e73154b13468c7c9ad9.html",tooltip=""];
+  dir_78f5ecd95a37a67589a284a718a0be9c->dir_4270bfced15e0e73154b13468c7c9ad9 [headlabel="2", labeldistance=1.5 headhref="dir_000002_000001.html" href="dir_000002_000001.html" color="steelblue1" fontcolor="steelblue1"];
+  dir_a8f641299cfea9f7461c2df1141b7786->dir_4270bfced15e0e73154b13468c7c9ad9 [headlabel="1", labeldistance=1.5 headhref="dir_000004_000001.html" href="dir_000004_000001.html" color="steelblue1" fontcolor="steelblue1"];
+  dir_a8f641299cfea9f7461c2df1141b7786->dir_78f5ecd95a37a67589a284a718a0be9c [headlabel="4", labeldistance=1.5 headhref="dir_000004_000002.html" href="dir_000004_000002.html" color="steelblue1" fontcolor="steelblue1"];
+}
