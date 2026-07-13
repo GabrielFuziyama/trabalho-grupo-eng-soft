@@ -6,7 +6,8 @@
 O MarmoManager foi reescrito em **C++** sob rigorosos Padrões de Projeto e separação em camadas (MVC). 
 Como o sistema gráfico C++ não possui dependências nativas como o Graphviz, nós preparamos abaixo um diagrama fluido, vetorial e interativo desenhado via **Mermaid.js**, que detalha perfeitamente a Hierarquia de Classes e os Padrões Arquiteturais:
 
-\mermaid
+\htmlonly
+<div class="mermaid">
 classDiagram
     class Database {
         <<Singleton>>
@@ -77,7 +78,8 @@ classDiagram
     %% Uso do Singleton
     OSRepository ..> Database : Usa (Singleton)
     HistoricoRepository ..> Database : Usa (Singleton)
-\endmermaid
+</div>
+\endhtmlonly
 
 ### Componentização
 * Toda a lógica de Controllers e Repositories (Model) é compilada como uma biblioteca dinâmica (`libmarmocore.so`).
