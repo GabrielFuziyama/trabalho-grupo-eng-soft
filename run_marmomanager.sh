@@ -1,8 +1,11 @@
 #!/bin/bash
 # Script facilitador para executar o MarmoManager em C++
 
-# Entra na pasta de build
-cd marmomanager_cpp/build
+# Entra na pasta do projeto
+cd marmomanager_cpp
 
-# Executa o binário do app (que vai carregar a DLL core automaticamente)
-./app/marmomanager_app
+# Garante que o projeto está compilado
+make
+
+# Executa o binário do app
+./bin/marmomanager_app

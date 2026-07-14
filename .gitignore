@@ -1,0 +1,24 @@
+# Build directories and generated files
+build/
+bin/
+*.o
+*.moc
+moc_*.cpp
+ui_*.h
+qrc_*.cpp
+Makefile
+CMakeCache.txt
+CMakeFiles/
+*.cmake
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+.qt/
+
+# IDE and OS specific files
+.vscode/
+.idea/
+*.user
+.DS_Store
+*.db
+*.sqlite

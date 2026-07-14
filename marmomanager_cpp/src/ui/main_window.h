@@ -24,6 +24,7 @@
  */
 class MarmoManagerApp : public QMainWindow {
     Q_OBJECT
+    friend class TestGUI;
 
 public:
     MarmoManagerApp(QWidget* parent = nullptr);

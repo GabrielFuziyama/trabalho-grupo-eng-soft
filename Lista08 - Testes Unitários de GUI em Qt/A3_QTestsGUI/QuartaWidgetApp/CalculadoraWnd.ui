@@ -1,0 +1,351 @@
+<ui version="4.0" >
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>545</width>
+    <height>354</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Minha Calculadora</string>
+  </property>
+  <widget class="QWidget" name="centralwidget" >
+   <widget class="QLabel" name="label_2" >
+    <property name="geometry" >
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>46</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>Parcela 1:</string>
+    </property>
+    <property name="buddy" >
+     <cstring>textEdit1</cstring>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit1" >
+    <property name="geometry" >
+     <rect>
+      <x>80</x>
+      <y>10</y>
+      <width>261</width>
+      <height>62</height>
+     </rect>
+    </property>
+    <property name="html" >
+     <string>&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal; text-decoration:none;">
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">0&lt;/p>&lt;/body>&lt;/html></string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3" >
+    <property name="geometry" >
+     <rect>
+      <x>10</x>
+      <y>110</y>
+      <width>46</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>Parcela 2:</string>
+    </property>
+    <property name="buddy" >
+     <cstring>textEdit2</cstring>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit2" >
+    <property name="geometry" >
+     <rect>
+      <x>80</x>
+      <y>90</y>
+      <width>261</width>
+      <height>64</height>
+     </rect>
+    </property>
+    <property name="html" >
+     <string>&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal; text-decoration:none;">
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">0&lt;/p>&lt;/body>&lt;/html></string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEditResult" >
+    <property name="geometry" >
+     <rect>
+      <x>80</x>
+      <y>180</y>
+      <width>431</width>
+      <height>64</height>
+     </rect>
+    </property>
+    <property name="html" >
+     <string>&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal; text-decoration:none;">
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;">0&lt;/p>&lt;/body>&lt;/html></string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4" >
+    <property name="geometry" >
+     <rect>
+      <x>10</x>
+      <y>210</y>
+      <width>52</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>Resultado:</string>
+    </property>
+    <property name="buddy" >
+     <cstring>textEditResult</cstring>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="exitButton" >
+    <property name="geometry" >
+     <rect>
+      <x>440</x>
+      <y>250</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>Sair</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label" >
+    <property name="geometry" >
+     <rect>
+      <x>98</x>
+      <y>250</y>
+      <width>321</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="layoutDirection" >
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text" >
+     <string>&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal; text-decoration:none;">
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;span style=" font-size:18pt; font-weight:600;">C A L C U L A D O R A&lt;/span>&lt;/p>&lt;/body>&lt;/html></string>
+    </property>
+    <property name="alignment" >
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="execButton" >
+    <property name="geometry" >
+     <rect>
+      <x>10</x>
+      <y>250</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>Executar</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox" >
+    <property name="geometry" >
+     <rect>
+      <x>360</x>
+      <y>10</y>
+      <width>151</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="title" >
+     <string>Operações</string>
+    </property>
+    <widget class="QRadioButton" name="radioButtonMult" >
+     <property name="geometry" >
+      <rect>
+       <x>10</x>
+       <y>90</y>
+       <width>83</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>Multipilicação</string>
+     </property>
+     <property name="checked" >
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButtonSoma" >
+     <property name="geometry" >
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>83</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>Soma</string>
+     </property>
+     <property name="checked" >
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButtonSub" >
+     <property name="geometry" >
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>83</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>Subtração</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButtonDiv" >
+     <property name="geometry" >
+      <rect>
+       <x>10</x>
+       <y>120</y>
+       <width>83</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>Divisão</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>545</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuE_xit" >
+    <property name="title" >
+     <string>E&amp;xit</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_Arquivo" >
+    <property name="title" >
+     <string>&amp;Arquivo</string>
+    </property>
+    <addaction name="action_Abrir" />
+    <addaction name="action_Salvar" />
+    <addaction name="separator" />
+    <addaction name="actionSai_r" />
+   </widget>
+   <widget class="QMenu" name="menuEdit" >
+    <property name="title" >
+     <string>&amp;Edit</string>
+    </property>
+    <addaction name="action_Copia" />
+   </widget>
+   <addaction name="menu_Arquivo" />
+   <addaction name="menuEdit" />
+   <addaction name="menuE_xit" />
+  </widget>
+  <widget class="QStatusBar" name="statusbar" />
+  <action name="action_Abrir" >
+   <property name="text" >
+    <string>&amp;Abrir</string>
+   </property>
+  </action>
+  <action name="action_Salvar" >
+   <property name="text" >
+    <string>&amp;Salvar</string>
+   </property>
+  </action>
+  <action name="actionSai_r" >
+   <property name="text" >
+    <string>Sai&amp;r</string>
+   </property>
+  </action>
+  <action name="action_Copia" >
+   <property name="text" >
+    <string>&amp;Copia</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>textEdit1</tabstop>
+  <tabstop>textEdit2</tabstop>
+  <tabstop>textEditResult</tabstop>
+  <tabstop>radioButtonSoma</tabstop>
+  <tabstop>radioButtonSub</tabstop>
+  <tabstop>radioButtonMult</tabstop>
+  <tabstop>radioButtonDiv</tabstop>
+  <tabstop>execButton</tabstop>
+  <tabstop>exitButton</tabstop>
+ </tabstops>
+ <resources>
+  <include location="../../../../../../Qt/4.2.2/demos/mainwindow/mainwindow.qrc" />
+ </resources>
+ <connections>
+  <connection>
+   <sender>exitButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>476</x>
+     <y>277</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>287</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>textEdit1</sender>
+   <signal>textChanged()</signal>
+   <receiver>textEditResult</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>128</x>
+     <y>86</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>228</x>
+     <y>239</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>textEdit2</sender>
+   <signal>textChanged()</signal>
+   <receiver>textEditResult</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>98</x>
+     <y>153</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>173</x>
+     <y>238</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
