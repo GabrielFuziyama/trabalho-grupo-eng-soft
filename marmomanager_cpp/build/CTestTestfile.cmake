@@ -6,3 +6,5 @@
 # testing this directory and lists subdirectories to be tested as well.
 add_test(CoreTests "/home/daniel/Área de trabalho/Engenharia_1/Sprint1-Grupo/marmomanager_cpp/bin/marmomanager_tests")
 set_tests_properties(CoreTests PROPERTIES  _BACKTRACE_TRIPLES "/home/daniel/Área de trabalho/Engenharia_1/Sprint1-Grupo/marmomanager_cpp/CMakeLists.txt;34;add_test;/home/daniel/Área de trabalho/Engenharia_1/Sprint1-Grupo/marmomanager_cpp/CMakeLists.txt;0;")
+add_test(GuiTests "/home/daniel/Área de trabalho/Engenharia_1/Sprint1-Grupo/marmomanager_cpp/bin/marmomanager_gui_tests")
+set_tests_properties(GuiTests PROPERTIES  _BACKTRACE_TRIPLES "/home/daniel/Área de trabalho/Engenharia_1/Sprint1-Grupo/marmomanager_cpp/CMakeLists.txt;38;add_test;/home/daniel/Área de trabalho/Engenharia_1/Sprint1-Grupo/marmomanager_cpp/CMakeLists.txt;0;")

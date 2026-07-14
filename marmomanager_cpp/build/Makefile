@@ -153,6 +153,19 @@ marmomanager_tests/fast:
 .PHONY : marmomanager_tests/fast
 
 #=============================================================================
+# Target rules for targets named marmomanager_gui_tests
+
+# Build rule for target.
+marmomanager_gui_tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 marmomanager_gui_tests
+.PHONY : marmomanager_gui_tests
+
+# fast build rule for target.
+marmomanager_gui_tests/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_gui_tests.dir/build.make CMakeFiles/marmomanager_gui_tests.dir/build
+.PHONY : marmomanager_gui_tests/fast
+
+#=============================================================================
 # Target rules for targets named marmomanager_app_autogen_timestamp_deps
 
 # Build rule for target.
@@ -204,6 +217,32 @@ marmomanager_tests_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_tests_autogen.dir/build.make CMakeFiles/marmomanager_tests_autogen.dir/build
 .PHONY : marmomanager_tests_autogen/fast
 
+#=============================================================================
+# Target rules for targets named marmomanager_gui_tests_autogen_timestamp_deps
+
+# Build rule for target.
+marmomanager_gui_tests_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 marmomanager_gui_tests_autogen_timestamp_deps
+.PHONY : marmomanager_gui_tests_autogen_timestamp_deps
+
+# fast build rule for target.
+marmomanager_gui_tests_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_gui_tests_autogen_timestamp_deps.dir/build.make CMakeFiles/marmomanager_gui_tests_autogen_timestamp_deps.dir/build
+.PHONY : marmomanager_gui_tests_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named marmomanager_gui_tests_autogen
+
+# Build rule for target.
+marmomanager_gui_tests_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 marmomanager_gui_tests_autogen
+.PHONY : marmomanager_gui_tests_autogen
+
+# fast build rule for target.
+marmomanager_gui_tests_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_gui_tests_autogen.dir/build.make CMakeFiles/marmomanager_gui_tests_autogen.dir/build
+.PHONY : marmomanager_gui_tests_autogen/fast
+
 marmomanager_app_autogen/mocs_compilation.o: marmomanager_app_autogen/mocs_compilation.cpp.o
 .PHONY : marmomanager_app_autogen/mocs_compilation.o
 
@@ -227,6 +266,30 @@ marmomanager_app_autogen/mocs_compilation.s: marmomanager_app_autogen/mocs_compi
 marmomanager_app_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_app.dir/build.make CMakeFiles/marmomanager_app.dir/marmomanager_app_autogen/mocs_compilation.cpp.s
 .PHONY : marmomanager_app_autogen/mocs_compilation.cpp.s
+
+marmomanager_gui_tests_autogen/mocs_compilation.o: marmomanager_gui_tests_autogen/mocs_compilation.cpp.o
+.PHONY : marmomanager_gui_tests_autogen/mocs_compilation.o
+
+# target to build an object file
+marmomanager_gui_tests_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_gui_tests.dir/build.make CMakeFiles/marmomanager_gui_tests.dir/marmomanager_gui_tests_autogen/mocs_compilation.cpp.o
+.PHONY : marmomanager_gui_tests_autogen/mocs_compilation.cpp.o
+
+marmomanager_gui_tests_autogen/mocs_compilation.i: marmomanager_gui_tests_autogen/mocs_compilation.cpp.i
+.PHONY : marmomanager_gui_tests_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+marmomanager_gui_tests_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_gui_tests.dir/build.make CMakeFiles/marmomanager_gui_tests.dir/marmomanager_gui_tests_autogen/mocs_compilation.cpp.i
+.PHONY : marmomanager_gui_tests_autogen/mocs_compilation.cpp.i
+
+marmomanager_gui_tests_autogen/mocs_compilation.s: marmomanager_gui_tests_autogen/mocs_compilation.cpp.s
+.PHONY : marmomanager_gui_tests_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+marmomanager_gui_tests_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_gui_tests.dir/build.make CMakeFiles/marmomanager_gui_tests.dir/marmomanager_gui_tests_autogen/mocs_compilation.cpp.s
+.PHONY : marmomanager_gui_tests_autogen/mocs_compilation.cpp.s
 
 marmomanager_tests_autogen/mocs_compilation.o: marmomanager_tests_autogen/mocs_compilation.cpp.o
 .PHONY : marmomanager_tests_autogen/mocs_compilation.o
@@ -259,6 +322,7 @@ src/database.o: src/database.cpp.o
 src/database.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_app.dir/build.make CMakeFiles/marmomanager_app.dir/src/database.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_tests.dir/build.make CMakeFiles/marmomanager_tests.dir/src/database.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_gui_tests.dir/build.make CMakeFiles/marmomanager_gui_tests.dir/src/database.cpp.o
 .PHONY : src/database.cpp.o
 
 src/database.i: src/database.cpp.i
@@ -268,6 +332,7 @@ src/database.i: src/database.cpp.i
 src/database.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_app.dir/build.make CMakeFiles/marmomanager_app.dir/src/database.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_tests.dir/build.make CMakeFiles/marmomanager_tests.dir/src/database.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_gui_tests.dir/build.make CMakeFiles/marmomanager_gui_tests.dir/src/database.cpp.i
 .PHONY : src/database.cpp.i
 
 src/database.s: src/database.cpp.s
@@ -277,6 +342,7 @@ src/database.s: src/database.cpp.s
 src/database.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_app.dir/build.make CMakeFiles/marmomanager_app.dir/src/database.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_tests.dir/build.make CMakeFiles/marmomanager_tests.dir/src/database.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_gui_tests.dir/build.make CMakeFiles/marmomanager_gui_tests.dir/src/database.cpp.s
 .PHONY : src/database.cpp.s
 
 src/historico_repository.o: src/historico_repository.cpp.o
@@ -286,6 +352,7 @@ src/historico_repository.o: src/historico_repository.cpp.o
 src/historico_repository.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_app.dir/build.make CMakeFiles/marmomanager_app.dir/src/historico_repository.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_tests.dir/build.make CMakeFiles/marmomanager_tests.dir/src/historico_repository.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_gui_tests.dir/build.make CMakeFiles/marmomanager_gui_tests.dir/src/historico_repository.cpp.o
 .PHONY : src/historico_repository.cpp.o
 
 src/historico_repository.i: src/historico_repository.cpp.i
@@ -295,6 +362,7 @@ src/historico_repository.i: src/historico_repository.cpp.i
 src/historico_repository.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_app.dir/build.make CMakeFiles/marmomanager_app.dir/src/historico_repository.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_tests.dir/build.make CMakeFiles/marmomanager_tests.dir/src/historico_repository.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_gui_tests.dir/build.make CMakeFiles/marmomanager_gui_tests.dir/src/historico_repository.cpp.i
 .PHONY : src/historico_repository.cpp.i
 
 src/historico_repository.s: src/historico_repository.cpp.s
@@ -304,6 +372,7 @@ src/historico_repository.s: src/historico_repository.cpp.s
 src/historico_repository.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_app.dir/build.make CMakeFiles/marmomanager_app.dir/src/historico_repository.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_tests.dir/build.make CMakeFiles/marmomanager_tests.dir/src/historico_repository.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_gui_tests.dir/build.make CMakeFiles/marmomanager_gui_tests.dir/src/historico_repository.cpp.s
 .PHONY : src/historico_repository.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -337,6 +406,7 @@ src/os_controller.o: src/os_controller.cpp.o
 src/os_controller.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_app.dir/build.make CMakeFiles/marmomanager_app.dir/src/os_controller.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_tests.dir/build.make CMakeFiles/marmomanager_tests.dir/src/os_controller.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_gui_tests.dir/build.make CMakeFiles/marmomanager_gui_tests.dir/src/os_controller.cpp.o
 .PHONY : src/os_controller.cpp.o
 
 src/os_controller.i: src/os_controller.cpp.i
@@ -346,6 +416,7 @@ src/os_controller.i: src/os_controller.cpp.i
 src/os_controller.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_app.dir/build.make CMakeFiles/marmomanager_app.dir/src/os_controller.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_tests.dir/build.make CMakeFiles/marmomanager_tests.dir/src/os_controller.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_gui_tests.dir/build.make CMakeFiles/marmomanager_gui_tests.dir/src/os_controller.cpp.i
 .PHONY : src/os_controller.cpp.i
 
 src/os_controller.s: src/os_controller.cpp.s
@@ -355,6 +426,7 @@ src/os_controller.s: src/os_controller.cpp.s
 src/os_controller.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_app.dir/build.make CMakeFiles/marmomanager_app.dir/src/os_controller.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_tests.dir/build.make CMakeFiles/marmomanager_tests.dir/src/os_controller.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_gui_tests.dir/build.make CMakeFiles/marmomanager_gui_tests.dir/src/os_controller.cpp.s
 .PHONY : src/os_controller.cpp.s
 
 src/os_repository.o: src/os_repository.cpp.o
@@ -364,6 +436,7 @@ src/os_repository.o: src/os_repository.cpp.o
 src/os_repository.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_app.dir/build.make CMakeFiles/marmomanager_app.dir/src/os_repository.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_tests.dir/build.make CMakeFiles/marmomanager_tests.dir/src/os_repository.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_gui_tests.dir/build.make CMakeFiles/marmomanager_gui_tests.dir/src/os_repository.cpp.o
 .PHONY : src/os_repository.cpp.o
 
 src/os_repository.i: src/os_repository.cpp.i
@@ -373,6 +446,7 @@ src/os_repository.i: src/os_repository.cpp.i
 src/os_repository.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_app.dir/build.make CMakeFiles/marmomanager_app.dir/src/os_repository.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_tests.dir/build.make CMakeFiles/marmomanager_tests.dir/src/os_repository.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_gui_tests.dir/build.make CMakeFiles/marmomanager_gui_tests.dir/src/os_repository.cpp.i
 .PHONY : src/os_repository.cpp.i
 
 src/os_repository.s: src/os_repository.cpp.s
@@ -382,6 +456,7 @@ src/os_repository.s: src/os_repository.cpp.s
 src/os_repository.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_app.dir/build.make CMakeFiles/marmomanager_app.dir/src/os_repository.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_tests.dir/build.make CMakeFiles/marmomanager_tests.dir/src/os_repository.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_gui_tests.dir/build.make CMakeFiles/marmomanager_gui_tests.dir/src/os_repository.cpp.s
 .PHONY : src/os_repository.cpp.s
 
 src/ui/history_dialog.o: src/ui/history_dialog.cpp.o
@@ -391,6 +466,7 @@ src/ui/history_dialog.o: src/ui/history_dialog.cpp.o
 src/ui/history_dialog.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_app.dir/build.make CMakeFiles/marmomanager_app.dir/src/ui/history_dialog.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_tests.dir/build.make CMakeFiles/marmomanager_tests.dir/src/ui/history_dialog.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_gui_tests.dir/build.make CMakeFiles/marmomanager_gui_tests.dir/src/ui/history_dialog.cpp.o
 .PHONY : src/ui/history_dialog.cpp.o
 
 src/ui/history_dialog.i: src/ui/history_dialog.cpp.i
@@ -400,6 +476,7 @@ src/ui/history_dialog.i: src/ui/history_dialog.cpp.i
 src/ui/history_dialog.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_app.dir/build.make CMakeFiles/marmomanager_app.dir/src/ui/history_dialog.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_tests.dir/build.make CMakeFiles/marmomanager_tests.dir/src/ui/history_dialog.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_gui_tests.dir/build.make CMakeFiles/marmomanager_gui_tests.dir/src/ui/history_dialog.cpp.i
 .PHONY : src/ui/history_dialog.cpp.i
 
 src/ui/history_dialog.s: src/ui/history_dialog.cpp.s
@@ -409,6 +486,7 @@ src/ui/history_dialog.s: src/ui/history_dialog.cpp.s
 src/ui/history_dialog.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_app.dir/build.make CMakeFiles/marmomanager_app.dir/src/ui/history_dialog.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_tests.dir/build.make CMakeFiles/marmomanager_tests.dir/src/ui/history_dialog.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_gui_tests.dir/build.make CMakeFiles/marmomanager_gui_tests.dir/src/ui/history_dialog.cpp.s
 .PHONY : src/ui/history_dialog.cpp.s
 
 src/ui/main_window.o: src/ui/main_window.cpp.o
@@ -418,6 +496,7 @@ src/ui/main_window.o: src/ui/main_window.cpp.o
 src/ui/main_window.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_app.dir/build.make CMakeFiles/marmomanager_app.dir/src/ui/main_window.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_tests.dir/build.make CMakeFiles/marmomanager_tests.dir/src/ui/main_window.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_gui_tests.dir/build.make CMakeFiles/marmomanager_gui_tests.dir/src/ui/main_window.cpp.o
 .PHONY : src/ui/main_window.cpp.o
 
 src/ui/main_window.i: src/ui/main_window.cpp.i
@@ -427,6 +506,7 @@ src/ui/main_window.i: src/ui/main_window.cpp.i
 src/ui/main_window.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_app.dir/build.make CMakeFiles/marmomanager_app.dir/src/ui/main_window.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_tests.dir/build.make CMakeFiles/marmomanager_tests.dir/src/ui/main_window.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_gui_tests.dir/build.make CMakeFiles/marmomanager_gui_tests.dir/src/ui/main_window.cpp.i
 .PHONY : src/ui/main_window.cpp.i
 
 src/ui/main_window.s: src/ui/main_window.cpp.s
@@ -436,6 +516,7 @@ src/ui/main_window.s: src/ui/main_window.cpp.s
 src/ui/main_window.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_app.dir/build.make CMakeFiles/marmomanager_app.dir/src/ui/main_window.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_tests.dir/build.make CMakeFiles/marmomanager_tests.dir/src/ui/main_window.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_gui_tests.dir/build.make CMakeFiles/marmomanager_gui_tests.dir/src/ui/main_window.cpp.s
 .PHONY : src/ui/main_window.cpp.s
 
 tests/unit/test_core.o: tests/unit/test_core.cpp.o
@@ -462,6 +543,30 @@ tests/unit/test_core.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_tests.dir/build.make CMakeFiles/marmomanager_tests.dir/tests/unit/test_core.cpp.s
 .PHONY : tests/unit/test_core.cpp.s
 
+tests/unit/test_gui.o: tests/unit/test_gui.cpp.o
+.PHONY : tests/unit/test_gui.o
+
+# target to build an object file
+tests/unit/test_gui.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_gui_tests.dir/build.make CMakeFiles/marmomanager_gui_tests.dir/tests/unit/test_gui.cpp.o
+.PHONY : tests/unit/test_gui.cpp.o
+
+tests/unit/test_gui.i: tests/unit/test_gui.cpp.i
+.PHONY : tests/unit/test_gui.i
+
+# target to preprocess a source file
+tests/unit/test_gui.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_gui_tests.dir/build.make CMakeFiles/marmomanager_gui_tests.dir/tests/unit/test_gui.cpp.i
+.PHONY : tests/unit/test_gui.cpp.i
+
+tests/unit/test_gui.s: tests/unit/test_gui.cpp.s
+.PHONY : tests/unit/test_gui.s
+
+# target to generate assembly for a file
+tests/unit/test_gui.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/marmomanager_gui_tests.dir/build.make CMakeFiles/marmomanager_gui_tests.dir/tests/unit/test_gui.cpp.s
+.PHONY : tests/unit/test_gui.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -473,13 +578,19 @@ help:
 	@echo "... test"
 	@echo "... marmomanager_app_autogen"
 	@echo "... marmomanager_app_autogen_timestamp_deps"
+	@echo "... marmomanager_gui_tests_autogen"
+	@echo "... marmomanager_gui_tests_autogen_timestamp_deps"
 	@echo "... marmomanager_tests_autogen"
 	@echo "... marmomanager_tests_autogen_timestamp_deps"
 	@echo "... marmomanager_app"
+	@echo "... marmomanager_gui_tests"
 	@echo "... marmomanager_tests"
 	@echo "... marmomanager_app_autogen/mocs_compilation.o"
 	@echo "... marmomanager_app_autogen/mocs_compilation.i"
 	@echo "... marmomanager_app_autogen/mocs_compilation.s"
+	@echo "... marmomanager_gui_tests_autogen/mocs_compilation.o"
+	@echo "... marmomanager_gui_tests_autogen/mocs_compilation.i"
+	@echo "... marmomanager_gui_tests_autogen/mocs_compilation.s"
 	@echo "... marmomanager_tests_autogen/mocs_compilation.o"
 	@echo "... marmomanager_tests_autogen/mocs_compilation.i"
 	@echo "... marmomanager_tests_autogen/mocs_compilation.s"
@@ -507,6 +618,9 @@ help:
 	@echo "... tests/unit/test_core.o"
 	@echo "... tests/unit/test_core.i"
 	@echo "... tests/unit/test_core.s"
+	@echo "... tests/unit/test_gui.o"
+	@echo "... tests/unit/test_gui.i"
+	@echo "... tests/unit/test_gui.s"
 .PHONY : help
 
 

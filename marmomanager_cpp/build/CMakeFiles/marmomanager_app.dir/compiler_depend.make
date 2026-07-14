@@ -475,76 +475,17 @@ marmomanager_app_autogen/timestamp: /home/daniel/anaconda3/include/qt/QtCore/QSt
   /usr/include/x86_64-linux-gnu/sys/types.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
-  /usr/share/cmake-3.28/Modules/CMakeCXXCompiler.cmake.in \
-  /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp \
   /usr/share/cmake-3.28/Modules/CMakeCXXInformation.cmake \
   /usr/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeCompilerIdDetection.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCompileFeatures.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeFindBinUtils.cmake \
   /usr/share/cmake-3.28/Modules/CMakeGenericSystem.cmake \
   /usr/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake \
   /usr/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake \
   /usr/share/cmake-3.28/Modules/CMakeParseArguments.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeParseImplicitIncludeInfo.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeParseImplicitLinkInfo.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeParseLibraryArchitecture.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeSystem.cmake.in \
   /usr/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake \
   /usr/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeTestCompilerCommon.cmake \
-  /usr/share/cmake-3.28/Modules/CMakeUnixFindMake.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/ADSP-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/ARMCC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/ARMClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/AppleClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Borland-DetermineCompiler.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompilerInternal.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Cray-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/CrayClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Embarcadero-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Fujitsu-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/GHS-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/GNU-FindBinUtils.cmake \
   /usr/share/cmake-3.28/Modules/Compiler/GNU.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/HP-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IAR-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Intel-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/MSVC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/NVHPC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/NVIDIA-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/OrangeC-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/PGI-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/PathScale-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/SCO-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/TI-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Tasking-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/Watcom-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/XL-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake \
-  /usr/share/cmake-3.28/Modules/Internal/FeatureTesting.cmake \
-  /usr/share/cmake-3.28/Modules/Platform/Linux-Determine-CXX.cmake \
   /usr/share/cmake-3.28/Modules/Platform/Linux-GNU-CXX.cmake \
   /usr/share/cmake-3.28/Modules/Platform/Linux-GNU.cmake \
   /usr/share/cmake-3.28/Modules/Platform/Linux-Initialize.cmake \
@@ -3398,78 +3339,6 @@ CMakeFiles/marmomanager_app.dir/src/ui/main_window.cpp.o: /home/daniel/Área\ de
 
 /home/daniel/anaconda3/include/qt/QtWidgets/qapplication.h:
 
-/home/daniel/anaconda3/include/qt/QtWidgets/QApplication:
-
-/home/daniel/anaconda3/include/qt/QtGui/qinputmethod.h:
-
-/home/daniel/anaconda3/include/qt/QtCore/qeventloop.h:
-
-/home/daniel/anaconda3/include/qt/QtCore/qcoreevent.h:
-
-/home/daniel/anaconda3/include/qt/QtCore/qcoreapplication.h:
-
-/home/daniel/anaconda3/include/qt/QtSql/qtsqlglobal.h:
-
-/home/daniel/anaconda3/include/qt/QtSql/qsqlquery.h:
-
-/home/daniel/anaconda3/include/qt/QtSql/qsqlerror.h:
-
-/home/daniel/anaconda3/include/qt/QtWidgets/QPushButton:
-
-/home/daniel/anaconda3/include/qt/QtSql/QSqlDatabase:
-
-/home/daniel/anaconda3/include/qt/QtCore/qtextstream.h:
-
-/home/daniel/anaconda3/include/qt/QtCore/qfileinfo.h:
-
-/home/daniel/anaconda3/include/qt/QtCore/qfiledevice.h:
-
-/home/daniel/anaconda3/include/qt/QtCore/qdir.h:
-
-/home/daniel/anaconda3/include/qt/QtCore/qcontiguouscache.h:
-
-/home/daniel/anaconda3/include/qt/QtCore/QDir:
-
-/home/daniel/anaconda3/include/qt/QtCore/QDebug:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h:
-
-/usr/include/stdio.h:
-
-/usr/include/c++/13/stdlib.h:
-
-/usr/include/c++/13/ratio:
-
-/usr/include/c++/13/pstl/pstl_config.h:
-
-/usr/include/c++/13/ctime:
-
-/usr/include/c++/13/chrono:
-
-/usr/include/c++/13/bits/parse_numbers.h:
-
-/usr/include/c++/13/bits/hashtable.h:
-
-/usr/include/c++/13/bits/chrono.h:
-
-marmomanager_app_autogen/YPKJ5OE7LN/moc_main_window.cpp:
-
-marmomanager_app_autogen/YPKJ5OE7LN/moc_history_dialog.cpp:
-
-/usr/share/cmake-3.28/Modules/Platform/UnixPaths.cmake:
-
-/usr/include/c++/13/bits/unordered_map.h:
-
-/usr/share/cmake-3.28/Modules/Platform/Linux.cmake:
-
-/usr/share/cmake-3.28/Modules/Platform/Linux-Initialize.cmake:
-
-/usr/share/cmake-3.28/Modules/Platform/Linux-GNU.cmake:
-
-/usr/share/cmake-3.28/Modules/Internal/FeatureTesting.cmake:
-
 /usr/include/c++/13/streambuf:
 
 /usr/include/c++/13/bits/locale_facets.tcc:
@@ -3500,25 +3369,15 @@ marmomanager_app_autogen/YPKJ5OE7LN/moc_history_dialog.cpp:
 
 /usr/include/c++/13/bits/basic_string.h:
 
-/usr/share/cmake-3.28/Modules/Compiler/IAR-DetermineCompiler.cmake:
-
 /usr/include/c++/13/bits/align.h:
 
 /usr/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake:
-
-marmomanager_app_autogen/mocs_compilation.cpp:
-
-/usr/include/c++/13/backward/binders.h:
 
 /home/daniel/anaconda3/include/qt/QtWidgets/qcombobox.h:
 
 /usr/include/c++/13/backward/auto_ptr.h:
 
 /home/daniel/anaconda3/include/qt/QtCore/qline.h:
-
-/home/daniel/anaconda3/include/qt/QtSql/QSqlQuery:
-
-/usr/include/c++/13/array:
 
 /usr/include/assert.h:
 
@@ -3546,12 +3405,6 @@ marmomanager_app_autogen/mocs_compilation.cpp:
 
 /usr/include/c++/13/initializer_list:
 
-/usr/share/cmake-3.28/Modules/Platform/Linux-GNU-CXX.cmake:
-
-/usr/include/c++/13/cstdlib:
-
-/usr/include/limits.h:
-
 /home/daniel/anaconda3/lib/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake:
 
 /home/daniel/anaconda3/lib/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake:
@@ -3562,11 +3415,9 @@ marmomanager_app_autogen/mocs_compilation.cpp:
 
 /home/daniel/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QWebGLIntegrationPlugin.cmake:
 
-/home/daniel/anaconda3/include/qt/QtCore/qdebug.h:
-
-/home/daniel/anaconda3/include/qt/QtCore/qprocessordetection.h:
-
 /home/daniel/anaconda3/lib/cmake/Qt5Sql/Qt5SqlConfig.cmake:
+
+/home/daniel/anaconda3/include/qt/QtCore/qcoreevent.h:
 
 /usr/include/c++/13/bits/char_traits.h:
 
@@ -3580,9 +3431,9 @@ marmomanager_app_autogen/mocs_compilation.cpp:
 
 /home/daniel/anaconda3/include/qt/QtCore/qgenericatomic.h:
 
-/usr/share/cmake-3.28/Modules/Compiler/HP-CXX-DetermineCompiler.cmake:
-
 /home/daniel/anaconda3/lib/cmake/Qt5Sql/Qt5SqlConfigVersion.cmake:
+
+/home/daniel/anaconda3/include/qt/QtSql/qsqlerror.h:
 
 /home/daniel/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QXcbEglIntegrationPlugin.cmake:
 
@@ -3598,9 +3449,9 @@ marmomanager_app_autogen/mocs_compilation.cpp:
 
 /usr/include/c++/13/bits/stl_raw_storage_iter.h:
 
-/usr/share/cmake-3.28/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake:
-
 /usr/include/c++/13/compare:
+
+/home/daniel/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QTgaPlugin.cmake:
 
 /home/daniel/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QSvgIconPlugin.cmake:
 
@@ -3611,10 +3462,6 @@ marmomanager_app_autogen/mocs_compilation.cpp:
 /usr/include/c++/13/bits/stl_list.h:
 
 /usr/include/c++/13/debug/debug.h:
-
-/usr/include/x86_64-linux-gnu/sys/single_threaded.h:
-
-/home/daniel/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake:
 
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
 
@@ -3654,6 +3501,8 @@ CMakeFiles/3.28.3/CMakeCXXCompiler.cmake:
 
 /home/daniel/anaconda3/lib/cmake/Qt5/Qt5ConfigVersion.cmake:
 
+/usr/include/c++/13/cwctype:
+
 /home/daniel/anaconda3/include/qt/QtWidgets/qwidget.h:
 
 /home/daniel/anaconda3/include/qt/QtCore/qcontainerfwd.h:
@@ -3664,8 +3513,6 @@ CMakeFiles/3.28.3/CMakeCXXCompiler.cmake:
 
 /usr/include/wctype.h:
 
-/usr/share/cmake-3.28/Modules/CMakeCompilerIdDetection.cmake:
-
 /home/daniel/anaconda3/include/qt/QtGui/qbrush.h:
 
 /usr/include/c++/13/bits/cxxabi_forced.h:
@@ -3673,6 +3520,10 @@ CMakeFiles/3.28.3/CMakeCXXCompiler.cmake:
 /home/daniel/anaconda3/include/qt/QtGui/qpixmap.h:
 
 /home/daniel/anaconda3/include/qt/QtCore/qsharedpointer_impl.h:
+
+/home/daniel/anaconda3/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake:
+
+/home/daniel/anaconda3/include/qt/QtSql/qtsqlglobal.h:
 
 /home/daniel/anaconda3/include/qt/QtCore/qstringmatcher.h:
 
@@ -3685,6 +3536,8 @@ CMakeFiles/3.28.3/CMakeCXXCompiler.cmake:
 /usr/include/c++/13/cstddef:
 
 /home/daniel/anaconda3/include/qt/QtCore/qset.h:
+
+/home/daniel/anaconda3/include/qt/QtCore/qconfig.h:
 
 /home/daniel/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QEvdevTabletPlugin.cmake:
 
@@ -3704,10 +3557,6 @@ CMakeFiles/3.28.3/CMakeCXXCompiler.cmake:
 
 /home/daniel/anaconda3/include/qt/QtCore/qalgorithms.h:
 
-/home/daniel/anaconda3/include/qt/QtSql/QSqlError:
-
-/home/daniel/anaconda3/include/qt/QtGui/qtextformat.h:
-
 /usr/include/ctype.h:
 
 /home/daniel/anaconda3/include/qt/QtWidgets/qpushbutton.h:
@@ -3721,8 +3570,6 @@ CMakeFiles/3.28.3/CMakeCXXCompiler.cmake:
 /home/daniel/anaconda3/include/qt/QtCore/qobject_impl.h:
 
 CMakeFiles/3.28.3/CMakeSystem.cmake:
-
-/usr/share/cmake-3.28/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake:
 
 /usr/include/c++/13/bits/hash_bytes.h:
 
@@ -3739,18 +3586,6 @@ CMakeFiles/3.28.3/CMakeSystem.cmake:
 /home/daniel/anaconda3/include/qt/QtCore/qcompilerdetection.h:
 
 /home/daniel/anaconda3/include/qt/QtWidgets/qdatetimeedit.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
-
-/home/daniel/anaconda3/lib/cmake/Qt5Test/Qt5TestConfigVersion.cmake:
-
-/home/daniel/anaconda3/lib/cmake/Qt5Sql/Qt5Sql_QMYSQLDriverPlugin.cmake:
-
-/usr/include/c++/13/bits/nested_exception.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
-
-/usr/include/c++/13/tuple:
 
 /home/daniel/anaconda3/lib/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake:
 
@@ -3770,7 +3605,7 @@ CMakeFiles/3.28.3/CMakeSystem.cmake:
 
 /home/daniel/anaconda3/include/qt/QtCore/qobjectdefs.h:
 
-/usr/share/cmake-3.28/Modules/Compiler/Intel-DetermineCompiler.cmake:
+/usr/include/c++/13/bits/stl_bvector.h:
 
 /home/daniel/anaconda3/include/qt/QtGui/qtguiglobal.h:
 
@@ -3790,8 +3625,6 @@ CMakeFiles/3.28.3/CMakeSystem.cmake:
 
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
-/usr/share/cmake-3.28/Modules/Compiler/NVIDIA-DetermineCompiler.cmake:
-
 /usr/include/c++/13/bits/atomic_wait.h:
 
 /home/daniel/anaconda3/include/qt/QtGui/qpaintdevice.h:
@@ -3808,6 +3641,8 @@ CMakeFiles/3.28.3/CMakeSystem.cmake:
 
 /home/daniel/anaconda3/include/qt/QtGui/qcolor.h:
 
+/home/daniel/anaconda3/include/qt/QtCore/qatomic_cxx11.h:
+
 /usr/include/c++/13/bits/shared_ptr_base.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
@@ -3815,10 +3650,6 @@ CMakeFiles/3.28.3/CMakeSystem.cmake:
 /usr/include/wchar.h:
 
 /home/daniel/anaconda3/include/qt/QtCore/qmap.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h:
-
-/usr/include/c++/13/bits/predefined_ops.h:
 
 /home/daniel/anaconda3/lib/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake:
 
@@ -3832,6 +3663,8 @@ CMakeFiles/3.28.3/CMakeSystem.cmake:
 
 /home/daniel/anaconda3/include/qt/QtCore/qstringview.h:
 
+/home/daniel/anaconda3/include/qt/QtCore/QDebug:
+
 /home/daniel/anaconda3/include/qt/QtGui/qrgb.h:
 
 /home/daniel/anaconda3/include/qt/QtCore/qglobal.h:
@@ -3840,10 +3673,6 @@ CMakeFiles/3.28.3/CMakeSystem.cmake:
 
 /home/daniel/anaconda3/include/qt/QtCore/qdatastream.h:
 
-/usr/include/c++/13/bits/hashtable_policy.h:
-
-/home/daniel/anaconda3/include/qt/QtCore/qatomic.h:
-
 /home/daniel/anaconda3/include/qt/QtCore/qhash.h:
 
 /usr/include/sched.h:
@@ -3851,8 +3680,6 @@ CMakeFiles/3.28.3/CMakeSystem.cmake:
 /home/daniel/Área\ de\ trabalho/Engenharia_1/Sprint1-Grupo/marmomanager_cpp/src/os_repository.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
-
-/usr/share/cmake-3.28/Modules/Compiler/ARMCC-DetermineCompiler.cmake:
 
 /home/daniel/anaconda3/include/qt/QtWidgets/QRadioButton:
 
@@ -3880,11 +3707,9 @@ marmomanager_app_autogen/moc_predefs.h:
 
 /usr/include/c++/13/bits/stl_iterator_base_funcs.h:
 
-/usr/share/cmake-3.28/Modules/Compiler/MSVC-DetermineCompiler.cmake:
-
 /home/daniel/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QWebpPlugin.cmake:
 
-/usr/share/cmake-3.28/Modules/CMakeSystem.cmake.in:
+/home/daniel/anaconda3/include/qt/QtCore/QDir:
 
 /home/daniel/anaconda3/include/qt/QtGui/qtextoption.h:
 
@@ -3892,13 +3717,9 @@ marmomanager_app_autogen/moc_predefs.h:
 
 /usr/include/string.h:
 
-/usr/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompiler.cmake:
-
 /home/daniel/anaconda3/include/qt/QtCore/qtcore-config.h:
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
-
-/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:
 
 /home/daniel/anaconda3/lib/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake:
 
@@ -3910,8 +3731,6 @@ marmomanager_app_autogen/moc_predefs.h:
 
 /home/daniel/anaconda3/include/qt/QtWidgets/QMainWindow:
 
-/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:
-
 /home/daniel/anaconda3/include/qt/QtCore/qlist.h:
 
 /home/daniel/anaconda3/include/qt/QtCore/qabstractitemmodel.h:
@@ -3920,15 +3739,19 @@ marmomanager_app_autogen/moc_predefs.h:
 
 /home/daniel/Área\ de\ trabalho/Engenharia_1/Sprint1-Grupo/marmomanager_cpp/src/os_controller.cpp:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h:
+/home/daniel/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake:
 
-/home/daniel/anaconda3/include/qt/QtWidgets/QComboBox:
+/usr/include/x86_64-linux-gnu/sys/single_threaded.h:
 
 /home/daniel/anaconda3/include/qt/QtCore/qtypeinfo.h:
 
 /home/daniel/anaconda3/include/qt/QtWidgets/qtableview.h:
 
 /usr/include/c++/13/bits/exception.h:
+
+/home/daniel/anaconda3/include/qt/QtCore/qvarlengtharray.h:
+
+/usr/include/c++/13/bits/refwrap.h:
 
 /home/daniel/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QMinimalEglIntegrationPlugin.cmake:
 
@@ -3939,8 +3762,6 @@ marmomanager_app_autogen/moc_predefs.h:
 /home/daniel/anaconda3/include/qt/QtWidgets/qcheckbox.h:
 
 /home/daniel/anaconda3/include/qt/QtGui/qfontmetrics.h:
-
-/usr/share/cmake-3.28/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake:
 
 /usr/include/c++/13/bits/localefwd.h:
 
@@ -3957,6 +3778,8 @@ marmomanager_app_autogen/moc_predefs.h:
 /home/daniel/anaconda3/include/qt/QtCore/qsharedpointer.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
+
+/home/daniel/anaconda3/include/qt/QtCore/qeventloop.h:
 
 /home/daniel/anaconda3/include/qt/QtWidgets/qsizepolicy.h:
 
@@ -3980,35 +3803,17 @@ marmomanager_app_autogen/moc_predefs.h:
 
 /home/daniel/anaconda3/include/qt/QtGui/qmatrix.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
-
-/home/daniel/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake:
-
-/usr/share/cmake-3.28/Modules/CMakeUnixFindMake.cmake:
-
 /home/daniel/anaconda3/include/qt/QtGui/qtextdocument.h:
 
-/home/daniel/anaconda3/include/qt/QtCore/qfile.h:
-
-/home/daniel/Área\ de\ trabalho/Engenharia_1/Sprint1-Grupo/marmomanager_cpp/includes/os_repository.h:
-
-/home/daniel/anaconda3/lib/cmake/Qt5Core/Qt5CoreConfigExtras.cmake:
+/usr/include/c++/13/bits/basic_ios.h:
 
 /home/daniel/anaconda3/include/qt/QtGui/qtgui-config.h:
 
 /home/daniel/anaconda3/include/qt/QtGui/qtransform.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
-
-/usr/include/c++/13/bits/basic_string.tcc:
-
 /usr/include/x86_64-linux-gnu/bits/cpu-set.h:
 
 /home/daniel/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QPdfPlugin.cmake:
-
-/usr/include/c++/13/bits/stl_bvector.h:
-
-/usr/share/cmake-3.28/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake:
 
 /home/daniel/anaconda3/include/qt/QtCore/qshareddata.h:
 
@@ -4031,6 +3836,8 @@ marmomanager_app_autogen/moc_predefs.h:
 /home/daniel/anaconda3/include/qt/QtWidgets/QTabWidget:
 
 /usr/include/x86_64-linux-gnu/asm/unistd.h:
+
+/home/daniel/anaconda3/include/qt/QtCore/qfiledevice.h:
 
 /home/daniel/anaconda3/include/qt/QtWidgets/QTextEdit:
 
@@ -4056,13 +3863,13 @@ marmomanager_app_autogen/moc_predefs.h:
 
 /home/daniel/anaconda3/include/qt/QtWidgets/QDateEdit:
 
-/usr/share/cmake-3.28/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake:
+/usr/include/c++/13/bits/basic_string.tcc:
+
+/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
 
 /home/daniel/Área\ de\ trabalho/Engenharia_1/Sprint1-Grupo/marmomanager_cpp/CMakeLists.txt:
 
 /usr/include/c++/13/bits/iterator_concepts.h:
-
-/usr/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:
 
 /home/daniel/anaconda3/include/qt/QtCore/qrect.h:
 
@@ -4086,27 +3893,25 @@ marmomanager_app_autogen/moc_predefs.h:
 
 /usr/include/c++/13/bits/concept_check.h:
 
+/home/daniel/Área\ de\ trabalho/Engenharia_1/Sprint1-Grupo/marmomanager_cpp/includes/os_repository.h:
+
+/home/daniel/anaconda3/lib/cmake/Qt5Core/Qt5CoreConfigExtras.cmake:
+
+/home/daniel/anaconda3/include/qt/QtCore/qfile.h:
+
 /usr/include/c++/13/bits/alloc_traits.h:
 
 /home/daniel/Área\ de\ trabalho/Engenharia_1/Sprint1-Grupo/marmomanager_cpp/src/ui/history_dialog.h:
-
-/usr/include/c++/13/variant:
-
-/usr/include/c++/13/bits/atomic_base.h:
-
-/home/daniel/anaconda3/include/qt/QtWidgets/qmainwindow.h:
 
 /usr/include/c++/13/bits/ranges_util.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h:
 
-/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
+/home/daniel/anaconda3/include/qt/QtCore/qatomic.h:
 
-/home/daniel/anaconda3/include/qt/QtWidgets/qslider.h:
+/usr/include/c++/13/bits/hashtable_policy.h:
 
 /usr/include/c++/13/algorithm:
-
-/usr/share/cmake-3.28/Modules/CMakeFindBinUtils.cmake:
 
 /home/daniel/anaconda3/include/qt/QtWidgets/qrubberband.h:
 
@@ -4148,9 +3953,13 @@ marmomanager_app_autogen/moc_predefs.h:
 
 /usr/include/c++/13/bits/ranges_base.h:
 
+/usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h:
+
 /home/daniel/anaconda3/include/qt/QtGui/qpen.h:
 
 /usr/include/c++/13/bits/ranges_cmp.h:
+
+/home/daniel/anaconda3/include/qt/QtCore/qfileinfo.h:
 
 /usr/include/c++/13/bits/requires_hosted.h:
 
@@ -4162,13 +3971,13 @@ marmomanager_app_autogen/moc_predefs.h:
 
 /usr/include/c++/13/bits/std_abs.h:
 
+/usr/include/c++/13/bits/parse_numbers.h:
+
 /usr/include/c++/13/bits/std_mutex.h:
 
 /home/daniel/anaconda3/include/qt/QtCore/qvector.h:
 
 /usr/include/c++/13/bits/stl_algo.h:
-
-/usr/share/cmake-3.28/Modules/Compiler/Tasking-DetermineCompiler.cmake:
 
 /usr/include/c++/13/bits/stl_algobase.h:
 
@@ -4184,9 +3993,13 @@ marmomanager_app_autogen/moc_predefs.h:
 
 /usr/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake:
 
+marmomanager_app_autogen/YPKJ5OE7LN/moc_main_window.cpp:
+
 /home/daniel/anaconda3/include/qt/QtCore/qregexp.h:
 
 /usr/include/c++/13/bits/stl_iterator_base_types.h:
+
+/usr/include/stdio.h:
 
 /usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
 
@@ -4196,9 +4009,11 @@ marmomanager_app_autogen/moc_predefs.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 
-/usr/include/c++/13/bits/stl_numeric.h:
+/usr/include/c++/13/backward/binders.h:
 
-/usr/share/cmake-3.28/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake:
+marmomanager_app_autogen/mocs_compilation.cpp:
+
+/usr/include/c++/13/bits/stl_numeric.h:
 
 /home/daniel/anaconda3/include/qt/QtCore/qstringliteral.h:
 
@@ -4216,15 +4031,13 @@ marmomanager_app_autogen/moc_predefs.h:
 
 /usr/include/c++/13/bits/stl_vector.h:
 
-/usr/share/cmake-3.28/Modules/Compiler/CrayClang-DetermineCompiler.cmake:
+/usr/include/c++/13/bits/stream_iterator.h:
 
 /usr/include/x86_64-linux-gnu/bits/uio_lim.h:
 
 /home/daniel/anaconda3/lib/cmake/Qt5/Qt5Config.cmake:
 
 /usr/include/c++/13/bits/streambuf.tcc:
-
-/usr/share/cmake-3.28/Modules/Compiler/AppleClang-DetermineCompiler.cmake:
 
 /usr/include/c++/13/bits/streambuf_iterator.h:
 
@@ -4260,6 +4073,8 @@ marmomanager_app_autogen/moc_predefs.h:
 
 /usr/include/x86_64-linux-gnu/bits/posix_opt.h:
 
+/home/daniel/anaconda3/include/qt/QtWidgets/QApplication:
+
 /usr/include/x86_64-linux-gnu/sys/syscall.h:
 
 /usr/include/c++/13/cstdint:
@@ -4267,8 +4082,6 @@ marmomanager_app_autogen/moc_predefs.h:
 /home/daniel/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QIbusPlatformInputContextPlugin.cmake:
 
 /usr/include/c++/13/cwchar:
-
-/usr/share/cmake-3.28/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/sys/select.h:
 
@@ -4286,9 +4099,9 @@ marmomanager_app_autogen/moc_predefs.h:
 
 /usr/include/c++/13/ext/string_conversions.h:
 
-/usr/share/cmake-3.28/Modules/CMakeTestCompilerCommon.cmake:
-
 /usr/include/c++/13/functional:
+
+/home/daniel/anaconda3/include/qt/QtCore/qcontiguouscache.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
 
@@ -4300,13 +4113,11 @@ marmomanager_app_autogen/moc_predefs.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
 
-/usr/share/cmake-3.28/Modules/CMakeParseLibraryArchitecture.cmake:
-
 /home/daniel/anaconda3/include/qt/QtCore/qcontainertools_impl.h:
 
 /usr/include/c++/13/map:
 
-/usr/share/cmake-3.28/Modules/CMakeDetermineCompiler.cmake:
+/usr/include/c++/13/string_view:
 
 /usr/include/c++/13/new:
 
@@ -4321,6 +4132,8 @@ marmomanager_app_autogen/moc_predefs.h:
 /usr/include/c++/13/ostream:
 
 /usr/include/c++/13/pstl/execution_defs.h:
+
+/home/daniel/anaconda3/include/qt/QtGui/qinputmethod.h:
 
 /usr/include/c++/13/pstl/glue_algorithm_defs.h:
 
@@ -4364,6 +4177,8 @@ marmomanager_app_autogen/moc_predefs.h:
 
 /usr/include/linux/limits.h:
 
+/usr/include/c++/13/ratio:
+
 /home/daniel/anaconda3/include/qt/QtCore/QVector:
 
 /usr/include/stdlib.h:
@@ -4374,10 +4189,6 @@ marmomanager_app_autogen/moc_predefs.h:
 
 /usr/include/syscall.h:
 
-/usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:
-
-/usr/share/cmake-3.28/Modules/Compiler/ADSP-DetermineCompiler.cmake:
-
 /home/daniel/anaconda3/include/qt/QtCore/qpair.h:
 
 /usr/include/unistd.h:
@@ -4385,10 +4196,6 @@ marmomanager_app_autogen/moc_predefs.h:
 /home/daniel/anaconda3/include/qt/QtWidgets/qabstractslider.h:
 
 /usr/include/x86_64-linux-gnu/asm/errno.h:
-
-/usr/share/cmake-3.28/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake:
-
-/usr/share/cmake-3.28/Modules/Compiler/PathScale-DetermineCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/asm/unistd_64.h:
 
@@ -4404,9 +4211,13 @@ marmomanager_app_autogen/moc_predefs.h:
 
 /usr/include/x86_64-linux-gnu/bits/endian.h:
 
-/usr/share/cmake-3.28/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake:
+/usr/include/c++/13/array:
+
+/home/daniel/anaconda3/include/qt/QtSql/QSqlQuery:
 
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
+
+/usr/include/c++/13/bits/chrono.h:
 
 /usr/include/x86_64-linux-gnu/bits/environments.h:
 
@@ -4446,15 +4257,15 @@ marmomanager_app_autogen/moc_predefs.h:
 
 /usr/include/x86_64-linux-gnu/bits/timex.h:
 
-/usr/include/c++/13/cstdio:
+/home/daniel/anaconda3/include/qt/QtWidgets/qslider.h:
 
-/home/daniel/anaconda3/include/qt/QtWidgets/qabstractitemview.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
+/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
 /home/daniel/anaconda3/include/qt/QtCore/qglobalstatic.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
 
@@ -4466,7 +4277,7 @@ marmomanager_app_autogen/moc_predefs.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/error_t.h:
 
-/usr/share/cmake-3.28/Modules/Compiler/Borland-DetermineCompiler.cmake:
+/usr/include/c++/13/bits/hashtable.h:
 
 /usr/include/c++/13/bits/list.tcc:
 
@@ -4478,10 +4289,6 @@ marmomanager_app_autogen/moc_predefs.h:
 
 /usr/share/cmake-3.28/Modules/CMakeCXXInformation.cmake:
 
-/home/daniel/anaconda3/include/qt/QtGui/qguiapplication.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
-
 /usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
 
 /home/daniel/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QVirtualKeyboardPlugin.cmake:
@@ -4489,10 +4296,6 @@ marmomanager_app_autogen/moc_predefs.h:
 /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h:
 
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
-
-/home/daniel/anaconda3/include/qt/QtCore/qatomic_cxx11.h:
-
-/usr/share/cmake-3.28/Modules/Compiler/ARMClang-DetermineCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
 
@@ -4512,13 +4315,9 @@ marmomanager_app_autogen/moc_predefs.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h:
 
-/usr/share/cmake-3.28/Modules/CMakeDetermineCompileFeatures.cmake:
-
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h:
-
-/usr/share/cmake-3.28/Modules/Platform/Linux-Determine-CXX.cmake:
 
 /home/daniel/anaconda3/include/qt/QtWidgets/QLineEdit:
 
@@ -4534,76 +4333,100 @@ marmomanager_app_autogen/moc_predefs.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
 
-/home/daniel/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QTgaPlugin.cmake:
-
-/usr/share/cmake-3.28/Modules/CMakeCXXCompiler.cmake.in:
-
-/usr/share/cmake-3.28/Modules/Compiler/GHS-DetermineCompiler.cmake:
-
-/usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp:
-
 /usr/include/x86_64-linux-gnu/sys/types.h:
-
-/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:
 
 /usr/share/cmake-3.28/Modules/CMakeGenericSystem.cmake:
 
+/usr/include/c++/13/bits/predefined_ops.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h:
+
 /usr/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake:
-
-/home/daniel/anaconda3/include/qt/QtCore/qvarlengtharray.h:
-
-/usr/share/cmake-3.28/Modules/Compiler/OrangeC-DetermineCompiler.cmake:
-
-/home/daniel/anaconda3/include/qt/QtCore/QVariant:
-
-/home/daniel/anaconda3/include/qt/QtGui/qcursor.h:
-
-/usr/share/cmake-3.28/Modules/CMakeParseImplicitIncludeInfo.cmake:
-
-/usr/share/cmake-3.28/Modules/CMakeParseImplicitLinkInfo.cmake:
 
 /usr/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake:
 
-/usr/include/c++/13/bits/basic_ios.h:
+/usr/include/c++/13/cstdlib:
 
-/usr/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompilerInternal.cmake:
+/usr/include/limits.h:
 
-/usr/share/cmake-3.28/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake:
+/usr/share/cmake-3.28/Modules/Platform/Linux-GNU-CXX.cmake:
 
-/usr/share/cmake-3.28/Modules/Compiler/XL-CXX-DetermineCompiler.cmake:
+/usr/share/cmake-3.28/Modules/Platform/Linux-GNU.cmake:
 
-/usr/share/cmake-3.28/Modules/Compiler/Cray-DetermineCompiler.cmake:
+/usr/share/cmake-3.28/Modules/Platform/Linux-Initialize.cmake:
 
-/usr/share/cmake-3.28/Modules/Compiler/Embarcadero-DetermineCompiler.cmake:
+/usr/share/cmake-3.28/Modules/Platform/UnixPaths.cmake:
 
-/usr/share/cmake-3.28/Modules/Compiler/Fujitsu-DetermineCompiler.cmake:
+marmomanager_app_autogen/YPKJ5OE7LN/moc_history_dialog.cpp:
 
-/usr/include/c++/13/bits/refwrap.h:
+/usr/share/cmake-3.28/Modules/Platform/Linux.cmake:
 
-/usr/share/cmake-3.28/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake:
+/usr/include/c++/13/bits/unordered_map.h:
 
-/usr/include/c++/13/cwctype:
+/usr/include/c++/13/chrono:
 
-/usr/share/cmake-3.28/Modules/Compiler/GNU-FindBinUtils.cmake:
+/home/daniel/anaconda3/include/qt/QtWidgets/qabstractitemview.h:
 
-/home/daniel/anaconda3/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake:
+/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
 
-/usr/share/cmake-3.28/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake:
+/usr/include/c++/13/cstdio:
 
-/usr/include/c++/13/string_view:
+/usr/include/c++/13/ctime:
 
-/usr/share/cmake-3.28/Modules/Compiler/NVHPC-DetermineCompiler.cmake:
+/usr/include/c++/13/pstl/pstl_config.h:
 
-/usr/share/cmake-3.28/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake:
+/usr/include/c++/13/stdlib.h:
 
-/usr/share/cmake-3.28/Modules/Compiler/SCO-DetermineCompiler.cmake:
+/usr/include/c++/13/bits/atomic_base.h:
 
-/home/daniel/anaconda3/include/qt/QtCore/qconfig.h:
+/home/daniel/anaconda3/include/qt/QtWidgets/qmainwindow.h:
 
-/usr/share/cmake-3.28/Modules/Compiler/PGI-DetermineCompiler.cmake:
+/usr/include/c++/13/variant:
 
-/usr/share/cmake-3.28/Modules/Compiler/TI-DetermineCompiler.cmake:
+/home/daniel/anaconda3/include/qt/QtSql/qsqlquery.h:
 
-/usr/include/c++/13/bits/stream_iterator.h:
+/home/daniel/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake:
 
-/usr/share/cmake-3.28/Modules/Compiler/Watcom-DetermineCompiler.cmake:
+/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
+
+/home/daniel/anaconda3/lib/cmake/Qt5Test/Qt5TestConfigVersion.cmake:
+
+/home/daniel/anaconda3/lib/cmake/Qt5Sql/Qt5Sql_QMYSQLDriverPlugin.cmake:
+
+/usr/include/c++/13/bits/nested_exception.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
+
+/usr/include/c++/13/tuple:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
+
+/home/daniel/anaconda3/include/qt/QtWidgets/QComboBox:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h:
+
+/home/daniel/anaconda3/include/qt/QtCore/qprocessordetection.h:
+
+/home/daniel/anaconda3/include/qt/QtCore/qdebug.h:
+
+/home/daniel/anaconda3/include/qt/QtCore/qdir.h:
+
+/home/daniel/anaconda3/include/qt/QtCore/qtextstream.h:
+
+/home/daniel/anaconda3/include/qt/QtWidgets/QPushButton:
+
+/home/daniel/anaconda3/include/qt/QtSql/QSqlDatabase:
+
+/home/daniel/anaconda3/include/qt/QtGui/qtextformat.h:
+
+/home/daniel/anaconda3/include/qt/QtSql/QSqlError:
+
+/home/daniel/anaconda3/include/qt/QtGui/qcursor.h:
+
+/home/daniel/anaconda3/include/qt/QtCore/QVariant:
+
+/home/daniel/anaconda3/include/qt/QtCore/qcoreapplication.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
+
+/home/daniel/anaconda3/include/qt/QtGui/qguiapplication.h:

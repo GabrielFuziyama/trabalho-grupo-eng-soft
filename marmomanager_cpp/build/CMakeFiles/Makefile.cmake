@@ -93,6 +93,7 @@ set(CMAKE_MAKEFILE_OUTPUTS
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/marmomanager_app_autogen.dir/AutogenInfo.json"
   "CMakeFiles/marmomanager_tests_autogen.dir/AutogenInfo.json"
+  "CMakeFiles/marmomanager_gui_tests_autogen.dir/AutogenInfo.json"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
@@ -100,8 +101,11 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/marmomanager_app.dir/DependInfo.cmake"
   "CMakeFiles/marmomanager_tests.dir/DependInfo.cmake"
+  "CMakeFiles/marmomanager_gui_tests.dir/DependInfo.cmake"
   "CMakeFiles/marmomanager_app_autogen_timestamp_deps.dir/DependInfo.cmake"
   "CMakeFiles/marmomanager_app_autogen.dir/DependInfo.cmake"
   "CMakeFiles/marmomanager_tests_autogen_timestamp_deps.dir/DependInfo.cmake"
   "CMakeFiles/marmomanager_tests_autogen.dir/DependInfo.cmake"
+  "CMakeFiles/marmomanager_gui_tests_autogen_timestamp_deps.dir/DependInfo.cmake"
+  "CMakeFiles/marmomanager_gui_tests_autogen.dir/DependInfo.cmake"
   )
