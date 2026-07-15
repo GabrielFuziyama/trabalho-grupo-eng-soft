@@ -6,6 +6,7 @@ all:
 
 test: all
 	./bin/marmomanager_tests
+	./bin/marmomanager_gui_tests
 
 clean:
 	rm -rf build

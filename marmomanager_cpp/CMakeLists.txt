@@ -33,6 +33,6 @@ add_executable(marmomanager_tests tests/unit/test_core.cpp ${SRC_FILES} ${UI_FIL
 target_link_libraries(marmomanager_tests PRIVATE Qt5::Core Qt5::Widgets Qt5::Sql Qt5::Test)
 add_test(NAME CoreTests COMMAND marmomanager_tests)
 
-add_executable(marmomanager_gui_tests tests/unit/test_gui.cpp ${SRC_FILES} ${UI_FILES} ${HEADERS})
+add_executable(marmomanager_gui_tests tests/func/test_func_gui.cpp ${SRC_FILES} ${UI_FILES} ${HEADERS})
 target_link_libraries(marmomanager_gui_tests PRIVATE Qt5::Core Qt5::Widgets Qt5::Sql Qt5::Test)
 add_test(NAME GuiTests COMMAND marmomanager_gui_tests)

@@ -14,11 +14,11 @@ private slots:
     void initTestCase();
     void cleanupTestCase();
     
-    void testCadastroOS_data();
-    void testCadastroOS();
+    void testCadastrarNovaOrdemDeServicoComSucesso_data();
+    void testCadastrarNovaOrdemDeServicoComSucesso();
     
-    void testConsultaOS_data();
-    void testConsultaOS();
+    void testConsultarOrdensDeServicoPorNomeDoCliente_data();
+    void testConsultarOrdensDeServicoPorNomeDoCliente();
 
     void timeOutMsgBox();
 
@@ -41,7 +41,7 @@ void TestGUI::cleanupTestCase() {
     QFile::remove("test_marmomanager_gui.db");
 }
 
-void TestGUI::testCadastroOS_data() {
+void TestGUI::testCadastrarNovaOrdemDeServicoComSucesso_data() {
     QTest::addColumn<QString>("cliente");
     QTest::addColumn<QString>("contato");
     QTest::addColumn<QString>("medidas");
@@ -50,7 +50,7 @@ void TestGUI::testCadastroOS_data() {
     QTest::newRow("Cadastro Simples") << "Cliente Teste GUI" << "9999-9999" << "2x2" << "Marmore Branco";
 }
 
-void TestGUI::testCadastroOS() {
+void TestGUI::testCadastrarNovaOrdemDeServicoComSucesso() {
     QFETCH(QString, cliente);
     QFETCH(QString, contato);
     QFETCH(QString, medidas);
@@ -94,7 +94,7 @@ void TestGUI::testCadastroOS() {
     QCOMPARE(app->m_cadCliente->text(), QString(""));
 }
 
-void TestGUI::testConsultaOS_data() {
+void TestGUI::testConsultarOrdensDeServicoPorNomeDoCliente_data() {
     QTest::addColumn<QString>("buscaCliente");
     QTest::addColumn<int>("expectedRowCount");
 
@@ -103,7 +103,7 @@ void TestGUI::testConsultaOS_data() {
     QTest::newRow("Busca Cliente Inexistente") << "Fantasma" << 0;
 }
 
-void TestGUI::testConsultaOS() {
+void TestGUI::testConsultarOrdensDeServicoPorNomeDoCliente() {
     QFETCH(QString, buscaCliente);
     QFETCH(int, expectedRowCount);
 
@@ -149,4 +149,4 @@ void TestGUI::timeOutMsgBox() {
 }
 
 QTEST_MAIN(TestGUI)
-#include "test_gui.moc"
+#include "test_func_gui.moc"
