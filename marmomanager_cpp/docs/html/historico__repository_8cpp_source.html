@@ -1,22 +1,28 @@
+<!-- HTML header for doxygen 1.16.1-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MarmoManager: Código-Fonte de /home/daniel/Downloads/Engenharia_1/Sprint1-Grupo/marmomanager_cpp/core/src/historico_repository.cpp</title>
+<title>MarmoManager: Código-Fonte de /home/arthurteixeira/Músicas/trabalho-grupo-eng-soft/trabalho-grupo-eng-soft/marmomanager_cpp/src/historico_repository.cpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="navtreedata.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true });
+</script>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -34,28 +40,22 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Gerado por Doxygen 1.9.8 -->
+<!-- Gerado por Doxygen 1.16.1 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "search/",'.html');
-/* @license-end */
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
-  initMenu('',true,false,'search.php','Localizar');
-  $(document).ready(function() { init_search(); });
+  initMenu('',true,false,'search.php','Localizar',true);
+  $(function() { init_search(); });
 });
-/* @license-end */
 </script>
 <div id="main-nav"></div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function() { init_codefold(0); });
-/* @license-end */
-</script>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -68,10 +68,9 @@ $(document).ready(function() { init_codefold(0); });
   </div>
 </div>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('historico__repository_8cpp_source.html',''); initResizable(); });
-/* @license-end */
+$(function(){initNavTree('historico__repository_8cpp_source.html','',''); });
 </script>
+<div id="container">
 <div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -158,27 +157,28 @@ $(document).ready(function(){initNavTree('historico__repository_8cpp_source.html
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordflow">return</span> results;</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>}</div>
 </div>
-<div class="ttc" id="aclassDatabase_html_aa04e547554cc34fa4b6c5a9390021eab"><div class="ttname"><a href="classDatabase.html#aa04e547554cc34fa4b6c5a9390021eab">Database::getInstance</a></div><div class="ttdeci">static Database &amp; getInstance()</div><div class="ttdoc">Obtém a instância única do Banco de Dados.</div><div class="ttdef"><b>Definição</b> <a href="database_8cpp_source.html#l00006">database.cpp:6</a></div></div>
-<div class="ttc" id="aclassDatabase_html_aaf21db9254c8ed77d4d800802c987d87"><div class="ttname"><a href="classDatabase.html#aaf21db9254c8ed77d4d800802c987d87">Database::getConnection</a></div><div class="ttdeci">QSqlDatabase getConnection() const</div><div class="ttdoc">Recupera o objeto de conexão QSqlDatabase.</div><div class="ttdef"><b>Definição</b> <a href="database_8cpp_source.html#l00019">database.cpp:19</a></div></div>
-<div class="ttc" id="aclassHistoricoRepository_html_adc29f7e094d6b1155ff82a08c77de8b9"><div class="ttname"><a href="classHistoricoRepository.html#adc29f7e094d6b1155ff82a08c77de8b9">HistoricoRepository::create</a></div><div class="ttdeci">void create(int osId, const QString &amp;statusAnterior, const QString &amp;statusNovo, const QString &amp;dataAlteracao, const QString &amp;responsavel)</div><div class="ttdoc">Cria um novo registro de histórico.</div><div class="ttdef"><b>Definição</b> <a href="historico__repository_8cpp_source.html#l00011">historico_repository.cpp:11</a></div></div>
-<div class="ttc" id="aclassHistoricoRepository_html_ae1c14be64e7574ab5b919e6ab5fe6e83"><div class="ttname"><a href="classHistoricoRepository.html#ae1c14be64e7574ab5b919e6ab5fe6e83">HistoricoRepository::getByOsId</a></div><div class="ttdeci">QVector&lt; HistoricoData &gt; getByOsId(int osId)</div><div class="ttdoc">Busca o histórico para uma dada OS.</div><div class="ttdef"><b>Definição</b> <a href="historico__repository_8cpp_source.html#l00029">historico_repository.cpp:29</a></div></div>
-<div class="ttc" id="aclassHistoricoRepository_html_af6f0680358a4e5da74efc6f81e243ffc"><div class="ttname"><a href="classHistoricoRepository.html#af6f0680358a4e5da74efc6f81e243ffc">HistoricoRepository::HistoricoRepository</a></div><div class="ttdeci">HistoricoRepository()</div><div class="ttdef"><b>Definição</b> <a href="historico__repository_8cpp_source.html#l00008">historico_repository.cpp:8</a></div></div>
+<div class="ttc" id="aclassDatabase_html_aa04e547554cc34fa4b6c5a9390021eab"><div class="ttname"><a href="classDatabase.html#aa04e547554cc34fa4b6c5a9390021eab">Database::getInstance</a></div><div class="ttdeci">static Database &amp; getInstance()</div><div class="ttdoc">Obtém a instância única do Banco de Dados.</div><div class="ttdef"><b>Definição</b> <a href="database_8cpp_source.html#l00007">database.cpp:7</a></div></div>
+<div class="ttc" id="aclassDatabase_html_aaf21db9254c8ed77d4d800802c987d87"><div class="ttname"><a href="classDatabase.html#aaf21db9254c8ed77d4d800802c987d87">Database::getConnection</a></div><div class="ttdeci">QSqlDatabase getConnection() const</div><div class="ttdoc">Recupera o objeto de conexão QSqlDatabase.</div><div class="ttdef"><b>Definição</b> <a href="database_8cpp_source.html#l00026">database.cpp:26</a></div></div>
+<div class="ttc" id="aclassHistoricoRepository_html_adc29f7e094d6b1155ff82a08c77de8b9"><div class="ttname"><a href="classHistoricoRepository.html#adc29f7e094d6b1155ff82a08c77de8b9">HistoricoRepository::create</a></div><div class="ttdeci">void create(int osId, const QString &amp;statusAnterior, const QString &amp;statusNovo, const QString &amp;dataAlteracao, const QString &amp;responsavel)</div><div class="ttdoc">Cria um novo registro de histórico.</div><div class="ttdef"><b>Definição</b> <a href="#l00011">historico_repository.cpp:11</a></div></div>
+<div class="ttc" id="aclassHistoricoRepository_html_ae1c14be64e7574ab5b919e6ab5fe6e83"><div class="ttname"><a href="classHistoricoRepository.html#ae1c14be64e7574ab5b919e6ab5fe6e83">HistoricoRepository::getByOsId</a></div><div class="ttdeci">QVector&lt; HistoricoData &gt; getByOsId(int osId)</div><div class="ttdoc">Busca o histórico para uma dada OS.</div><div class="ttdef"><b>Definição</b> <a href="#l00029">historico_repository.cpp:29</a></div></div>
+<div class="ttc" id="aclassHistoricoRepository_html_af6f0680358a4e5da74efc6f81e243ffc"><div class="ttname"><a href="classHistoricoRepository.html#af6f0680358a4e5da74efc6f81e243ffc">HistoricoRepository::HistoricoRepository</a></div><div class="ttdeci">HistoricoRepository()</div><div class="ttdef"><b>Definição</b> <a href="#l00008">historico_repository.cpp:8</a></div></div>
 <div class="ttc" id="adatabase_8h_html"><div class="ttname"><a href="database_8h.html">database.h</a></div><div class="ttdoc">Arquivo de cabeçalho para o Singleton do Banco de Dados.</div></div>
 <div class="ttc" id="ahistorico__repository_8h_html"><div class="ttname"><a href="historico__repository_8h.html">historico_repository.h</a></div><div class="ttdoc">Cabeçalho da classe HistoricoRepository.</div></div>
-<div class="ttc" id="astructHistoricoData_html"><div class="ttname"><a href="structHistoricoData.html">HistoricoData</a></div><div class="ttdoc">Representa um registro de Histórico de mudanças.</div><div class="ttdef"><b>Definição</b> <a href="os__model_8h_source.html#l00032">os_model.h:32</a></div></div>
-<div class="ttc" id="astructHistoricoData_html_a0184901a1c88619103d9e1dd0e2976f1"><div class="ttname"><a href="structHistoricoData.html#a0184901a1c88619103d9e1dd0e2976f1">HistoricoData::statusAnterior</a></div><div class="ttdeci">QString statusAnterior</div><div class="ttdef"><b>Definição</b> <a href="os__model_8h_source.html#l00035">os_model.h:35</a></div></div>
-<div class="ttc" id="astructHistoricoData_html_a806124713b87950629d8519cd110c197"><div class="ttname"><a href="structHistoricoData.html#a806124713b87950629d8519cd110c197">HistoricoData::dataAlteracao</a></div><div class="ttdeci">QString dataAlteracao</div><div class="ttdef"><b>Definição</b> <a href="os__model_8h_source.html#l00037">os_model.h:37</a></div></div>
-<div class="ttc" id="astructHistoricoData_html_a84fb3d823e79079c9082b04c35e3f1fd"><div class="ttname"><a href="structHistoricoData.html#a84fb3d823e79079c9082b04c35e3f1fd">HistoricoData::responsavel</a></div><div class="ttdeci">QString responsavel</div><div class="ttdef"><b>Definição</b> <a href="os__model_8h_source.html#l00038">os_model.h:38</a></div></div>
-<div class="ttc" id="astructHistoricoData_html_ab29682c4cdcd75928ed295a4d603c766"><div class="ttname"><a href="structHistoricoData.html#ab29682c4cdcd75928ed295a4d603c766">HistoricoData::osId</a></div><div class="ttdeci">int osId</div><div class="ttdef"><b>Definição</b> <a href="os__model_8h_source.html#l00034">os_model.h:34</a></div></div>
-<div class="ttc" id="astructHistoricoData_html_ac484068333bb193c229cea52c567b2dc"><div class="ttname"><a href="structHistoricoData.html#ac484068333bb193c229cea52c567b2dc">HistoricoData::statusNovo</a></div><div class="ttdeci">QString statusNovo</div><div class="ttdef"><b>Definição</b> <a href="os__model_8h_source.html#l00036">os_model.h:36</a></div></div>
-<div class="ttc" id="astructHistoricoData_html_af7fdead2a20a957e5add573395fa21a4"><div class="ttname"><a href="structHistoricoData.html#af7fdead2a20a957e5add573395fa21a4">HistoricoData::id</a></div><div class="ttdeci">int id</div><div class="ttdef"><b>Definição</b> <a href="os__model_8h_source.html#l00033">os_model.h:33</a></div></div>
+<div class="ttc" id="astructHistoricoData_html"><div class="ttname"><a href="structHistoricoData.html">HistoricoData</a></div><div class="ttdoc">Representa um registro de Histórico de mudanças.</div><div class="ttdef"><b>Definição</b> <a href="os__model_8h_source.html#l00034">os_model.h:34</a></div></div>
+<div class="ttc" id="astructHistoricoData_html_a0184901a1c88619103d9e1dd0e2976f1"><div class="ttname"><a href="structHistoricoData.html#a0184901a1c88619103d9e1dd0e2976f1">HistoricoData::statusAnterior</a></div><div class="ttdeci">QString statusAnterior</div><div class="ttdef"><b>Definição</b> <a href="os__model_8h_source.html#l00037">os_model.h:37</a></div></div>
+<div class="ttc" id="astructHistoricoData_html_a806124713b87950629d8519cd110c197"><div class="ttname"><a href="structHistoricoData.html#a806124713b87950629d8519cd110c197">HistoricoData::dataAlteracao</a></div><div class="ttdeci">QString dataAlteracao</div><div class="ttdef"><b>Definição</b> <a href="os__model_8h_source.html#l00039">os_model.h:39</a></div></div>
+<div class="ttc" id="astructHistoricoData_html_a84fb3d823e79079c9082b04c35e3f1fd"><div class="ttname"><a href="structHistoricoData.html#a84fb3d823e79079c9082b04c35e3f1fd">HistoricoData::responsavel</a></div><div class="ttdeci">QString responsavel</div><div class="ttdef"><b>Definição</b> <a href="os__model_8h_source.html#l00040">os_model.h:40</a></div></div>
+<div class="ttc" id="astructHistoricoData_html_ab29682c4cdcd75928ed295a4d603c766"><div class="ttname"><a href="structHistoricoData.html#ab29682c4cdcd75928ed295a4d603c766">HistoricoData::osId</a></div><div class="ttdeci">int osId</div><div class="ttdef"><b>Definição</b> <a href="os__model_8h_source.html#l00036">os_model.h:36</a></div></div>
+<div class="ttc" id="astructHistoricoData_html_ac484068333bb193c229cea52c567b2dc"><div class="ttname"><a href="structHistoricoData.html#ac484068333bb193c229cea52c567b2dc">HistoricoData::statusNovo</a></div><div class="ttdeci">QString statusNovo</div><div class="ttdef"><b>Definição</b> <a href="os__model_8h_source.html#l00038">os_model.h:38</a></div></div>
+<div class="ttc" id="astructHistoricoData_html_af7fdead2a20a957e5add573395fa21a4"><div class="ttname"><a href="structHistoricoData.html#af7fdead2a20a957e5add573395fa21a4">HistoricoData::id</a></div><div class="ttdeci">int id</div><div class="ttdef"><b>Definição</b> <a href="os__model_8h_source.html#l00035">os_model.h:35</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+</div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_4270bfced15e0e73154b13468c7c9ad9.html">core</a></li><li class="navelem"><a class="el" href="dir_90fd98a0ba30abf7a6068a44995d2d6b.html">src</a></li><li class="navelem"><a class="el" href="historico__repository_8cpp.html">historico_repository.cpp</a></li>
-    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="navelem"><a href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a href="historico__repository_8cpp.html">historico_repository.cpp</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
   </ul>
 </div>
 </body>

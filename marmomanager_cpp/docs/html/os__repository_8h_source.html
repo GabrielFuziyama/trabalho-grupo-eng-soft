@@ -1,22 +1,28 @@
+<!-- HTML header for doxygen 1.16.1-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MarmoManager: Código-Fonte de /home/daniel/Downloads/Engenharia_1/Sprint1-Grupo/marmomanager_cpp/core/include/os_repository.h</title>
+<title>MarmoManager: Código-Fonte de /home/arthurteixeira/Músicas/trabalho-grupo-eng-soft/trabalho-grupo-eng-soft/marmomanager_cpp/includes/os_repository.h</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="navtreedata.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true });
+</script>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -34,28 +40,22 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Gerado por Doxygen 1.9.8 -->
+<!-- Gerado por Doxygen 1.16.1 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "search/",'.html');
-/* @license-end */
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
-  initMenu('',true,false,'search.php','Localizar');
-  $(document).ready(function() { init_search(); });
+  initMenu('',true,false,'search.php','Localizar',true);
+  $(function() { init_search(); });
 });
-/* @license-end */
 </script>
 <div id="main-nav"></div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function() { init_codefold(0); });
-/* @license-end */
-</script>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -68,10 +68,9 @@ $(document).ready(function() { init_codefold(0); });
   </div>
 </div>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('os__repository_8h_source.html',''); initResizable(); });
-/* @license-end */
+$(function(){initNavTree('os__repository_8h_source.html','',''); });
 </script>
+<div id="container">
 <div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -98,45 +97,47 @@ $(document).ready(function(){initNavTree('os__repository_8h_source.html',''); in
   <div class="headertitle"><div class="title">os_repository.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="os__repository_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<a href="os__repository_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef OS_REPOSITORY_H</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#define OS_REPOSITORY_H</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="os__model_8h.html">os_model.h</a>&quot;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;QVector&gt;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span></div>
 <div class="foldopen" id="foldopen00016" data-start="{" data-end="};">
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="classOSRepository.html">   16</a></span><span class="keyword">class </span><a class="code hl_class" href="classOSRepository.html">OSRepository</a> {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="classOSRepository.html">   16</a></span><span class="keyword">class </span><a class="code hl_function" href="classOSRepository.html#a98f93993ca65a0b7c6bf0a48ec1efef1">OSRepository</a> {</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <a class="code hl_function" href="classOSRepository.html#a98f93993ca65a0b7c6bf0a48ec1efef1">OSRepository</a>();</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classOSRepository.html#a06f3ca1cdcbffffb55c4ed09557b5f8a">create</a>(<span class="keyword">const</span> QString&amp; cliente, <span class="keyword">const</span> QString&amp; contato, <span class="keyword">const</span> QString&amp; descricao,</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classOSRepository.html#af6139a9045e4f6c8ab9b04d9d4e0ee06">create</a>(<span class="keyword">const</span> QString&amp; cliente, <span class="keyword">const</span> QString&amp; contato, <span class="keyword">const</span> QString&amp; descricao,</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>               <span class="keyword">const</span> QString&amp; medidas, <span class="keyword">const</span> QString&amp; material, <span class="keyword">const</span> QString&amp; prazo,</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>               <span class="keyword">const</span> QString&amp; status, <span class="keyword">const</span> QString&amp; dataAbertura);</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classOSRepository.html#a216ac5a1b6bd12065a6d6f7edaddbcd2">updateStatus</a>(<span class="keywordtype">int</span> osId, <span class="keyword">const</span> QString&amp; novoStatus);</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    QVector&lt;OSData&gt; <a class="code hl_function" href="classOSRepository.html#af02690680d93fe471b48a07ac58587a4">fetchAll</a>(<span class="keyword">const</span> QString&amp; buscaCliente = <span class="stringliteral">&quot;&quot;</span>, </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                             <span class="keyword">const</span> QString&amp; buscaStatus = <span class="stringliteral">&quot;Todos&quot;</span>,</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                             <span class="keyword">const</span> QString&amp; dataIni = <span class="stringliteral">&quot;&quot;</span>, </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                             <span class="keyword">const</span> QString&amp; dataFim = <span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>};</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>               <span class="keyword">const</span> QString&amp; status, <span class="keyword">const</span> QString&amp; prioridade, <span class="keyword">const</span> QString&amp; dificuldade,</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>               <span class="keyword">const</span> QString&amp; dataAbertura);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classOSRepository.html#a216ac5a1b6bd12065a6d6f7edaddbcd2">updateStatus</a>(<span class="keywordtype">int</span> osId, <span class="keyword">const</span> QString&amp; novoStatus);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    QVector&lt;OSData&gt; <a class="code hl_function" href="classOSRepository.html#af02690680d93fe471b48a07ac58587a4">fetchAll</a>(<span class="keyword">const</span> QString&amp; buscaCliente = <span class="stringliteral">&quot;&quot;</span>, </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                             <span class="keyword">const</span> QString&amp; buscaStatus = <span class="stringliteral">&quot;Todos&quot;</span>,</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                             <span class="keyword">const</span> QString&amp; dataIni = <span class="stringliteral">&quot;&quot;</span>, </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                             <span class="keyword">const</span> QString&amp; dataFim = <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>};</div>
 </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#endif </span><span class="comment">// OS_REPOSITORY_H</span></div>
-<div class="ttc" id="aclassOSRepository_html"><div class="ttname"><a href="classOSRepository.html">OSRepository</a></div><div class="ttdoc">Data Access Object (DAO) para as entidades OS.</div><div class="ttdef"><b>Definição</b> <a href="os__repository_8h_source.html#l00016">os_repository.h:16</a></div></div>
-<div class="ttc" id="aclassOSRepository_html_a06f3ca1cdcbffffb55c4ed09557b5f8a"><div class="ttname"><a href="classOSRepository.html#a06f3ca1cdcbffffb55c4ed09557b5f8a">OSRepository::create</a></div><div class="ttdeci">int create(const QString &amp;cliente, const QString &amp;contato, const QString &amp;descricao, const QString &amp;medidas, const QString &amp;material, const QString &amp;prazo, const QString &amp;status, const QString &amp;dataAbertura)</div><div class="ttdoc">Cria uma nova Ordem de Serviço (OS).</div><div class="ttdef"><b>Definição</b> <a href="os__repository_8cpp_source.html#l00011">os_repository.cpp:11</a></div></div>
-<div class="ttc" id="aclassOSRepository_html_a216ac5a1b6bd12065a6d6f7edaddbcd2"><div class="ttname"><a href="classOSRepository.html#a216ac5a1b6bd12065a6d6f7edaddbcd2">OSRepository::updateStatus</a></div><div class="ttdeci">void updateStatus(int osId, const QString &amp;novoStatus)</div><div class="ttdoc">Atualiza o status de uma OS existente.</div><div class="ttdef"><b>Definição</b> <a href="os__repository_8cpp_source.html#l00036">os_repository.cpp:36</a></div></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#endif </span><span class="comment">// OS_REPOSITORY_H</span></div>
+<div class="ttc" id="aclassOSRepository_html_a216ac5a1b6bd12065a6d6f7edaddbcd2"><div class="ttname"><a href="classOSRepository.html#a216ac5a1b6bd12065a6d6f7edaddbcd2">OSRepository::updateStatus</a></div><div class="ttdeci">void updateStatus(int osId, const QString &amp;novoStatus)</div><div class="ttdoc">Atualiza o status de uma OS existente.</div><div class="ttdef"><b>Definição</b> <a href="os__repository_8cpp_source.html#l00039">os_repository.cpp:39</a></div></div>
 <div class="ttc" id="aclassOSRepository_html_a98f93993ca65a0b7c6bf0a48ec1efef1"><div class="ttname"><a href="classOSRepository.html#a98f93993ca65a0b7c6bf0a48ec1efef1">OSRepository::OSRepository</a></div><div class="ttdeci">OSRepository()</div><div class="ttdef"><b>Definição</b> <a href="os__repository_8cpp_source.html#l00008">os_repository.cpp:8</a></div></div>
-<div class="ttc" id="aclassOSRepository_html_af02690680d93fe471b48a07ac58587a4"><div class="ttname"><a href="classOSRepository.html#af02690680d93fe471b48a07ac58587a4">OSRepository::fetchAll</a></div><div class="ttdeci">QVector&lt; OSData &gt; fetchAll(const QString &amp;buscaCliente=&quot;&quot;, const QString &amp;buscaStatus=&quot;Todos&quot;, const QString &amp;dataIni=&quot;&quot;, const QString &amp;dataFim=&quot;&quot;)</div><div class="ttdoc">Busca todas as OS que coincidem com os critérios.</div><div class="ttdef"><b>Definição</b> <a href="os__repository_8cpp_source.html#l00049">os_repository.cpp:49</a></div></div>
+<div class="ttc" id="aclassOSRepository_html_af02690680d93fe471b48a07ac58587a4"><div class="ttname"><a href="classOSRepository.html#af02690680d93fe471b48a07ac58587a4">OSRepository::fetchAll</a></div><div class="ttdeci">QVector&lt; OSData &gt; fetchAll(const QString &amp;buscaCliente=&quot;&quot;, const QString &amp;buscaStatus=&quot;Todos&quot;, const QString &amp;dataIni=&quot;&quot;, const QString &amp;dataFim=&quot;&quot;)</div><div class="ttdoc">Busca todas as OS que coincidem com os critérios.</div><div class="ttdef"><b>Definição</b> <a href="os__repository_8cpp_source.html#l00052">os_repository.cpp:52</a></div></div>
+<div class="ttc" id="aclassOSRepository_html_af6139a9045e4f6c8ab9b04d9d4e0ee06"><div class="ttname"><a href="classOSRepository.html#af6139a9045e4f6c8ab9b04d9d4e0ee06">OSRepository::create</a></div><div class="ttdeci">int create(const QString &amp;cliente, const QString &amp;contato, const QString &amp;descricao, const QString &amp;medidas, const QString &amp;material, const QString &amp;prazo, const QString &amp;status, const QString &amp;prioridade, const QString &amp;dificuldade, const QString &amp;dataAbertura)</div><div class="ttdoc">Cria uma nova Ordem de Serviço (OS).</div><div class="ttdef"><b>Definição</b> <a href="os__repository_8cpp_source.html#l00011">os_repository.cpp:11</a></div></div>
 <div class="ttc" id="aos__model_8h_html"><div class="ttname"><a href="os__model_8h.html">os_model.h</a></div><div class="ttdoc">Estruturas de dados para OS e Histórico.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+</div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_4270bfced15e0e73154b13468c7c9ad9.html">core</a></li><li class="navelem"><a class="el" href="dir_24d671cfcbc5d5238a6bd565a49d198f.html">include</a></li><li class="navelem"><a class="el" href="os__repository_8h.html">os_repository.h</a></li>
-    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="navelem"><a href="dir_09e761304027c904456130627fd4dcf5.html">includes</a></li><li class="navelem"><a href="os__repository_8h.html">os_repository.h</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
   </ul>
 </div>
 </body>

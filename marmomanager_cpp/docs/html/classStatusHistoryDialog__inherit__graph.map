@@ -1,0 +1,5 @@
+<map id="StatusHistoryDialog" name="StatusHistoryDialog">
+<area shape="rect" id="Node000001" title="Dialog (janela modal) para exibir o histórico da OS." alt="" coords="5,123,154,256"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="51,5,109,75"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,87,82,124,77,123,79,92"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="OSController" name="OSController">
+<area shape="rect" id="Node000001" title="Classe Controller na arquitetura MVC. Gerencia toda a lógica de negócios da aplicação." alt="" coords="71,211,209,365"/>
+<area shape="rect" id="Node000002" href="$classOSRepository.html" title="Data Access Object (DAO) para as entidades OS." alt="" coords="5,5,119,139"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,136,109,194,104,195,85,141"/>
+<area shape="rect" id="Node000003" href="$classHistoricoRepository.html" title="Data Access Object (DAO) para o Histórico de OS." alt="" coords="144,16,290,128"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="204,126,186,188,183,197,178,194,181,186,201,130"/>
+</map>

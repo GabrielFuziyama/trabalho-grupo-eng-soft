@@ -19,7 +19,7 @@ EXTRACT_STATIC         = YES
 SOURCE_BROWSER         = YES
 
 # Diretórios onde o Doxygen vai procurar os arquivos .h e .cpp
-INPUT                  = ../core/include ../app/include ../core/src ../app/src mainpage.dox
+INPUT                  = ../includes ../src mainpage.dox
 
 # Procurar recursivamente dentro das pastas INPUT
 RECURSIVE              = YES
@@ -43,3 +43,14 @@ HTML_HEADER            = header.html
 
 # Mostrar todos os atributos e métodos nos diagramas UML
 UML_LIMIT_NUM_FIELDS   = 50
+
+# Grafos estendidos (Caixas e setas)
+TEMPLATE_RELATIONS     = YES
+INCLUDED_BY_GRAPH      = YES
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+DIRECTORY_GRAPH        = YES
+DOT_IMAGE_FORMAT       = svg
+INTERACTIVE_SVG        = YES
+MAX_DOT_GRAPH_DEPTH    = 0
+DOT_TRANSPARENT        = YES

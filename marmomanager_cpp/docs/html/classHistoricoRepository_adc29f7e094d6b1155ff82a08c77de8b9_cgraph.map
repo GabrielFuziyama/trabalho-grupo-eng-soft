@@ -1,0 +1,9 @@
+<map id="HistoricoRepository::create" name="HistoricoRepository::create">
+<area shape="rect" id="Node000001" title="Cria um novo registro de histórico." alt="" coords="5,23,142,65"/>
+<area shape="rect" id="Node000002" href="$classDatabase.html#aaf21db9254c8ed77d4d800802c987d87" title="Recupera o objeto de conexão QSqlDatabase." alt="" coords="190,5,359,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,33,177,31,172,32,142,38"/>
+<area shape="rect" id="Node000003" href="$classDatabase.html#aa04e547554cc34fa4b6c5a9390021eab" title="Obtém a instância única do Banco de Dados." alt="" coords="198,56,351,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="142,50,185,57,179,58,142,55"/>
+<area shape="rect" id="Node000004" href="$classDatabase.html#a4703c80e6969d33565ea340f768fdadf" title=" " alt="" coords="407,56,548,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="351,67,395,69,389,69,352,72"/>
+</map>

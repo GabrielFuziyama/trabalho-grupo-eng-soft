@@ -1,0 +1,9 @@
+<map id="MarmoManagerApp::getSelectedOsStatus" name="MarmoManagerApp::getSelectedOsStatus">
+<area shape="rect" id="Node000001" title=" " alt="" coords="843,5,1055,48"/>
+<area shape="rect" id="Node000002" href="$classMarmoManagerApp.html#ae9274b8e82144862ae92889e0546eaa2" title=" " alt="" coords="604,5,795,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="825,27,796,29,796,24,830,27"/>
+<area shape="rect" id="Node000003" href="$classMarmoManagerApp.html#aaa4093f9a540417273a7a5849da18c27" title=" " alt="" coords="309,13,556,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="586,27,556,29,556,24,591,27"/>
+<area shape="rect" id="Node000004" href="$classMarmoManagerApp.html#a43323a0e85c1887feb435874b2bcc055" title=" " alt="" coords="5,13,261,40"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="290,27,261,29,261,24,296,27"/>
+</map>

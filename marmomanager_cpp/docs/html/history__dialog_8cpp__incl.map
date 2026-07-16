@@ -1,0 +1,31 @@
+<map id="/home/arthurteixeira/Músicas/trabalho&#45;grupo&#45;eng&#45;soft/trabalho&#45;grupo&#45;eng&#45;soft/marmomanager_cpp/src/ui/history_dialog.cpp" name="/home/arthurteixeira/Músicas/trabalho&#45;grupo&#45;eng&#45;soft/trabalho&#45;grupo&#45;eng&#45;soft/marmomanager_cpp/src/ui/history_dialog.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="184,5,378,96"/>
+<area shape="rect" id="Node000002" href="$history__dialog_8h.html" title="Cabeçalho para a view StatusHistoryDialog." alt="" coords="93,144,205,171"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="223,99,178,136,174,133,226,94"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="230,144,332,171"/>
+<area shape="poly" id="edge15_Node000001_Node000012" title=" " alt="" coords="282,94,283,129,278,128,280,99"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="356,144,459,171"/>
+<area shape="poly" id="edge16_Node000001_Node000013" title=" " alt="" coords="335,94,384,134,378,135,335,99"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,219,74,245"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="128,174,73,212,69,208,131,169"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="97,219,200,245"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="150,169,151,204,146,202,148,174"/>
+<area shape="rect" id="Node000005" href="$os__controller_8h.html" title="Cabeçalho da classe OSController." alt="" coords="225,219,331,245"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="171,169,245,210,240,212,172,174"/>
+<area shape="rect" id="Node000006" href="$os__repository_8h.html" title="Cabeçalho para a classe OSRepository." alt="" coords="148,293,257,320"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="267,244,228,285,224,281,263,248"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="114,443,179,469"/>
+<area shape="poly" id="edge13_Node000005_Node000008" title=" " alt="" coords="232,248,176,270,152,283,138,295,125,327,123,363,129,397,138,429,133,427,124,399,118,363,120,326,133,292,149,278,174,265,236,244"/>
+<area shape="rect" id="Node000010" href="$historico__repository_8h.html" title="Cabeçalho da classe HistoricoRepository." alt="" coords="281,293,425,320"/>
+<area shape="poly" id="edge10_Node000005_Node000010" title=" " alt="" coords="292,243,332,283,327,283,291,248"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="450,293,528,320"/>
+<area shape="poly" id="edge14_Node000005_Node000011" title=" " alt="" coords="315,243,440,287,435,289,315,249"/>
+<area shape="rect" id="Node000007" href="$os__model_8h.html" title="Estruturas de dados para OS e Histórico." alt="" coords="227,368,316,395"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="215,318,252,357,246,357,214,323"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="237,443,306,469"/>
+<area shape="poly" id="edge9_Node000006_Node000009" title=" " alt="" coords="203,318,207,355,218,394,231,413,247,433,242,432,226,416,213,396,202,355,200,323"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="252,395,182,437,180,432,247,396"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="273,393,274,429,269,426,270,397"/>
+<area shape="poly" id="edge11_Node000010_Node000007" title=" " alt="" coords="341,319,298,360,295,355,336,322"/>
+<area shape="poly" id="edge12_Node000010_Node000009" title=" " alt="" coords="353,319,346,356,330,396,299,434,296,430,325,393,341,354,349,322"/>
+</map>

@@ -1,22 +1,28 @@
+<!-- HTML header for doxygen 1.16.1-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>MarmoManager: Arquitetura e Diagrama de Classes</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="navtreedata.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true });
+</script>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -34,21 +40,20 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Gerado por Doxygen 1.9.8 -->
+<!-- Gerado por Doxygen 1.16.1 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "search/",'.html');
-/* @license-end */
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
-  initMenu('',true,false,'search.php','Localizar');
-  $(document).ready(function() { init_search(); });
+  initMenu('',true,false,'search.php','Localizar',true);
+  $(function() { init_search(); });
 });
-/* @license-end */
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
@@ -63,10 +68,9 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('index.html',''); initResizable(); });
-/* @license-end */
+$(function(){initNavTree('index.html','',''); });
 </script>
+<div id="container">
 <div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -93,31 +97,95 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
   <div class="headertitle"><div class="title">Arquitetura e Diagrama de Classes </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2><a class="anchor" id="autotoc_md0"></a>
+<div class="textblock"><h2 class="doxsection"><a class="anchor" id="autotoc_md0"></a>
 Visão Geral do Sistema MarmoManager</h2>
 <p>O MarmoManager foi reescrito em <b>C++</b> sob rigorosos Padrões de Projeto e separação em camadas (MVC). Como o sistema gráfico C++ não possui dependências nativas como o Graphviz, nós preparamos abaixo um diagrama fluido, vetorial e interativo desenhado via <b>Mermaid.js</b>, que detalha perfeitamente a Hierarquia de Classes e os Padrões Arquiteturais:</p>
-<p>\mermaid classDiagram class <a class="el" href="classDatabase.html" title="Classe Singleton para gerenciar a conexão com o banco de dados SQLite.">Database</a> { &lt;&lt;Singleton&gt;&gt; -QString m_dbName -QSqlDatabase m_db -<a class="el" href="classDatabase.html" title="Classe Singleton para gerenciar a conexão com o banco de dados SQLite.">Database()</a> +getInstance() Database$ +getConnection() QSqlDatabase +initDb() void }</p>
-<p>class <a class="el" href="classOSRepository.html" title="Data Access Object (DAO) para as entidades OS.">OSRepository</a> { &lt;&lt;DAO / Model&gt;&gt; +create(...) int +updateStatus(...) void +fetchAll(...) QVector~OSData~ }</p>
-<p>class <a class="el" href="classHistoricoRepository.html" title="Data Access Object (DAO) para o Histórico de OS.">HistoricoRepository</a> { &lt;&lt;DAO / Model&gt;&gt; +create(...) void +getByOsId(...) QVector~HistoricoData~ }</p>
-<p>class <a class="el" href="classOSController.html" title="Classe Controller na arquitetura MVC. Gerencia toda a lógica de negócios da aplicação.">OSController</a> { &lt;&lt;Controller&gt;&gt; -<a class="el" href="classOSRepository.html" title="Data Access Object (DAO) para as entidades OS.">OSRepository</a> m_osRepo -<a class="el" href="classHistoricoRepository.html" title="Data Access Object (DAO) para o Histórico de OS.">HistoricoRepository</a> m_histRepo +cadastrarOS(...) int +atualizarStatusOS(...) void +listarOS(...) QVector~OSData~ +obterHistorico(...) QVector~HistoricoData~ }</p>
-<p>class QMainWindow { &lt;&lt;Qt5&gt;&gt; }</p>
-<p>class QDialog { &lt;&lt;Qt5&gt;&gt; }</p>
-<p>class <a class="el" href="classMarmoManagerApp.html" title="Classe principal de Interface Gráfica (View) para a aplicação.">MarmoManagerApp</a> { &lt;&lt;View&gt;&gt; -<a class="el" href="classOSController.html" title="Classe Controller na arquitetura MVC. Gerencia toda a lógica de negócios da aplicação.">OSController</a> m_controller +salvarOS() +loadOSData() +atualizarStatus() }</p>
-<p>class <a class="el" href="classStatusHistoryDialog.html" title="Dialog (janela modal) para exibir o histórico da OS.">StatusHistoryDialog</a> { &lt;&lt;View&gt;&gt; -OSController* m_controller +loadHistory() }</p>
-<p>%% Hierarquia de Herança do Qt QMainWindow &lt;|&ndash; <a class="el" href="classMarmoManagerApp.html" title="Classe principal de Interface Gráfica (View) para a aplicação.">MarmoManagerApp</a> : Herda QDialog &lt;|&ndash; <a class="el" href="classStatusHistoryDialog.html" title="Dialog (janela modal) para exibir o histórico da OS.">StatusHistoryDialog</a> : Herda</p>
-<p>%% Relações de Composição e Uso (MVC) <a class="el" href="classMarmoManagerApp.html" title="Classe principal de Interface Gráfica (View) para a aplicação.">MarmoManagerApp</a> --&gt; <a class="el" href="classOSController.html" title="Classe Controller na arquitetura MVC. Gerencia toda a lógica de negócios da aplicação.">OSController</a> : Comunica <a class="el" href="classStatusHistoryDialog.html" title="Dialog (janela modal) para exibir o histórico da OS.">StatusHistoryDialog</a> --&gt; <a class="el" href="classOSController.html" title="Classe Controller na arquitetura MVC. Gerencia toda a lógica de negócios da aplicação.">OSController</a> : Comunica</p>
-<p><a class="el" href="classOSController.html" title="Classe Controller na arquitetura MVC. Gerencia toda a lógica de negócios da aplicação.">OSController</a> *&ndash; <a class="el" href="classOSRepository.html" title="Data Access Object (DAO) para as entidades OS.">OSRepository</a> : Instancia <a class="el" href="classOSController.html" title="Classe Controller na arquitetura MVC. Gerencia toda a lógica de negócios da aplicação.">OSController</a> *&ndash; <a class="el" href="classHistoricoRepository.html" title="Data Access Object (DAO) para o Histórico de OS.">HistoricoRepository</a> : Instancia</p>
-<p>%% Uso do Singleton <a class="el" href="classOSRepository.html" title="Data Access Object (DAO) para as entidades OS.">OSRepository</a> ..&gt; <a class="el" href="classDatabase.html" title="Classe Singleton para gerenciar a conexão com o banco de dados SQLite.">Database</a> : Usa (Singleton) <a class="el" href="classHistoricoRepository.html" title="Data Access Object (DAO) para o Histórico de OS.">HistoricoRepository</a> ..&gt; <a class="el" href="classDatabase.html" title="Classe Singleton para gerenciar a conexão com o banco de dados SQLite.">Database</a> : Usa (Singleton) \endmermaid</p>
-<h3><a class="anchor" id="autotoc_md1"></a>
+<p> 
+<div class="mermaid">
+classDiagram
+    class Database {
+        <<Singleton>>
+        -QString m_dbName
+        -QSqlDatabase m_db
+        -Database()
+        +getInstance() Database$
+        +getConnection() QSqlDatabase
+        +initDb() void
+    }
+
+    class OSRepository {
+        <<DAO / Model>>
+        +create(...) int
+        +updateStatus(...) void
+        +fetchAll(...) QVector~OSData~
+    }
+
+    class HistoricoRepository {
+        <<DAO / Model>>
+        +create(...) void
+        +getByOsId(...) QVector~HistoricoData~
+    }
+
+    class OSController {
+        <<Controller>>
+        -OSRepository m_osRepo
+        -HistoricoRepository m_histRepo
+        +cadastrarOS(...) int
+        +atualizarStatusOS(...) void
+        +listarOS(...) QVector~OSData~
+        +obterHistorico(...) QVector~HistoricoData~
+    }
+
+    class QMainWindow {
+        <<Qt5>>
+    }
+
+    class QDialog {
+        <<Qt5>>
+    }
+
+    class MarmoManagerApp {
+        <<View>>
+        -OSController m_controller
+        +salvarOS()
+        +loadOSData()
+        +atualizarStatus()
+    }
+
+    class StatusHistoryDialog {
+        <<View>>
+        -OSController* m_controller
+        +loadHistory()
+    }
+
+    %% Hierarquia de Herança do Qt
+    QMainWindow <|-- MarmoManagerApp : Herda
+    QDialog <|-- StatusHistoryDialog : Herda
+
+    %% Relações de Composição e Uso (MVC)
+    MarmoManagerApp --> OSController : Comunica
+    StatusHistoryDialog --> OSController : Comunica
+    
+    OSController *-- OSRepository : Instancia
+    OSController *-- HistoricoRepository : Instancia
+
+    %% Uso do Singleton
+    OSRepository ..> Database : Usa (Singleton)
+    HistoricoRepository ..> Database : Usa (Singleton)
+</div>
+</p>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md1"></a>
 Componentização</h3>
-<p>Toda a lógica de Controllers e Repositories (Model) é compilada como uma biblioteca dinâmica (<code>libmarmocore.so</code>). As Views (<code><a class="el" href="classMarmoManagerApp.html" title="Classe principal de Interface Gráfica (View) para a aplicação.">MarmoManagerApp</a></code> e <code><a class="el" href="classStatusHistoryDialog.html" title="Dialog (janela modal) para exibir o histórico da OS.">StatusHistoryDialog</a></code>) são empacotadas no executável final e apenas consomem a biblioteca dinâmica. </p>
+<p>Toda a lógica de Controllers e Repositories (Model) é compilada como uma biblioteca dinâmica (<span class="tt">libmarmocore.so</span>). As Views (<span class="tt"><a class="el" href="classMarmoManagerApp.html" title="Classe principal de Interface Gráfica (View) para a aplicação.">MarmoManagerApp</a></span> e <span class="tt"><a class="el" href="classStatusHistoryDialog.html" title="Dialog (janela modal) para exibir o histórico da OS.">StatusHistoryDialog</a></span>) são empacotadas no executável final e apenas consomem a biblioteca dinâmica. </p>
 </div></div><!-- PageDoc -->
+<a href="doxygen_crawl.html"></a>
 </div><!-- contents -->
 </div><!-- doc-content -->
+</div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
   </ul>
 </div>
 </body>

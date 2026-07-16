@@ -33,7 +33,8 @@ var NAVTREE =
       [ "Componentes membro", "functions.html", [
         [ "Tudo", "functions.html", null ],
         [ "Funções", "functions_func.html", null ],
-        [ "Variáveis", "functions_vars.html", null ]
+        [ "Variáveis", "functions_vars.html", null ],
+        [ "Símbolos relacionados", "functions_rela.html", null ]
       ] ]
     ] ],
     [ "Ficheiros", "files.html", [
@@ -53,3 +54,4 @@ var NAVTREEINDEX =
 
 var SYNCONMSG = 'clique para desativar a sincronização do painel';
 var SYNCOFFMSG = 'clique para ativar a sincronização do painel';
+var LISTOFALLMEMBERS = 'Mostrar lista completa dos membros';

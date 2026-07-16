@@ -1,0 +1,11 @@
+<map id="StatusHistoryDialog" name="StatusHistoryDialog">
+<area shape="rect" id="Node000001" title="Dialog (janela modal) para exibir o histórico da OS." alt="" coords="5,437,154,549"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="30,253,87,323"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="65,335,77,438,71,438,62,339"/>
+<area shape="rect" id="Node000003" href="$classOSController.html" title="Classe Controller na arquitetura MVC. Gerencia toda a lógica de negócios da aplicação." alt="" coords="111,211,249,365"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="144,363,117,424,112,421,141,367"/>
+<area shape="rect" id="Node000004" href="$classOSRepository.html" title="Data Access Object (DAO) para as entidades OS." alt="" coords="46,5,160,139"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="126,136,149,194,144,195,126,141"/>
+<area shape="rect" id="Node000005" href="$classHistoricoRepository.html" title="Data Access Object (DAO) para o Histórico de OS." alt="" coords="184,16,331,128"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="244,126,226,188,223,197,218,194,221,186,241,130"/>
+</map>

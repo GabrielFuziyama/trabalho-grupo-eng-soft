@@ -7,6 +7,6 @@ var searchData=
   ['sistema_20marmomanager_4',['Visão Geral do Sistema MarmoManager',['../index.html#autotoc_md0',1,'']]],
   ['status_5',['status',['../structOSData.html#adebdedab567da0afb533bf8b6ac0787d',1,'OSData']]],
   ['statusanterior_6',['statusAnterior',['../structHistoricoData.html#a0184901a1c88619103d9e1dd0e2976f1',1,'HistoricoData']]],
-  ['statushistorydialog_7',['statushistorydialog',['../classStatusHistoryDialog.html',1,'StatusHistoryDialog'],['../classStatusHistoryDialog.html#a9f8e484fce775ebe419a14375a497b8f',1,'StatusHistoryDialog::StatusHistoryDialog()']]],
+  ['statushistorydialog_7',['StatusHistoryDialog',['../classStatusHistoryDialog.html',1,'StatusHistoryDialog'],['../classStatusHistoryDialog.html#a9f8e484fce775ebe419a14375a497b8f',1,'StatusHistoryDialog::StatusHistoryDialog()']]],
   ['statusnovo_8',['statusNovo',['../structHistoricoData.html#ac484068333bb193c229cea52c567b2dc',1,'HistoricoData']]]
 ];

@@ -1,0 +1,9 @@
+<map id="OSRepository::updateStatus" name="OSRepository::updateStatus">
+<area shape="rect" id="Node000001" title="Atualiza o status de uma OS existente." alt="" coords="5,31,194,57"/>
+<area shape="rect" id="Node000002" href="$classDatabase.html#aaf21db9254c8ed77d4d800802c987d87" title="Recupera o objeto de conexão QSqlDatabase." alt="" coords="242,5,411,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,31,229,29,224,30,194,36"/>
+<area shape="rect" id="Node000003" href="$classDatabase.html#aa04e547554cc34fa4b6c5a9390021eab" title="Obtém a instância única do Banco de Dados." alt="" coords="250,56,403,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="194,52,237,59,231,59,194,57"/>
+<area shape="rect" id="Node000004" href="$classDatabase.html#a4703c80e6969d33565ea340f768fdadf" title=" " alt="" coords="459,56,600,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="403,67,447,69,441,69,404,72"/>
+</map>
