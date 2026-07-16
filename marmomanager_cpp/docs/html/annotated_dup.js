@@ -7,5 +7,7 @@ var annotated_dup =
     [ "OSController", "classOSController.html", "classOSController" ],
     [ "OSData", "structOSData.html", "structOSData" ],
     [ "OSRepository", "classOSRepository.html", "classOSRepository" ],
-    [ "StatusHistoryDialog", "classStatusHistoryDialog.html", "classStatusHistoryDialog" ]
+    [ "StatusHistoryDialog", "classStatusHistoryDialog.html", "classStatusHistoryDialog" ],
+    [ "TestCore", "classTestCore.html", "classTestCore" ],
+    [ "TestGUI", "classTestGUI.html", "classTestGUI" ]
 ];

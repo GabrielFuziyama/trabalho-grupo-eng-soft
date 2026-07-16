@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['osid_0',['osId',['../structHistoricoData.html#ab29682c4cdcd75928ed295a4d603c766',1,'HistoricoData']]]
+  ['id_0',['id',['../structOSData.html#a442258eb8d12c60ad94e856ef340d7e2',1,'OSData::id'],['../structHistoricoData.html#af7fdead2a20a957e5add573395fa21a4',1,'HistoricoData::id']]]
 ];

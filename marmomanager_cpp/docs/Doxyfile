@@ -19,7 +19,7 @@ EXTRACT_STATIC         = YES
 SOURCE_BROWSER         = YES
 
 # Diretórios onde o Doxygen vai procurar os arquivos .h e .cpp
-INPUT                  = ../includes ../src mainpage.dox
+INPUT                  = ../includes ../src ../tests mainpage.dox
 
 # Procurar recursivamente dentro das pastas INPUT
 RECURSIVE              = YES

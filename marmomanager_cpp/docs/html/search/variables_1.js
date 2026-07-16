@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['dataabertura_0',['dataAbertura',['../structOSData.html#af91d8aeb8d179597d6548eb70f3f0f70',1,'OSData']]],
-  ['dataalteracao_1',['dataAlteracao',['../structHistoricoData.html#a806124713b87950629d8519cd110c197',1,'HistoricoData']]],
-  ['descricao_2',['descricao',['../structOSData.html#abd64de056f1b97223bbee4b0b75a795f',1,'OSData']]],
-  ['dificuldade_3',['dificuldade',['../structOSData.html#ab3ae999aaa4d67c7f0a79d6cceafa826',1,'OSData']]]
+  ['cliente_0',['cliente',['../structOSData.html#ae0be4376eabe0123dd85e591dcbd5924',1,'OSData']]],
+  ['contato_1',['contato',['../structOSData.html#a1d3482cb6ff964e0b0655dca9ea73e40',1,'OSData']]]
 ];

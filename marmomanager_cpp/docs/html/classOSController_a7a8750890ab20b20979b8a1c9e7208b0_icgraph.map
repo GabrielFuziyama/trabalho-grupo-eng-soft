@@ -1,0 +1,7 @@
+<map id="OSController::obterHistorico" name="OSController::obterHistorico">
+<area shape="rect" id="Node000001" title="Recupera o histórico de uma OS específica." alt="" coords="215,47,400,73"/>
+<area shape="rect" id="Node000002" href="$classTestCore.html#ae456d85773ff88a0864ccb9b3ffad71f" title=" " alt="" coords="5,5,167,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="197,44,167,42,167,36,202,43"/>
+<area shape="rect" id="Node000003" href="$classTestCore.html#a2db7bb70351feec0b7718fc63e684b58" title=" " alt="" coords="6,72,166,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="197,77,167,84,166,79,202,76"/>
+</map>

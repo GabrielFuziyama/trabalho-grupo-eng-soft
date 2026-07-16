@@ -41,5 +41,6 @@ var searchData=
   ['marmomanager_38',['Visão Geral do Sistema MarmoManager',['../index.html#autotoc_md0',1,'']]],
   ['marmomanagerapp_39',['MarmoManagerApp',['../classMarmoManagerApp.html',1,'MarmoManagerApp'],['../classMarmoManagerApp.html#a43323a0e85c1887feb435874b2bcc055',1,'MarmoManagerApp::MarmoManagerApp()']]],
   ['material_40',['material',['../structOSData.html#a5d2521eebdadfdf58dc9b77ac7da173e',1,'OSData']]],
-  ['medidas_41',['medidas',['../structOSData.html#af8008c6fde01ad2320dab113a7ebd0f4',1,'OSData']]]
+  ['medidas_41',['medidas',['../structOSData.html#af8008c6fde01ad2320dab113a7ebd0f4',1,'OSData']]],
+  ['msgboxfound_42',['msgBoxFound',['../classTestGUI.html#acbe4e722ff5744635d2943113d1ccc68',1,'TestGUI']]]
 ];

@@ -47,7 +47,7 @@
   </g>
 </defs>
 <script type="application/ecmascript">
-var viewWidth = 564;
+var viewWidth = 715;
 var viewHeight = 388;
 var sectionId = 'dynsection-1';
 </script>
@@ -59,12 +59,12 @@ var sectionId = 'dynsection-1';
 <g id="Node000001" class="node">
 <title>Node1</title>
 <g id="a_Node000001"><a xlink:title="Cabeçalho da classe HistoricoRepository.">
-<polygon fill="#999999" stroke="#666666" points="394,-380 243.75,-380 243.75,-312 394,-312 394,-380"/>
-<text xml:space="preserve" text-anchor="start" x="251.75" y="-366.5" font-family="Helvetica,sans-Serif" font-size="10.00">/home/arthurteixeira</text>
-<text xml:space="preserve" text-anchor="start" x="251.75" y="-354.5" font-family="Helvetica,sans-Serif" font-size="10.00">/Músicas/trabalho&#45;grupo</text>
-<text xml:space="preserve" text-anchor="start" x="251.75" y="-342.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;eng&#45;soft/trabalho&#45;grupo</text>
-<text xml:space="preserve" text-anchor="start" x="251.75" y="-330.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;eng&#45;soft/marmomanager_cpp</text>
-<text xml:space="preserve" text-anchor="middle" x="318.88" y="-318.5" font-family="Helvetica,sans-Serif" font-size="10.00">/includes/historico_repository.h</text>
+<polygon fill="#999999" stroke="#666666" points="608,-380 457.75,-380 457.75,-312 608,-312 608,-380"/>
+<text xml:space="preserve" text-anchor="start" x="465.75" y="-366.5" font-family="Helvetica,sans-Serif" font-size="10.00">/home/arthurteixeira</text>
+<text xml:space="preserve" text-anchor="start" x="465.75" y="-354.5" font-family="Helvetica,sans-Serif" font-size="10.00">/Músicas/trabalho&#45;grupo</text>
+<text xml:space="preserve" text-anchor="start" x="465.75" y="-342.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;eng&#45;soft/trabalho&#45;grupo</text>
+<text xml:space="preserve" text-anchor="start" x="465.75" y="-330.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;eng&#45;soft/marmomanager_cpp</text>
+<text xml:space="preserve" text-anchor="middle" x="532.88" y="-318.5" font-family="Helvetica,sans-Serif" font-size="10.00">/includes/historico_repository.h</text>
 </a>
 </g>
 </g>
@@ -72,12 +72,12 @@ var sectionId = 'dynsection-1';
 <g id="Node000002" class="node">
 <title>Node2</title>
 <g id="a_Node000002"><a xlink:href="os__controller_8h.html" target="_top" xlink:title="Cabeçalho da classe OSController.">
-<polygon fill="white" stroke="#666666" points="309.75,-276 164,-276 164,-208 309.75,-208 309.75,-276"/>
-<text xml:space="preserve" text-anchor="start" x="172" y="-262.5" font-family="Helvetica,sans-Serif" font-size="10.00">/home/arthurteixeira</text>
-<text xml:space="preserve" text-anchor="start" x="172" y="-250.5" font-family="Helvetica,sans-Serif" font-size="10.00">/Músicas/trabalho&#45;grupo</text>
-<text xml:space="preserve" text-anchor="start" x="172" y="-238.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;eng&#45;soft/trabalho&#45;grupo</text>
-<text xml:space="preserve" text-anchor="start" x="172" y="-226.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;eng&#45;soft/marmomanager_cpp</text>
-<text xml:space="preserve" text-anchor="middle" x="236.88" y="-214.5" font-family="Helvetica,sans-Serif" font-size="10.00">/includes/os_controller.h</text>
+<polygon fill="white" stroke="#666666" points="473.75,-276 328,-276 328,-208 473.75,-208 473.75,-276"/>
+<text xml:space="preserve" text-anchor="start" x="336" y="-262.5" font-family="Helvetica,sans-Serif" font-size="10.00">/home/arthurteixeira</text>
+<text xml:space="preserve" text-anchor="start" x="336" y="-250.5" font-family="Helvetica,sans-Serif" font-size="10.00">/Músicas/trabalho&#45;grupo</text>
+<text xml:space="preserve" text-anchor="start" x="336" y="-238.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;eng&#45;soft/trabalho&#45;grupo</text>
+<text xml:space="preserve" text-anchor="start" x="336" y="-226.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;eng&#45;soft/marmomanager_cpp</text>
+<text xml:space="preserve" text-anchor="middle" x="400.88" y="-214.5" font-family="Helvetica,sans-Serif" font-size="10.00">/includes/os_controller.h</text>
 </a>
 </g>
 </g>
@@ -85,30 +85,52 @@ var sectionId = 'dynsection-1';
 <g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
 <g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M284.84,-302.67C277.82,-293.93 270.51,-284.84 263.79,-276.47"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="282.08,-304.82 291.08,-310.42 287.54,-300.44 282.08,-304.82"/>
+<path fill="none" stroke="#63b8ff" d="M480.58,-304.59C468.52,-295.27 455.82,-285.46 444.19,-276.47"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="478.4,-307.33 488.46,-310.68 482.68,-301.79 478.4,-307.33"/>
 </a>
 </g>
 </g>
-<!-- Node9 -->
-<g id="Node000009" class="node">
-<title>Node9</title>
-<g id="a_Node000009"><a xlink:href="historico__repository_8cpp.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="473.75,-276 328,-276 328,-208 473.75,-208 473.75,-276"/>
-<text xml:space="preserve" text-anchor="start" x="336" y="-262.5" font-family="Helvetica,sans-Serif" font-size="10.00">/home/arthurteixeira</text>
-<text xml:space="preserve" text-anchor="start" x="336" y="-250.5" font-family="Helvetica,sans-Serif" font-size="10.00">/Músicas/trabalho&#45;grupo</text>
-<text xml:space="preserve" text-anchor="start" x="336" y="-238.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;eng&#45;soft/trabalho&#45;grupo</text>
-<text xml:space="preserve" text-anchor="start" x="336" y="-226.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;eng&#45;soft/marmomanager_cpp</text>
-<text xml:space="preserve" text-anchor="middle" x="400.88" y="-214.5" font-family="Helvetica,sans-Serif" font-size="10.00">/src/historico_repository.cpp</text>
+<!-- Node10 -->
+<g id="Node000010" class="node">
+<title>Node10</title>
+<g id="a_Node000010"><a xlink:href="test__core_8cpp.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="637.75,-172 492,-172 492,-104 637.75,-104 637.75,-172"/>
+<text xml:space="preserve" text-anchor="start" x="500" y="-158.5" font-family="Helvetica,sans-Serif" font-size="10.00">/home/arthurteixeira</text>
+<text xml:space="preserve" text-anchor="start" x="500" y="-146.5" font-family="Helvetica,sans-Serif" font-size="10.00">/Músicas/trabalho&#45;grupo</text>
+<text xml:space="preserve" text-anchor="start" x="500" y="-134.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;eng&#45;soft/trabalho&#45;grupo</text>
+<text xml:space="preserve" text-anchor="start" x="500" y="-122.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;eng&#45;soft/marmomanager_cpp</text>
+<text xml:space="preserve" text-anchor="middle" x="564.88" y="-110.5" font-family="Helvetica,sans-Serif" font-size="10.00">/tests/unit/test_core.cpp</text>
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node9 -->
-<g id="edge9_Node000001_Node000009" class="edge">
-<title>Node1&#45;&gt;Node9</title>
-<g id="a_edge9_Node000001_Node000009"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M352.91,-302.67C359.93,-293.93 367.24,-284.84 373.96,-276.47"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="350.21,-300.44 346.67,-310.42 355.67,-304.82 350.21,-300.44"/>
+<!-- Node1&#45;&gt;Node10 -->
+<g id="edge12_Node000001_Node000010" class="edge">
+<title>Node1&#45;&gt;Node10</title>
+<g id="a_edge12_Node000001_Node000010"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M538.51,-300.37C542.03,-273.54 546.85,-238.76 551.88,-208 553.78,-196.33 556.11,-183.6 558.27,-172.28"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="535.05,-299.84 537.23,-310.21 541.99,-300.75 535.05,-299.84"/>
+</a>
+</g>
+</g>
+<!-- Node11 -->
+<g id="Node000011" class="node">
+<title>Node11</title>
+<g id="a_Node000011"><a xlink:href="historico__repository_8cpp.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="706.75,-276 561,-276 561,-208 706.75,-208 706.75,-276"/>
+<text xml:space="preserve" text-anchor="start" x="569" y="-262.5" font-family="Helvetica,sans-Serif" font-size="10.00">/home/arthurteixeira</text>
+<text xml:space="preserve" text-anchor="start" x="569" y="-250.5" font-family="Helvetica,sans-Serif" font-size="10.00">/Músicas/trabalho&#45;grupo</text>
+<text xml:space="preserve" text-anchor="start" x="569" y="-238.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;eng&#45;soft/trabalho&#45;grupo</text>
+<text xml:space="preserve" text-anchor="start" x="569" y="-226.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;eng&#45;soft/marmomanager_cpp</text>
+<text xml:space="preserve" text-anchor="middle" x="633.88" y="-214.5" font-family="Helvetica,sans-Serif" font-size="10.00">/src/historico_repository.cpp</text>
+</a>
+</g>
+</g>
+<!-- Node1&#45;&gt;Node11 -->
+<g id="edge11_Node000001_Node000011" class="edge">
+<title>Node1&#45;&gt;Node11</title>
+<g id="a_edge11_Node000001_Node000011"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M573.97,-303.49C582.87,-294.51 592.18,-285.11 600.73,-276.47"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="571.56,-300.96 567.01,-310.53 576.53,-305.88 571.56,-300.96"/>
 </a>
 </g>
 </g>
@@ -129,8 +151,8 @@ var sectionId = 'dynsection-1';
 <g id="edge2_Node000002_Node000003" class="edge">
 <title>Node2&#45;&gt;Node3</title>
 <g id="a_edge2_Node000002_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M173.67,-201.69C158.16,-192.04 141.71,-181.81 126.7,-172.47"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="171.55,-204.49 181.89,-206.8 175.25,-198.55 171.55,-204.49"/>
+<path fill="none" stroke="#63b8ff" d="M316.65,-219.81C268.81,-207.17 208.05,-190.1 154.88,-172 151.97,-171.01 149.02,-169.98 146.04,-168.91"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="315.55,-223.14 326.11,-222.3 317.33,-216.37 315.55,-223.14"/>
 </a>
 </g>
 </g>
@@ -151,8 +173,8 @@ var sectionId = 'dynsection-1';
 <g id="edge3_Node000002_Node000004" class="edge">
 <title>Node2&#45;&gt;Node4</title>
 <g id="a_edge3_Node000002_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M236.88,-196.18C236.88,-188.22 236.88,-180.05 236.88,-172.47"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="233.38,-196.09 236.88,-206.09 240.38,-196.09 233.38,-196.09"/>
+<path fill="none" stroke="#63b8ff" d="M337.67,-201.69C322.16,-192.04 305.71,-181.81 290.7,-172.47"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="335.55,-204.49 345.89,-206.8 339.25,-198.55 335.55,-204.49"/>
 </a>
 </g>
 </g>
@@ -173,8 +195,17 @@ var sectionId = 'dynsection-1';
 <g id="edge6_Node000002_Node000007" class="edge">
 <title>Node2&#45;&gt;Node7</title>
 <g id="a_edge6_Node000002_Node000007"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M300.08,-201.69C315.59,-192.04 332.04,-181.81 347.05,-172.47"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="298.5,-198.55 291.86,-206.8 302.2,-204.49 298.5,-198.55"/>
+<path fill="none" stroke="#63b8ff" d="M400.88,-196.18C400.88,-188.22 400.88,-180.05 400.88,-172.47"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="397.38,-196.09 400.88,-206.09 404.38,-196.09 397.38,-196.09"/>
+</a>
+</g>
+</g>
+<!-- Node2&#45;&gt;Node10 -->
+<g id="edge10_Node000002_Node000010" class="edge">
+<title>Node2&#45;&gt;Node10</title>
+<g id="a_edge10_Node000002_Node000010"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M464.08,-201.69C479.59,-192.04 496.04,-181.81 511.05,-172.47"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="462.5,-198.55 455.86,-206.8 466.2,-204.49 462.5,-198.55"/>
 </a>
 </g>
 </g>
@@ -182,12 +213,12 @@ var sectionId = 'dynsection-1';
 <g id="Node000005" class="node">
 <title>Node5</title>
 <g id="a_Node000005"><a xlink:href="history__dialog_8cpp.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="227.75,-68 82,-68 82,0 227.75,0 227.75,-68"/>
-<text xml:space="preserve" text-anchor="start" x="90" y="-54.5" font-family="Helvetica,sans-Serif" font-size="10.00">/home/arthurteixeira</text>
-<text xml:space="preserve" text-anchor="start" x="90" y="-42.5" font-family="Helvetica,sans-Serif" font-size="10.00">/Músicas/trabalho&#45;grupo</text>
-<text xml:space="preserve" text-anchor="start" x="90" y="-30.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;eng&#45;soft/trabalho&#45;grupo</text>
-<text xml:space="preserve" text-anchor="start" x="90" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;eng&#45;soft/marmomanager_cpp</text>
-<text xml:space="preserve" text-anchor="middle" x="154.88" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">/src/ui/history_dialog.cpp</text>
+<polygon fill="white" stroke="#666666" points="145.75,-68 0,-68 0,0 145.75,0 145.75,-68"/>
+<text xml:space="preserve" text-anchor="start" x="8" y="-54.5" font-family="Helvetica,sans-Serif" font-size="10.00">/home/arthurteixeira</text>
+<text xml:space="preserve" text-anchor="start" x="8" y="-42.5" font-family="Helvetica,sans-Serif" font-size="10.00">/Músicas/trabalho&#45;grupo</text>
+<text xml:space="preserve" text-anchor="start" x="8" y="-30.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;eng&#45;soft/trabalho&#45;grupo</text>
+<text xml:space="preserve" text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;eng&#45;soft/marmomanager_cpp</text>
+<text xml:space="preserve" text-anchor="middle" x="72.88" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">/src/ui/history_dialog.cpp</text>
 </a>
 </g>
 </g>
@@ -195,8 +226,8 @@ var sectionId = 'dynsection-1';
 <g id="edge4_Node000004_Node000005" class="edge">
 <title>Node4&#45;&gt;Node5</title>
 <g id="a_edge4_Node000004_Node000005"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M202.84,-94.67C195.82,-85.93 188.51,-76.84 181.79,-68.47"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="200.08,-96.82 209.08,-102.42 205.54,-92.44 200.08,-96.82"/>
+<path fill="none" stroke="#63b8ff" d="M173.67,-97.69C158.16,-88.04 141.71,-77.81 126.7,-68.47"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="171.55,-100.49 181.89,-102.8 175.25,-94.55 171.55,-100.49"/>
 </a>
 </g>
 </g>
@@ -204,12 +235,12 @@ var sectionId = 'dynsection-1';
 <g id="Node000006" class="node">
 <title>Node6</title>
 <g id="a_Node000006"><a xlink:href="main__window_8cpp.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="391.75,-68 246,-68 246,0 391.75,0 391.75,-68"/>
-<text xml:space="preserve" text-anchor="start" x="254" y="-54.5" font-family="Helvetica,sans-Serif" font-size="10.00">/home/arthurteixeira</text>
-<text xml:space="preserve" text-anchor="start" x="254" y="-42.5" font-family="Helvetica,sans-Serif" font-size="10.00">/Músicas/trabalho&#45;grupo</text>
-<text xml:space="preserve" text-anchor="start" x="254" y="-30.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;eng&#45;soft/trabalho&#45;grupo</text>
-<text xml:space="preserve" text-anchor="start" x="254" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;eng&#45;soft/marmomanager_cpp</text>
-<text xml:space="preserve" text-anchor="middle" x="318.88" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">/src/ui/main_window.cpp</text>
+<polygon fill="white" stroke="#666666" points="309.75,-68 164,-68 164,0 309.75,0 309.75,-68"/>
+<text xml:space="preserve" text-anchor="start" x="172" y="-54.5" font-family="Helvetica,sans-Serif" font-size="10.00">/home/arthurteixeira</text>
+<text xml:space="preserve" text-anchor="start" x="172" y="-42.5" font-family="Helvetica,sans-Serif" font-size="10.00">/Músicas/trabalho&#45;grupo</text>
+<text xml:space="preserve" text-anchor="start" x="172" y="-30.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;eng&#45;soft/trabalho&#45;grupo</text>
+<text xml:space="preserve" text-anchor="start" x="172" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;eng&#45;soft/marmomanager_cpp</text>
+<text xml:space="preserve" text-anchor="middle" x="236.88" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">/src/ui/main_window.cpp</text>
 </a>
 </g>
 </g>
@@ -217,8 +248,8 @@ var sectionId = 'dynsection-1';
 <g id="edge5_Node000004_Node000006" class="edge">
 <title>Node4&#45;&gt;Node6</title>
 <g id="a_edge5_Node000004_Node000006"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M270.91,-94.67C277.93,-85.93 285.24,-76.84 291.96,-68.47"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="268.21,-92.44 264.67,-102.42 273.67,-96.82 268.21,-92.44"/>
+<path fill="none" stroke="#63b8ff" d="M236.88,-92.18C236.88,-84.22 236.88,-76.05 236.88,-68.47"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="233.38,-92.09 236.88,-102.09 240.38,-92.09 233.38,-92.09"/>
 </a>
 </g>
 </g>
@@ -226,8 +257,8 @@ var sectionId = 'dynsection-1';
 <g id="edge8_Node000007_Node000006" class="edge">
 <title>Node7&#45;&gt;Node6</title>
 <g id="a_edge8_Node000007_Node000006"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M366.84,-94.67C359.82,-85.93 352.51,-76.84 345.79,-68.47"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="364.08,-96.82 373.08,-102.42 369.54,-92.44 364.08,-96.82"/>
+<path fill="none" stroke="#63b8ff" d="M337.67,-97.69C322.16,-88.04 305.71,-77.81 290.7,-68.47"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="335.55,-100.49 345.89,-102.8 339.25,-94.55 335.55,-100.49"/>
 </a>
 </g>
 </g>
@@ -235,12 +266,12 @@ var sectionId = 'dynsection-1';
 <g id="Node000008" class="node">
 <title>Node8</title>
 <g id="a_Node000008"><a xlink:href="main_8cpp.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="555.75,-68 410,-68 410,0 555.75,0 555.75,-68"/>
-<text xml:space="preserve" text-anchor="start" x="418" y="-54.5" font-family="Helvetica,sans-Serif" font-size="10.00">/home/arthurteixeira</text>
-<text xml:space="preserve" text-anchor="start" x="418" y="-42.5" font-family="Helvetica,sans-Serif" font-size="10.00">/Músicas/trabalho&#45;grupo</text>
-<text xml:space="preserve" text-anchor="start" x="418" y="-30.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;eng&#45;soft/trabalho&#45;grupo</text>
-<text xml:space="preserve" text-anchor="start" x="418" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;eng&#45;soft/marmomanager_cpp</text>
-<text xml:space="preserve" text-anchor="middle" x="482.88" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">/src/main.cpp</text>
+<polygon fill="white" stroke="#666666" points="473.75,-68 328,-68 328,0 473.75,0 473.75,-68"/>
+<text xml:space="preserve" text-anchor="start" x="336" y="-54.5" font-family="Helvetica,sans-Serif" font-size="10.00">/home/arthurteixeira</text>
+<text xml:space="preserve" text-anchor="start" x="336" y="-42.5" font-family="Helvetica,sans-Serif" font-size="10.00">/Músicas/trabalho&#45;grupo</text>
+<text xml:space="preserve" text-anchor="start" x="336" y="-30.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;eng&#45;soft/trabalho&#45;grupo</text>
+<text xml:space="preserve" text-anchor="start" x="336" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;eng&#45;soft/marmomanager_cpp</text>
+<text xml:space="preserve" text-anchor="middle" x="400.88" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">/src/main.cpp</text>
 </a>
 </g>
 </g>
@@ -248,8 +279,30 @@ var sectionId = 'dynsection-1';
 <g id="edge7_Node000007_Node000008" class="edge">
 <title>Node7&#45;&gt;Node8</title>
 <g id="a_edge7_Node000007_Node000008"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M434.91,-94.67C441.93,-85.93 449.24,-76.84 455.96,-68.47"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="432.21,-92.44 428.67,-102.42 437.67,-96.82 432.21,-92.44"/>
+<path fill="none" stroke="#63b8ff" d="M400.88,-92.18C400.88,-84.22 400.88,-76.05 400.88,-68.47"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="397.38,-92.09 400.88,-102.09 404.38,-92.09 397.38,-92.09"/>
+</a>
+</g>
+</g>
+<!-- Node9 -->
+<g id="Node000009" class="node">
+<title>Node9</title>
+<g id="a_Node000009"><a xlink:href="test__func__gui_8cpp.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="637.75,-68 492,-68 492,0 637.75,0 637.75,-68"/>
+<text xml:space="preserve" text-anchor="start" x="500" y="-54.5" font-family="Helvetica,sans-Serif" font-size="10.00">/home/arthurteixeira</text>
+<text xml:space="preserve" text-anchor="start" x="500" y="-42.5" font-family="Helvetica,sans-Serif" font-size="10.00">/Músicas/trabalho&#45;grupo</text>
+<text xml:space="preserve" text-anchor="start" x="500" y="-30.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;eng&#45;soft/trabalho&#45;grupo</text>
+<text xml:space="preserve" text-anchor="start" x="500" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;eng&#45;soft/marmomanager_cpp</text>
+<text xml:space="preserve" text-anchor="middle" x="564.88" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">/tests/func/test_func_gui.cpp</text>
+</a>
+</g>
+</g>
+<!-- Node7&#45;&gt;Node9 -->
+<g id="edge9_Node000007_Node000009" class="edge">
+<title>Node7&#45;&gt;Node9</title>
+<g id="a_edge9_Node000007_Node000009"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M464.08,-97.69C479.59,-88.04 496.04,-77.81 511.05,-68.47"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="462.5,-94.55 455.86,-102.8 466.2,-100.49 462.5,-94.55"/>
 </a>
 </g>
 </g>

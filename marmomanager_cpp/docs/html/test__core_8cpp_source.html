@@ -1,0 +1,266 @@
+<!-- HTML header for doxygen 1.16.1-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MarmoManager: Código-Fonte de /home/arthurteixeira/Músicas/trabalho-grupo-eng-soft/trabalho-grupo-eng-soft/marmomanager_cpp/tests/unit/test_core.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true });
+</script>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MarmoManager<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Sistema em C++ e Qt de Gerenciamento de Ordens de Serviço</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Localizar',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('test__core_8cpp_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">test_core.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="test__core_8cpp.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &lt;QtTest&gt;</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="database_8h.html">database.h</a>&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="os__repository_8h.html">os_repository.h</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="historico__repository_8h.html">historico_repository.h</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="os__controller_8h.html">os_controller.h</a>&quot;</span></div>
+<div class="foldopen" id="foldopen00006" data-start="{" data-end="};">
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="classTestCore.html">    6</a></span><span class="keyword">class </span><a class="code hl_class" href="classTestCore.html">TestCore</a> : <span class="keyword">public</span> QObject {</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    Q_OBJECT</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">private</span> slots:</div>
+<div class="foldopen" id="foldopen00010" data-start="{" data-end="}">
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="classTestCore.html#aea614e8fdb8b52361fcd091fb9b4d4be">   10</a></span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classTestCore.html#aea614e8fdb8b52361fcd091fb9b4d4be">initTestCase</a>() {</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        <span class="comment">// Setup in-memory or test database</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        <a class="code hl_function" href="classDatabase.html#aa04e547554cc34fa4b6c5a9390021eab">Database::getInstance</a>().<a class="code hl_function" href="classDatabase.html#a38db6df1fd752d89f4305e42553690d4">setDbName</a>(<span class="stringliteral">&quot;test_marmomanager_cpp.db&quot;</span>);</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        <a class="code hl_function" href="classDatabase.html#aa04e547554cc34fa4b6c5a9390021eab">Database::getInstance</a>().<a class="code hl_function" href="classDatabase.html#a6747ce1b1f980cd917c9c006545e2b2a">initDb</a>();</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    }</div>
+</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="foldopen" id="foldopen00016" data-start="{" data-end="}">
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="classTestCore.html#a22f7cfcf0657e5567d1f2c37587fcc11">   16</a></span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classTestCore.html#a22f7cfcf0657e5567d1f2c37587fcc11">cleanupTestCase</a>() {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        QFile::remove(<span class="stringliteral">&quot;test_marmomanager_cpp.db&quot;</span>);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    }</div>
+</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="foldopen" id="foldopen00020" data-start="{" data-end="}">
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="classTestCore.html#a5d0a011fa04fbbc0315445d87dd5d418">   20</a></span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classTestCore.html#a5d0a011fa04fbbc0315445d87dd5d418">testSingleton</a>() {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <a class="code hl_class" href="classDatabase.html">Database</a>&amp; db1 = <a class="code hl_function" href="classDatabase.html#aa04e547554cc34fa4b6c5a9390021eab">Database::getInstance</a>();</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <a class="code hl_class" href="classDatabase.html">Database</a>&amp; db2 = <a class="code hl_function" href="classDatabase.html#aa04e547554cc34fa4b6c5a9390021eab">Database::getInstance</a>();</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        QCOMPARE(&amp;db1, &amp;db2);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    }</div>
+</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="foldopen" id="foldopen00026" data-start="{" data-end="}">
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="classTestCore.html#afe230280f7222da40f40f509be5874e9">   26</a></span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classTestCore.html#afe230280f7222da40f40f509be5874e9">testCreateOs</a>() {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <a class="code hl_class" href="classOSRepository.html">OSRepository</a> repo;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <span class="keywordtype">int</span> <span class="keywordtype">id</span> = repo.<a class="code hl_function" href="classOSRepository.html#af6139a9045e4f6c8ab9b04d9d4e0ee06">create</a>(<span class="stringliteral">&quot;C++ Cliente&quot;</span>, <span class="stringliteral">&quot;123&quot;</span>, <span class="stringliteral">&quot;Teste C++&quot;</span>, <span class="stringliteral">&quot;1x1&quot;</span>, <span class="stringliteral">&quot;Granito&quot;</span>, <span class="stringliteral">&quot;2026-12-12&quot;</span>, <span class="stringliteral">&quot;Aberta&quot;</span>, <span class="stringliteral">&quot;Alta&quot;</span>, <span class="stringliteral">&quot;Alta&quot;</span>, <span class="stringliteral">&quot;2026-07-09&quot;</span>);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        QVERIFY(<span class="keywordtype">id</span> &gt; 0);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <span class="keyword">auto</span> rows = repo.<a class="code hl_function" href="classOSRepository.html#af02690680d93fe471b48a07ac58587a4">fetchAll</a>(<span class="stringliteral">&quot;C++ Cliente&quot;</span>);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        QCOMPARE(rows.size(), 1);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        QCOMPARE(rows[0].cliente, QString(<span class="stringliteral">&quot;C++ Cliente&quot;</span>));</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    }</div>
+</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="foldopen" id="foldopen00036" data-start="{" data-end="}">
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="classTestCore.html#ad8f858a033c4cc62db06412cfb93748c">   36</a></span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classTestCore.html#ad8f858a033c4cc62db06412cfb93748c">testHistorico</a>() {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <a class="code hl_class" href="classOSRepository.html">OSRepository</a> osRepo;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <a class="code hl_class" href="classHistoricoRepository.html">HistoricoRepository</a> histRepo;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="keywordtype">int</span> <span class="keywordtype">id</span> = osRepo.<a class="code hl_function" href="classOSRepository.html#af6139a9045e4f6c8ab9b04d9d4e0ee06">create</a>(<span class="stringliteral">&quot;Hist Cliente&quot;</span>, <span class="stringliteral">&quot;123&quot;</span>, <span class="stringliteral">&quot;Teste Hist&quot;</span>, <span class="stringliteral">&quot;1x1&quot;</span>, <span class="stringliteral">&quot;Granito&quot;</span>, <span class="stringliteral">&quot;2026-12-12&quot;</span>, <span class="stringliteral">&quot;Aberta&quot;</span>, <span class="stringliteral">&quot;Média&quot;</span>, <span class="stringliteral">&quot;Baixa&quot;</span>, <span class="stringliteral">&quot;2026-07-09&quot;</span>);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        osRepo.<a class="code hl_function" href="classOSRepository.html#a216ac5a1b6bd12065a6d6f7edaddbcd2">updateStatus</a>(<span class="keywordtype">id</span>, <span class="stringliteral">&quot;Concluída&quot;</span>);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        histRepo.<a class="code hl_function" href="classHistoricoRepository.html#adc29f7e094d6b1155ff82a08c77de8b9">create</a>(<span class="keywordtype">id</span>, <span class="stringliteral">&quot;Aberta&quot;</span>, <span class="stringliteral">&quot;Concluída&quot;</span>, <span class="stringliteral">&quot;2026-07-09 12:00:00&quot;</span>, <span class="stringliteral">&quot;Admin&quot;</span>);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <span class="keyword">auto</span> hist = histRepo.<a class="code hl_function" href="classHistoricoRepository.html#ae1c14be64e7574ab5b919e6ab5fe6e83">getByOsId</a>(<span class="keywordtype">id</span>);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        QCOMPARE(hist.size(), 1);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        QCOMPARE(hist[0].statusNovo, QString(<span class="stringliteral">&quot;Concluída&quot;</span>));</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    }</div>
+</div>
+<div class="foldopen" id="foldopen00048" data-start="{" data-end="}">
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classTestCore.html#a2db7bb70351feec0b7718fc63e684b58">   48</a></span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classTestCore.html#a2db7bb70351feec0b7718fc63e684b58">testControllerCadastrarSucesso</a>() {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <a class="code hl_class" href="classOSController.html">OSController</a> controller;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <span class="keywordtype">int</span> <span class="keywordtype">id</span> = controller.<a class="code hl_function" href="classOSController.html#a3361b93effeed435c51858d24117f7f0">cadastrarOS</a>(<span class="stringliteral">&quot;Cliente Teste Controller&quot;</span>, <span class="stringliteral">&quot;11999&quot;</span>, <span class="stringliteral">&quot;Desc&quot;</span>, <span class="stringliteral">&quot;2x2&quot;</span>, <span class="stringliteral">&quot;Granito&quot;</span>, <span class="stringliteral">&quot;2026-10-10&quot;</span>, <span class="stringliteral">&quot;Aberta&quot;</span>, <span class="stringliteral">&quot;Baixa&quot;</span>, <span class="stringliteral">&quot;Média&quot;</span>);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        QVERIFY(<span class="keywordtype">id</span> &gt; 0);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        <span class="keyword">auto</span> historico = controller.<a class="code hl_function" href="classOSController.html#a7a8750890ab20b20979b8a1c9e7208b0">obterHistorico</a>(<span class="keywordtype">id</span>);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        QCOMPARE(historico.size(), 1);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        QCOMPARE(historico[0].statusNovo, QString(<span class="stringliteral">&quot;Aberta&quot;</span>));</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    }</div>
+</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="foldopen" id="foldopen00058" data-start="{" data-end="}">
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="classTestCore.html#a73d4212eb79fc30b49a049e9b7a5a92c">   58</a></span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classTestCore.html#a73d4212eb79fc30b49a049e9b7a5a92c">testControllerCadastrarFalha</a>() {</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <a class="code hl_class" href="classOSController.html">OSController</a> controller;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        <span class="keywordtype">bool</span> exceptionThrown = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="keywordflow">try</span> {</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            controller.<a class="code hl_function" href="classOSController.html#a3361b93effeed435c51858d24117f7f0">cadastrarOS</a>(<span class="stringliteral">&quot;   &quot;</span>, <span class="stringliteral">&quot;11999&quot;</span>, <span class="stringliteral">&quot;Desc&quot;</span>, <span class="stringliteral">&quot;2x2&quot;</span>, <span class="stringliteral">&quot;Granito&quot;</span>, <span class="stringliteral">&quot;2026-10-10&quot;</span>, <span class="stringliteral">&quot;Aberta&quot;</span>, <span class="stringliteral">&quot;Baixa&quot;</span>, <span class="stringliteral">&quot;Média&quot;</span>);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::invalid_argument&amp; e) {</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            exceptionThrown = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            QCOMPARE(QString(e.what()), QString(<span class="stringliteral">&quot;O nome do cliente é obrigatório.&quot;</span>));</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        }</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        QVERIFY(exceptionThrown);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    }</div>
+</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="foldopen" id="foldopen00070" data-start="{" data-end="}">
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="classTestCore.html#ae456d85773ff88a0864ccb9b3ffad71f">   70</a></span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classTestCore.html#ae456d85773ff88a0864ccb9b3ffad71f">testControllerAtualizarStatusSucesso</a>() {</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <a class="code hl_class" href="classOSController.html">OSController</a> controller;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="keywordtype">int</span> <span class="keywordtype">id</span> = controller.<a class="code hl_function" href="classOSController.html#a3361b93effeed435c51858d24117f7f0">cadastrarOS</a>(<span class="stringliteral">&quot;Cliente Atualizar&quot;</span>, <span class="stringliteral">&quot;11999&quot;</span>, <span class="stringliteral">&quot;Desc&quot;</span>, <span class="stringliteral">&quot;2x2&quot;</span>, <span class="stringliteral">&quot;Granito&quot;</span>, <span class="stringliteral">&quot;2026-10-10&quot;</span>, <span class="stringliteral">&quot;Aberta&quot;</span>, <span class="stringliteral">&quot;Baixa&quot;</span>, <span class="stringliteral">&quot;Média&quot;</span>);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        controller.<a class="code hl_function" href="classOSController.html#a331fb5661fbccd504b6371caf1fc87e0">atualizarStatusOS</a>(<span class="keywordtype">id</span>, <span class="stringliteral">&quot;Aberta&quot;</span>, <span class="stringliteral">&quot;Em Andamento&quot;</span>, <span class="stringliteral">&quot;Funcionario1&quot;</span>);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="keyword">auto</span> historico = controller.<a class="code hl_function" href="classOSController.html#a7a8750890ab20b20979b8a1c9e7208b0">obterHistorico</a>(<span class="keywordtype">id</span>);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        QCOMPARE(historico.size(), 2);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        QCOMPARE(historico[0].statusNovo, QString(<span class="stringliteral">&quot;Em Andamento&quot;</span>));</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        QCOMPARE(historico[0].responsavel, QString(<span class="stringliteral">&quot;Funcionario1&quot;</span>));</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    }</div>
+</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="foldopen" id="foldopen00082" data-start="{" data-end="}">
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="classTestCore.html#a2b7af696501e25504cf71bea7aefb998">   82</a></span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classTestCore.html#a2b7af696501e25504cf71bea7aefb998">testControllerAtualizarStatusFalhas</a>() {</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        <a class="code hl_class" href="classOSController.html">OSController</a> controller;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <span class="keywordtype">int</span> <span class="keywordtype">id</span> = controller.<a class="code hl_function" href="classOSController.html#a3361b93effeed435c51858d24117f7f0">cadastrarOS</a>(<span class="stringliteral">&quot;Cliente Atualizar Falha&quot;</span>, <span class="stringliteral">&quot;11999&quot;</span>, <span class="stringliteral">&quot;Desc&quot;</span>, <span class="stringliteral">&quot;2x2&quot;</span>, <span class="stringliteral">&quot;Granito&quot;</span>, <span class="stringliteral">&quot;2026-10-10&quot;</span>, <span class="stringliteral">&quot;Aberta&quot;</span>, <span class="stringliteral">&quot;Baixa&quot;</span>, <span class="stringliteral">&quot;Média&quot;</span>);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <span class="comment">// Falha 1: Sem responsavel</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        <span class="keywordtype">bool</span> exceptionThrown1 = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        <span class="keywordflow">try</span> {</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            controller.<a class="code hl_function" href="classOSController.html#a331fb5661fbccd504b6371caf1fc87e0">atualizarStatusOS</a>(<span class="keywordtype">id</span>, <span class="stringliteral">&quot;Aberta&quot;</span>, <span class="stringliteral">&quot;Em Andamento&quot;</span>, <span class="stringliteral">&quot;   &quot;</span>);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::invalid_argument&amp; e) {</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            exceptionThrown1 = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        }</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        QVERIFY(exceptionThrown1);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        <span class="comment">// Falha 2: Mesmo status</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        <span class="keywordtype">bool</span> exceptionThrown2 = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        <span class="keywordflow">try</span> {</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            controller.<a class="code hl_function" href="classOSController.html#a331fb5661fbccd504b6371caf1fc87e0">atualizarStatusOS</a>(<span class="keywordtype">id</span>, <span class="stringliteral">&quot;Aberta&quot;</span>, <span class="stringliteral">&quot;Aberta&quot;</span>, <span class="stringliteral">&quot;Funcionario1&quot;</span>);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::invalid_argument&amp; e) {</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>            exceptionThrown2 = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        }</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        QVERIFY(exceptionThrown2);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    }</div>
+</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>};</div>
+</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>QTEST_MAIN(<a class="code hl_class" href="classTestCore.html">TestCore</a>)</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="preprocessor">#include &quot;test_core.moc&quot;</span></div>
+<div class="ttc" id="aclassDatabase_html"><div class="ttname"><a href="classDatabase.html">Database</a></div><div class="ttdoc">Classe Singleton para gerenciar a conexão com o banco de dados SQLite.</div><div class="ttdef"><b>Definição</b> <a href="database_8h_source.html#l00019">database.h:19</a></div></div>
+<div class="ttc" id="aclassDatabase_html_a38db6df1fd752d89f4305e42553690d4"><div class="ttname"><a href="classDatabase.html#a38db6df1fd752d89f4305e42553690d4">Database::setDbName</a></div><div class="ttdeci">void setDbName(const QString &amp;dbName)</div><div class="ttdoc">Define um nome customizado para o banco (útil para testes).</div><div class="ttdef"><b>Definição</b> <a href="database_8cpp_source.html#l00022">database.cpp:22</a></div></div>
+<div class="ttc" id="aclassDatabase_html_a6747ce1b1f980cd917c9c006545e2b2a"><div class="ttname"><a href="classDatabase.html#a6747ce1b1f980cd917c9c006545e2b2a">Database::initDb</a></div><div class="ttdeci">void initDb()</div><div class="ttdoc">Inicializa o banco de dados criando as tabelas necessárias.</div><div class="ttdef"><b>Definição</b> <a href="database_8cpp_source.html#l00037">database.cpp:37</a></div></div>
+<div class="ttc" id="aclassDatabase_html_aa04e547554cc34fa4b6c5a9390021eab"><div class="ttname"><a href="classDatabase.html#aa04e547554cc34fa4b6c5a9390021eab">Database::getInstance</a></div><div class="ttdeci">static Database &amp; getInstance()</div><div class="ttdoc">Obtém a instância única do Banco de Dados.</div><div class="ttdef"><b>Definição</b> <a href="database_8cpp_source.html#l00007">database.cpp:7</a></div></div>
+<div class="ttc" id="aclassHistoricoRepository_html"><div class="ttname"><a href="classHistoricoRepository.html">HistoricoRepository</a></div><div class="ttdoc">Data Access Object (DAO) para o Histórico de OS.</div><div class="ttdef"><b>Definição</b> <a href="historico__repository_8h_source.html#l00016">historico_repository.h:16</a></div></div>
+<div class="ttc" id="aclassHistoricoRepository_html_adc29f7e094d6b1155ff82a08c77de8b9"><div class="ttname"><a href="classHistoricoRepository.html#adc29f7e094d6b1155ff82a08c77de8b9">HistoricoRepository::create</a></div><div class="ttdeci">void create(int osId, const QString &amp;statusAnterior, const QString &amp;statusNovo, const QString &amp;dataAlteracao, const QString &amp;responsavel)</div><div class="ttdoc">Cria um novo registro de histórico.</div><div class="ttdef"><b>Definição</b> <a href="historico__repository_8cpp_source.html#l00011">historico_repository.cpp:11</a></div></div>
+<div class="ttc" id="aclassHistoricoRepository_html_ae1c14be64e7574ab5b919e6ab5fe6e83"><div class="ttname"><a href="classHistoricoRepository.html#ae1c14be64e7574ab5b919e6ab5fe6e83">HistoricoRepository::getByOsId</a></div><div class="ttdeci">QVector&lt; HistoricoData &gt; getByOsId(int osId)</div><div class="ttdoc">Busca o histórico para uma dada OS.</div><div class="ttdef"><b>Definição</b> <a href="historico__repository_8cpp_source.html#l00029">historico_repository.cpp:29</a></div></div>
+<div class="ttc" id="aclassOSController_html"><div class="ttname"><a href="classOSController.html">OSController</a></div><div class="ttdoc">Classe Controller na arquitetura MVC. Gerencia toda a lógica de negócios da aplicação.</div><div class="ttdef"><b>Definição</b> <a href="os__controller_8h_source.html#l00019">os_controller.h:19</a></div></div>
+<div class="ttc" id="aclassOSController_html_a331fb5661fbccd504b6371caf1fc87e0"><div class="ttname"><a href="classOSController.html#a331fb5661fbccd504b6371caf1fc87e0">OSController::atualizarStatusOS</a></div><div class="ttdeci">void atualizarStatusOS(int osId, const QString &amp;statusAnterior, const QString &amp;novoStatus, const QString &amp;responsavel)</div><div class="ttdoc">Atualiza o status da OS e registra no histórico.</div><div class="ttdef"><b>Definição</b> <a href="os__controller_8cpp_source.html#l00027">os_controller.cpp:27</a></div></div>
+<div class="ttc" id="aclassOSController_html_a3361b93effeed435c51858d24117f7f0"><div class="ttname"><a href="classOSController.html#a3361b93effeed435c51858d24117f7f0">OSController::cadastrarOS</a></div><div class="ttdeci">int cadastrarOS(const QString &amp;cliente, const QString &amp;contato, const QString &amp;descricao, const QString &amp;medidas, const QString &amp;material, const QString &amp;prazo, const QString &amp;status, const QString &amp;prioridade, const QString &amp;dificuldade)</div><div class="ttdoc">Cadastra uma nova OS aplicando as regras de negócio.</div><div class="ttdef"><b>Definição</b> <a href="os__controller_8cpp_source.html#l00007">os_controller.cpp:7</a></div></div>
+<div class="ttc" id="aclassOSController_html_a7a8750890ab20b20979b8a1c9e7208b0"><div class="ttname"><a href="classOSController.html#a7a8750890ab20b20979b8a1c9e7208b0">OSController::obterHistorico</a></div><div class="ttdeci">QVector&lt; HistoricoData &gt; obterHistorico(int osId)</div><div class="ttdoc">Recupera o histórico de uma OS específica.</div><div class="ttdef"><b>Definição</b> <a href="os__controller_8cpp_source.html#l00047">os_controller.cpp:47</a></div></div>
+<div class="ttc" id="aclassOSRepository_html"><div class="ttname"><a href="classOSRepository.html">OSRepository</a></div><div class="ttdoc">Data Access Object (DAO) para as entidades OS.</div><div class="ttdef"><b>Definição</b> <a href="os__repository_8h_source.html#l00016">os_repository.h:16</a></div></div>
+<div class="ttc" id="aclassOSRepository_html_a216ac5a1b6bd12065a6d6f7edaddbcd2"><div class="ttname"><a href="classOSRepository.html#a216ac5a1b6bd12065a6d6f7edaddbcd2">OSRepository::updateStatus</a></div><div class="ttdeci">void updateStatus(int osId, const QString &amp;novoStatus)</div><div class="ttdoc">Atualiza o status de uma OS existente.</div><div class="ttdef"><b>Definição</b> <a href="os__repository_8cpp_source.html#l00039">os_repository.cpp:39</a></div></div>
+<div class="ttc" id="aclassOSRepository_html_af02690680d93fe471b48a07ac58587a4"><div class="ttname"><a href="classOSRepository.html#af02690680d93fe471b48a07ac58587a4">OSRepository::fetchAll</a></div><div class="ttdeci">QVector&lt; OSData &gt; fetchAll(const QString &amp;buscaCliente=&quot;&quot;, const QString &amp;buscaStatus=&quot;Todos&quot;, const QString &amp;dataIni=&quot;&quot;, const QString &amp;dataFim=&quot;&quot;)</div><div class="ttdoc">Busca todas as OS que coincidem com os critérios.</div><div class="ttdef"><b>Definição</b> <a href="os__repository_8cpp_source.html#l00052">os_repository.cpp:52</a></div></div>
+<div class="ttc" id="aclassOSRepository_html_af6139a9045e4f6c8ab9b04d9d4e0ee06"><div class="ttname"><a href="classOSRepository.html#af6139a9045e4f6c8ab9b04d9d4e0ee06">OSRepository::create</a></div><div class="ttdeci">int create(const QString &amp;cliente, const QString &amp;contato, const QString &amp;descricao, const QString &amp;medidas, const QString &amp;material, const QString &amp;prazo, const QString &amp;status, const QString &amp;prioridade, const QString &amp;dificuldade, const QString &amp;dataAbertura)</div><div class="ttdoc">Cria uma nova Ordem de Serviço (OS).</div><div class="ttdef"><b>Definição</b> <a href="os__repository_8cpp_source.html#l00011">os_repository.cpp:11</a></div></div>
+<div class="ttc" id="aclassTestCore_html"><div class="ttname"><a href="classTestCore.html">TestCore</a></div><div class="ttdef"><b>Definição</b> <a href="#l00006">test_core.cpp:6</a></div></div>
+<div class="ttc" id="aclassTestCore_html_a22f7cfcf0657e5567d1f2c37587fcc11"><div class="ttname"><a href="classTestCore.html#a22f7cfcf0657e5567d1f2c37587fcc11">TestCore::cleanupTestCase</a></div><div class="ttdeci">void cleanupTestCase()</div><div class="ttdef"><b>Definição</b> <a href="#l00016">test_core.cpp:16</a></div></div>
+<div class="ttc" id="aclassTestCore_html_a2b7af696501e25504cf71bea7aefb998"><div class="ttname"><a href="classTestCore.html#a2b7af696501e25504cf71bea7aefb998">TestCore::testControllerAtualizarStatusFalhas</a></div><div class="ttdeci">void testControllerAtualizarStatusFalhas()</div><div class="ttdef"><b>Definição</b> <a href="#l00082">test_core.cpp:82</a></div></div>
+<div class="ttc" id="aclassTestCore_html_a2db7bb70351feec0b7718fc63e684b58"><div class="ttname"><a href="classTestCore.html#a2db7bb70351feec0b7718fc63e684b58">TestCore::testControllerCadastrarSucesso</a></div><div class="ttdeci">void testControllerCadastrarSucesso()</div><div class="ttdef"><b>Definição</b> <a href="#l00048">test_core.cpp:48</a></div></div>
+<div class="ttc" id="aclassTestCore_html_a5d0a011fa04fbbc0315445d87dd5d418"><div class="ttname"><a href="classTestCore.html#a5d0a011fa04fbbc0315445d87dd5d418">TestCore::testSingleton</a></div><div class="ttdeci">void testSingleton()</div><div class="ttdef"><b>Definição</b> <a href="#l00020">test_core.cpp:20</a></div></div>
+<div class="ttc" id="aclassTestCore_html_a73d4212eb79fc30b49a049e9b7a5a92c"><div class="ttname"><a href="classTestCore.html#a73d4212eb79fc30b49a049e9b7a5a92c">TestCore::testControllerCadastrarFalha</a></div><div class="ttdeci">void testControllerCadastrarFalha()</div><div class="ttdef"><b>Definição</b> <a href="#l00058">test_core.cpp:58</a></div></div>
+<div class="ttc" id="aclassTestCore_html_ad8f858a033c4cc62db06412cfb93748c"><div class="ttname"><a href="classTestCore.html#ad8f858a033c4cc62db06412cfb93748c">TestCore::testHistorico</a></div><div class="ttdeci">void testHistorico()</div><div class="ttdef"><b>Definição</b> <a href="#l00036">test_core.cpp:36</a></div></div>
+<div class="ttc" id="aclassTestCore_html_ae456d85773ff88a0864ccb9b3ffad71f"><div class="ttname"><a href="classTestCore.html#ae456d85773ff88a0864ccb9b3ffad71f">TestCore::testControllerAtualizarStatusSucesso</a></div><div class="ttdeci">void testControllerAtualizarStatusSucesso()</div><div class="ttdef"><b>Definição</b> <a href="#l00070">test_core.cpp:70</a></div></div>
+<div class="ttc" id="aclassTestCore_html_aea614e8fdb8b52361fcd091fb9b4d4be"><div class="ttname"><a href="classTestCore.html#aea614e8fdb8b52361fcd091fb9b4d4be">TestCore::initTestCase</a></div><div class="ttdeci">void initTestCase()</div><div class="ttdef"><b>Definição</b> <a href="#l00010">test_core.cpp:10</a></div></div>
+<div class="ttc" id="aclassTestCore_html_afe230280f7222da40f40f509be5874e9"><div class="ttname"><a href="classTestCore.html#afe230280f7222da40f40f509be5874e9">TestCore::testCreateOs</a></div><div class="ttdeci">void testCreateOs()</div><div class="ttdef"><b>Definição</b> <a href="#l00026">test_core.cpp:26</a></div></div>
+<div class="ttc" id="adatabase_8h_html"><div class="ttname"><a href="database_8h.html">database.h</a></div><div class="ttdoc">Arquivo de cabeçalho para o Singleton do Banco de Dados.</div></div>
+<div class="ttc" id="ahistorico__repository_8h_html"><div class="ttname"><a href="historico__repository_8h.html">historico_repository.h</a></div><div class="ttdoc">Cabeçalho da classe HistoricoRepository.</div></div>
+<div class="ttc" id="aos__controller_8h_html"><div class="ttname"><a href="os__controller_8h.html">os_controller.h</a></div><div class="ttdoc">Cabeçalho da classe OSController.</div></div>
+<div class="ttc" id="aos__repository_8h_html"><div class="ttname"><a href="os__repository_8h.html">os_repository.h</a></div><div class="ttdoc">Cabeçalho para a classe OSRepository.</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a href="dir_7711e90abc3d4bd55823d9013a185d04.html">unit</a></li><li class="navelem"><a href="test__core_8cpp.html">test_core.cpp</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -11,5 +11,9 @@ var hierarchy =
     ] ],
     [ "QMainWindow", null, [
       [ "MarmoManagerApp", "classMarmoManagerApp.html", null ]
+    ] ],
+    [ "QObject", null, [
+      [ "TestCore", "classTestCore.html", null ],
+      [ "TestGUI", "classTestGUI.html", null ]
     ] ]
 ];

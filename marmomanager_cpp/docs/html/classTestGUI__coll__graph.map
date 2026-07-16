@@ -1,0 +1,15 @@
+<map id="TestGUI" name="TestGUI">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,1325,206,1608"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="55,811,114,880"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="89,894,104,1325,98,1325,84,896"/>
+<area shape="rect" id="Node000003" href="$classMarmoManagerApp.html" title="Classe principal de Interface Gráfica (View) para a aplicação." alt="" coords="137,437,298,1253"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="145,1251,137,1310,132,1308,143,1256"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="123,253,219,323"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="175,335,186,438,181,438,175,340"/>
+<area shape="rect" id="Node000005" href="$classOSController.html" title="Classe Controller na arquitetura MVC. Gerencia toda a lógica de negócios da aplicação." alt="" coords="244,211,382,365"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="300,363,293,422,287,421,299,368"/>
+<area shape="rect" id="Node000006" href="$classOSRepository.html" title="Data Access Object (DAO) para as entidades OS." alt="" coords="178,5,292,139"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="259,136,282,194,276,195,259,141"/>
+<area shape="rect" id="Node000007" href="$classHistoricoRepository.html" title="Data Access Object (DAO) para o Histórico de OS." alt="" coords="316,16,463,128"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="375,131,359,188,356,196,351,195,354,186,376,125"/>
+</map>

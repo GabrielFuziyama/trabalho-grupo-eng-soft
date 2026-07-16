@@ -1,0 +1,23 @@
+<map id="TestCore::testHistorico" name="TestCore::testHistorico">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,101,162,128"/>
+<area shape="rect" id="Node000002" href="$classHistoricoRepository.html#adc29f7e094d6b1155ff82a08c77de8b9" title="Cria um novo registro de histórico." alt="" coords="236,123,372,165"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="162,122,223,132,218,134,162,128"/>
+<area shape="rect" id="Node000006" href="$classOSRepository.html#af6139a9045e4f6c8ab9b04d9d4e0ee06" title="Cria uma nova Ordem de Serviço (OS)." alt="" coords="230,189,378,216"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="109,126,156,151,211,175,233,185,227,184,209,180,154,155,109,131"/>
+<area shape="rect" id="Node000007" href="$classHistoricoRepository.html#ae1c14be64e7574ab5b919e6ab5fe6e83" title="Busca o histórico para uma dada OS." alt="" coords="236,5,372,48"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="114,98,209,58,228,53,223,55,211,62,116,103"/>
+<area shape="rect" id="Node000008" href="$classOSRepository.html#a216ac5a1b6bd12065a6d6f7edaddbcd2" title="Atualiza o status de uma OS existente." alt="" coords="210,72,398,99"/>
+<area shape="poly" id="edge11_Node000001_Node000008" title=" " alt="" coords="161,102,197,99,192,101,163,107"/>
+<area shape="rect" id="Node000003" href="$classDatabase.html#aaf21db9254c8ed77d4d800802c987d87" title="Recupera o objeto de conexão QSqlDatabase." alt="" coords="446,75,615,101"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="372,125,456,106,461,105,373,130"/>
+<area shape="rect" id="Node000004" href="$classDatabase.html#aa04e547554cc34fa4b6c5a9390021eab" title="Obtém a instância única do Banco de Dados." alt="" coords="454,127,607,153"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="372,140,441,141,436,142,373,145"/>
+<area shape="rect" id="Node000005" href="$classDatabase.html#a4703c80e6969d33565ea340f768fdadf" title=" " alt="" coords="663,127,805,153"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="608,137,651,140,646,140,608,143"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="375,186,396,175,412,161,420,145,428,129,444,113,454,109,459,107,448,117,433,132,425,147,416,164,400,180,377,191"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="356,186,397,175,464,159,469,158,399,180,357,191"/>
+<area shape="poly" id="edge9_Node000007_Node000003" title=" " alt="" coords="372,42,467,70,461,71,372,48"/>
+<area shape="poly" id="edge10_Node000007_Node000004" title=" " alt="" coords="373,44,400,58,415,72,424,85,433,98,448,111,461,120,455,120,444,116,429,102,420,88,411,75,396,62,372,49"/>
+<area shape="poly" id="edge12_Node000008_Node000003" title=" " alt="" coords="398,84,433,86,427,87,399,89"/>
+<area shape="poly" id="edge13_Node000008_Node000004" title=" " alt="" coords="362,97,460,122,455,123,362,102"/>
+</map>
