@@ -1,0 +1,9 @@
+<map id="/home/daniel/Área de trabalho/Engenharia_1/Sprint1&#45;Grupo/marmomanager_cpp/src/ui/application_coordinator.h" name="/home/daniel/Área de trabalho/Engenharia_1/Sprint1&#45;Grupo/marmomanager_cpp/src/ui/application_coordinator.h">
+<area shape="rect" id="Node000001" title="Coordenação do fluxo visual de login, sessão e logout." alt="" coords="5,5,264,75"/>
+<area shape="rect" id="Node000002" href="$user__model_8h.html" title="Contratos de dados compartilhados para autenticação e sessão." alt="" coords="21,123,131,148"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,76,93,112,88,109,111,73"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="156,123,231,148"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="158,73,181,109,176,112,154,76"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="41,196,111,221"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="79,148,79,182,73,182,73,148"/>
+</map>

@@ -4,17 +4,16 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MarmoManager: Código-Fonte de /home/arthurteixeira/Músicas/trabalho-grupo-eng-soft/trabalho-grupo-eng-soft/marmomanager_cpp/includes/os_model.h</title>
+<title>MarmoManager: Código-Fonte de /home/daniel/Área de trabalho/Engenharia_1/Sprint1-Grupo/marmomanager_cpp/includes/os_model.h</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<script type="text/javascript" src="clipboard.js"></script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="navtreedata.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript" src="cookie.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -31,31 +30,37 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MarmoManager<span id="projectnumber">&#160;1.0</span>
+   <div id="projectname">MarmoManager<span id="projectnumber">&#160;1.1</span>
    </div>
-   <div id="projectbrief">Sistema em C++ e Qt de Gerenciamento de Ordens de Serviço</div>
+   <div id="projectbrief">Sistema em C++/Qt para gerenciamento de ordens de serviço</div>
   </td>
  </tr>
  </tbody>
 </table>
 </div>
 <!-- end header part -->
-<!-- Gerado por Doxygen 1.16.1 -->
+<!-- Gerado por Doxygen 1.9.8 -->
 <script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "search/",'.html');
-</script>
-<script type="text/javascript">
-$(function() { codefold.init(); });
+/* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
-  initMenu('',true,false,'search.php','Localizar',true);
-  $(function() { init_search(); });
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
 });
+/* @license-end */
 </script>
 <div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -63,14 +68,15 @@ $(function() {
       <div id="nav-sync" class="sync"></div>
     </div>
   </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
+  <div id="splitbar" style="-moz-user-select:none;"
        class="ui-resizable-handle">
   </div>
 </div>
 <script type="text/javascript">
-$(function(){initNavTree('os__model_8h_source.html','',''); });
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('os__model_8h_source.html',''); initResizable(); });
+/* @license-end */
 </script>
-<div id="container">
 <div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -97,69 +103,67 @@ $(function(){initNavTree('os__model_8h_source.html','',''); });
   <div class="headertitle"><div class="title">os_model.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="os__model_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<a href="os__model_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef OS_MODEL_H</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#define OS_MODEL_H</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;QString&gt;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;QVector&gt;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
 <div class="foldopen" id="foldopen00016" data-start="{" data-end="};">
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="structOSData.html">   16</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structOSData.html">OSData</a> {</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="structOSData.html#a442258eb8d12c60ad94e856ef340d7e2">   17</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structOSData.html#a442258eb8d12c60ad94e856ef340d7e2">id</a>;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="structOSData.html#ae0be4376eabe0123dd85e591dcbd5924">   18</a></span>    QString <a class="code hl_variable" href="structOSData.html#ae0be4376eabe0123dd85e591dcbd5924">cliente</a>;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="structOSData.html#a1d3482cb6ff964e0b0655dca9ea73e40">   19</a></span>    QString <a class="code hl_variable" href="structOSData.html#a1d3482cb6ff964e0b0655dca9ea73e40">contato</a>;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="structOSData.html#abd64de056f1b97223bbee4b0b75a795f">   20</a></span>    QString <a class="code hl_variable" href="structOSData.html#abd64de056f1b97223bbee4b0b75a795f">descricao</a>;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="structOSData.html#af8008c6fde01ad2320dab113a7ebd0f4">   21</a></span>    QString <a class="code hl_variable" href="structOSData.html#af8008c6fde01ad2320dab113a7ebd0f4">medidas</a>;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="structOSData.html#a5d2521eebdadfdf58dc9b77ac7da173e">   22</a></span>    QString <a class="code hl_variable" href="structOSData.html#a5d2521eebdadfdf58dc9b77ac7da173e">material</a>;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="structOSData.html#aa946424cd35e28dd2c60ea43e99c61bd">   23</a></span>    QString <a class="code hl_variable" href="structOSData.html#aa946424cd35e28dd2c60ea43e99c61bd">prazo</a>;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="structOSData.html#adebdedab567da0afb533bf8b6ac0787d">   24</a></span>    QString <a class="code hl_variable" href="structOSData.html#adebdedab567da0afb533bf8b6ac0787d">status</a>;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="structOSData.html#ae1ea6cd9db6950de0880db5ecbd23b40">   25</a></span>    QString <a class="code hl_variable" href="structOSData.html#ae1ea6cd9db6950de0880db5ecbd23b40">prioridade</a>;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="structOSData.html#ab3ae999aaa4d67c7f0a79d6cceafa826">   26</a></span>    QString <a class="code hl_variable" href="structOSData.html#ab3ae999aaa4d67c7f0a79d6cceafa826">dificuldade</a>;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="structOSData.html#af91d8aeb8d179597d6548eb70f3f0f70">   27</a></span>    QString <a class="code hl_variable" href="structOSData.html#af91d8aeb8d179597d6548eb70f3f0f70">dataAbertura</a>;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>};</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="structOSData.html#a442258eb8d12c60ad94e856ef340d7e2">   18</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structOSData.html#a442258eb8d12c60ad94e856ef340d7e2">id</a>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="structOSData.html#ae0be4376eabe0123dd85e591dcbd5924">   20</a></span>    QString <a class="code hl_variable" href="structOSData.html#ae0be4376eabe0123dd85e591dcbd5924">cliente</a>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="structOSData.html#a1d3482cb6ff964e0b0655dca9ea73e40">   22</a></span>    QString <a class="code hl_variable" href="structOSData.html#a1d3482cb6ff964e0b0655dca9ea73e40">contato</a>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="structOSData.html#abd64de056f1b97223bbee4b0b75a795f">   24</a></span>    QString <a class="code hl_variable" href="structOSData.html#abd64de056f1b97223bbee4b0b75a795f">descricao</a>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="structOSData.html#af8008c6fde01ad2320dab113a7ebd0f4">   26</a></span>    QString <a class="code hl_variable" href="structOSData.html#af8008c6fde01ad2320dab113a7ebd0f4">medidas</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="structOSData.html#a5d2521eebdadfdf58dc9b77ac7da173e">   28</a></span>    QString <a class="code hl_variable" href="structOSData.html#a5d2521eebdadfdf58dc9b77ac7da173e">material</a>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="structOSData.html#aa946424cd35e28dd2c60ea43e99c61bd">   30</a></span>    QString <a class="code hl_variable" href="structOSData.html#aa946424cd35e28dd2c60ea43e99c61bd">prazo</a>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="structOSData.html#adebdedab567da0afb533bf8b6ac0787d">   32</a></span>    QString <a class="code hl_variable" href="structOSData.html#adebdedab567da0afb533bf8b6ac0787d">status</a>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="structOSData.html#ae1ea6cd9db6950de0880db5ecbd23b40">   34</a></span>    QString <a class="code hl_variable" href="structOSData.html#ae1ea6cd9db6950de0880db5ecbd23b40">prioridade</a>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="structOSData.html#ab3ae999aaa4d67c7f0a79d6cceafa826">   36</a></span>    QString <a class="code hl_variable" href="structOSData.html#ab3ae999aaa4d67c7f0a79d6cceafa826">dificuldade</a>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="structOSData.html#af91d8aeb8d179597d6548eb70f3f0f70">   38</a></span>    QString <a class="code hl_variable" href="structOSData.html#af91d8aeb8d179597d6548eb70f3f0f70">dataAbertura</a>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>};</div>
 </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span></div>
-<div class="foldopen" id="foldopen00034" data-start="{" data-end="};">
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="structHistoricoData.html">   34</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structHistoricoData.html">HistoricoData</a> {</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="structHistoricoData.html#af7fdead2a20a957e5add573395fa21a4">   35</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structHistoricoData.html#af7fdead2a20a957e5add573395fa21a4">id</a>;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="structHistoricoData.html#ab29682c4cdcd75928ed295a4d603c766">   36</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structHistoricoData.html#ab29682c4cdcd75928ed295a4d603c766">osId</a>;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="structHistoricoData.html#a0184901a1c88619103d9e1dd0e2976f1">   37</a></span>    QString <a class="code hl_variable" href="structHistoricoData.html#a0184901a1c88619103d9e1dd0e2976f1">statusAnterior</a>;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="structHistoricoData.html#ac484068333bb193c229cea52c567b2dc">   38</a></span>    QString <a class="code hl_variable" href="structHistoricoData.html#ac484068333bb193c229cea52c567b2dc">statusNovo</a>;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="structHistoricoData.html#a806124713b87950629d8519cd110c197">   39</a></span>    QString <a class="code hl_variable" href="structHistoricoData.html#a806124713b87950629d8519cd110c197">dataAlteracao</a>;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="structHistoricoData.html#a84fb3d823e79079c9082b04c35e3f1fd">   40</a></span>    QString <a class="code hl_variable" href="structHistoricoData.html#a84fb3d823e79079c9082b04c35e3f1fd">responsavel</a>;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>};</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="foldopen" id="foldopen00045" data-start="{" data-end="};">
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="structHistoricoData.html">   45</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structHistoricoData.html">HistoricoData</a> {</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="structHistoricoData.html#af7fdead2a20a957e5add573395fa21a4">   47</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structHistoricoData.html#af7fdead2a20a957e5add573395fa21a4">id</a>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="structHistoricoData.html#ab29682c4cdcd75928ed295a4d603c766">   49</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structHistoricoData.html#ab29682c4cdcd75928ed295a4d603c766">osId</a>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="structHistoricoData.html#a0184901a1c88619103d9e1dd0e2976f1">   51</a></span>    QString <a class="code hl_variable" href="structHistoricoData.html#a0184901a1c88619103d9e1dd0e2976f1">statusAnterior</a>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="structHistoricoData.html#ac484068333bb193c229cea52c567b2dc">   53</a></span>    QString <a class="code hl_variable" href="structHistoricoData.html#ac484068333bb193c229cea52c567b2dc">statusNovo</a>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="structHistoricoData.html#a806124713b87950629d8519cd110c197">   55</a></span>    QString <a class="code hl_variable" href="structHistoricoData.html#a806124713b87950629d8519cd110c197">dataAlteracao</a>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="structHistoricoData.html#a84fb3d823e79079c9082b04c35e3f1fd">   57</a></span>    QString <a class="code hl_variable" href="structHistoricoData.html#a84fb3d823e79079c9082b04c35e3f1fd">responsavel</a>;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>};</div>
 </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#endif </span><span class="comment">// OS_MODEL_H</span></div>
-<div class="ttc" id="astructHistoricoData_html"><div class="ttname"><a href="structHistoricoData.html">HistoricoData</a></div><div class="ttdoc">Representa um registro de Histórico de mudanças.</div><div class="ttdef"><b>Definição</b> <a href="#l00034">os_model.h:34</a></div></div>
-<div class="ttc" id="astructHistoricoData_html_a0184901a1c88619103d9e1dd0e2976f1"><div class="ttname"><a href="structHistoricoData.html#a0184901a1c88619103d9e1dd0e2976f1">HistoricoData::statusAnterior</a></div><div class="ttdeci">QString statusAnterior</div><div class="ttdef"><b>Definição</b> <a href="#l00037">os_model.h:37</a></div></div>
-<div class="ttc" id="astructHistoricoData_html_a806124713b87950629d8519cd110c197"><div class="ttname"><a href="structHistoricoData.html#a806124713b87950629d8519cd110c197">HistoricoData::dataAlteracao</a></div><div class="ttdeci">QString dataAlteracao</div><div class="ttdef"><b>Definição</b> <a href="#l00039">os_model.h:39</a></div></div>
-<div class="ttc" id="astructHistoricoData_html_a84fb3d823e79079c9082b04c35e3f1fd"><div class="ttname"><a href="structHistoricoData.html#a84fb3d823e79079c9082b04c35e3f1fd">HistoricoData::responsavel</a></div><div class="ttdeci">QString responsavel</div><div class="ttdef"><b>Definição</b> <a href="#l00040">os_model.h:40</a></div></div>
-<div class="ttc" id="astructHistoricoData_html_ab29682c4cdcd75928ed295a4d603c766"><div class="ttname"><a href="structHistoricoData.html#ab29682c4cdcd75928ed295a4d603c766">HistoricoData::osId</a></div><div class="ttdeci">int osId</div><div class="ttdef"><b>Definição</b> <a href="#l00036">os_model.h:36</a></div></div>
-<div class="ttc" id="astructHistoricoData_html_ac484068333bb193c229cea52c567b2dc"><div class="ttname"><a href="structHistoricoData.html#ac484068333bb193c229cea52c567b2dc">HistoricoData::statusNovo</a></div><div class="ttdeci">QString statusNovo</div><div class="ttdef"><b>Definição</b> <a href="#l00038">os_model.h:38</a></div></div>
-<div class="ttc" id="astructHistoricoData_html_af7fdead2a20a957e5add573395fa21a4"><div class="ttname"><a href="structHistoricoData.html#af7fdead2a20a957e5add573395fa21a4">HistoricoData::id</a></div><div class="ttdeci">int id</div><div class="ttdef"><b>Definição</b> <a href="#l00035">os_model.h:35</a></div></div>
-<div class="ttc" id="astructOSData_html"><div class="ttname"><a href="structOSData.html">OSData</a></div><div class="ttdoc">Representa um registro único de Ordem de Serviço.</div><div class="ttdef"><b>Definição</b> <a href="#l00016">os_model.h:16</a></div></div>
-<div class="ttc" id="astructOSData_html_a1d3482cb6ff964e0b0655dca9ea73e40"><div class="ttname"><a href="structOSData.html#a1d3482cb6ff964e0b0655dca9ea73e40">OSData::contato</a></div><div class="ttdeci">QString contato</div><div class="ttdef"><b>Definição</b> <a href="#l00019">os_model.h:19</a></div></div>
-<div class="ttc" id="astructOSData_html_a442258eb8d12c60ad94e856ef340d7e2"><div class="ttname"><a href="structOSData.html#a442258eb8d12c60ad94e856ef340d7e2">OSData::id</a></div><div class="ttdeci">int id</div><div class="ttdef"><b>Definição</b> <a href="#l00017">os_model.h:17</a></div></div>
-<div class="ttc" id="astructOSData_html_a5d2521eebdadfdf58dc9b77ac7da173e"><div class="ttname"><a href="structOSData.html#a5d2521eebdadfdf58dc9b77ac7da173e">OSData::material</a></div><div class="ttdeci">QString material</div><div class="ttdef"><b>Definição</b> <a href="#l00022">os_model.h:22</a></div></div>
-<div class="ttc" id="astructOSData_html_aa946424cd35e28dd2c60ea43e99c61bd"><div class="ttname"><a href="structOSData.html#aa946424cd35e28dd2c60ea43e99c61bd">OSData::prazo</a></div><div class="ttdeci">QString prazo</div><div class="ttdef"><b>Definição</b> <a href="#l00023">os_model.h:23</a></div></div>
-<div class="ttc" id="astructOSData_html_ab3ae999aaa4d67c7f0a79d6cceafa826"><div class="ttname"><a href="structOSData.html#ab3ae999aaa4d67c7f0a79d6cceafa826">OSData::dificuldade</a></div><div class="ttdeci">QString dificuldade</div><div class="ttdef"><b>Definição</b> <a href="#l00026">os_model.h:26</a></div></div>
-<div class="ttc" id="astructOSData_html_abd64de056f1b97223bbee4b0b75a795f"><div class="ttname"><a href="structOSData.html#abd64de056f1b97223bbee4b0b75a795f">OSData::descricao</a></div><div class="ttdeci">QString descricao</div><div class="ttdef"><b>Definição</b> <a href="#l00020">os_model.h:20</a></div></div>
-<div class="ttc" id="astructOSData_html_adebdedab567da0afb533bf8b6ac0787d"><div class="ttname"><a href="structOSData.html#adebdedab567da0afb533bf8b6ac0787d">OSData::status</a></div><div class="ttdeci">QString status</div><div class="ttdef"><b>Definição</b> <a href="#l00024">os_model.h:24</a></div></div>
-<div class="ttc" id="astructOSData_html_ae0be4376eabe0123dd85e591dcbd5924"><div class="ttname"><a href="structOSData.html#ae0be4376eabe0123dd85e591dcbd5924">OSData::cliente</a></div><div class="ttdeci">QString cliente</div><div class="ttdef"><b>Definição</b> <a href="#l00018">os_model.h:18</a></div></div>
-<div class="ttc" id="astructOSData_html_ae1ea6cd9db6950de0880db5ecbd23b40"><div class="ttname"><a href="structOSData.html#ae1ea6cd9db6950de0880db5ecbd23b40">OSData::prioridade</a></div><div class="ttdeci">QString prioridade</div><div class="ttdef"><b>Definição</b> <a href="#l00025">os_model.h:25</a></div></div>
-<div class="ttc" id="astructOSData_html_af8008c6fde01ad2320dab113a7ebd0f4"><div class="ttname"><a href="structOSData.html#af8008c6fde01ad2320dab113a7ebd0f4">OSData::medidas</a></div><div class="ttdeci">QString medidas</div><div class="ttdef"><b>Definição</b> <a href="#l00021">os_model.h:21</a></div></div>
-<div class="ttc" id="astructOSData_html_af91d8aeb8d179597d6548eb70f3f0f70"><div class="ttname"><a href="structOSData.html#af91d8aeb8d179597d6548eb70f3f0f70">OSData::dataAbertura</a></div><div class="ttdeci">QString dataAbertura</div><div class="ttdef"><b>Definição</b> <a href="#l00027">os_model.h:27</a></div></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">#endif </span><span class="comment">// OS_MODEL_H</span></div>
+<div class="ttc" id="astructHistoricoData_html"><div class="ttname"><a href="structHistoricoData.html">HistoricoData</a></div><div class="ttdoc">Representa um registro de Histórico de mudanças.</div><div class="ttdef"><b>Definição</b> <a href="os__model_8h_source.html#l00045">os_model.h:45</a></div></div>
+<div class="ttc" id="astructHistoricoData_html_a0184901a1c88619103d9e1dd0e2976f1"><div class="ttname"><a href="structHistoricoData.html#a0184901a1c88619103d9e1dd0e2976f1">HistoricoData::statusAnterior</a></div><div class="ttdeci">QString statusAnterior</div><div class="ttdoc">Estado existente antes da transição.</div><div class="ttdef"><b>Definição</b> <a href="os__model_8h_source.html#l00051">os_model.h:51</a></div></div>
+<div class="ttc" id="astructHistoricoData_html_a806124713b87950629d8519cd110c197"><div class="ttname"><a href="structHistoricoData.html#a806124713b87950629d8519cd110c197">HistoricoData::dataAlteracao</a></div><div class="ttdeci">QString dataAlteracao</div><div class="ttdoc">Data e hora em que a alteração ocorreu.</div><div class="ttdef"><b>Definição</b> <a href="os__model_8h_source.html#l00055">os_model.h:55</a></div></div>
+<div class="ttc" id="astructHistoricoData_html_a84fb3d823e79079c9082b04c35e3f1fd"><div class="ttname"><a href="structHistoricoData.html#a84fb3d823e79079c9082b04c35e3f1fd">HistoricoData::responsavel</a></div><div class="ttdeci">QString responsavel</div><div class="ttdoc">Nome do usuário responsável pela alteração.</div><div class="ttdef"><b>Definição</b> <a href="os__model_8h_source.html#l00057">os_model.h:57</a></div></div>
+<div class="ttc" id="astructHistoricoData_html_ab29682c4cdcd75928ed295a4d603c766"><div class="ttname"><a href="structHistoricoData.html#ab29682c4cdcd75928ed295a4d603c766">HistoricoData::osId</a></div><div class="ttdeci">int osId</div><div class="ttdoc">Chave estrangeira da ordem de serviço.</div><div class="ttdef"><b>Definição</b> <a href="os__model_8h_source.html#l00049">os_model.h:49</a></div></div>
+<div class="ttc" id="astructHistoricoData_html_ac484068333bb193c229cea52c567b2dc"><div class="ttname"><a href="structHistoricoData.html#ac484068333bb193c229cea52c567b2dc">HistoricoData::statusNovo</a></div><div class="ttdeci">QString statusNovo</div><div class="ttdoc">Estado definido pela transição.</div><div class="ttdef"><b>Definição</b> <a href="os__model_8h_source.html#l00053">os_model.h:53</a></div></div>
+<div class="ttc" id="astructHistoricoData_html_af7fdead2a20a957e5add573395fa21a4"><div class="ttname"><a href="structHistoricoData.html#af7fdead2a20a957e5add573395fa21a4">HistoricoData::id</a></div><div class="ttdeci">int id</div><div class="ttdoc">Chave primária do evento.</div><div class="ttdef"><b>Definição</b> <a href="os__model_8h_source.html#l00047">os_model.h:47</a></div></div>
+<div class="ttc" id="astructOSData_html"><div class="ttname"><a href="structOSData.html">OSData</a></div><div class="ttdoc">Representa um registro único de Ordem de Serviço.</div><div class="ttdef"><b>Definição</b> <a href="os__model_8h_source.html#l00016">os_model.h:16</a></div></div>
+<div class="ttc" id="astructOSData_html_a1d3482cb6ff964e0b0655dca9ea73e40"><div class="ttname"><a href="structOSData.html#a1d3482cb6ff964e0b0655dca9ea73e40">OSData::contato</a></div><div class="ttdeci">QString contato</div><div class="ttdoc">Telefone, e-mail ou outro contato.</div><div class="ttdef"><b>Definição</b> <a href="os__model_8h_source.html#l00022">os_model.h:22</a></div></div>
+<div class="ttc" id="astructOSData_html_a442258eb8d12c60ad94e856ef340d7e2"><div class="ttname"><a href="structOSData.html#a442258eb8d12c60ad94e856ef340d7e2">OSData::id</a></div><div class="ttdeci">int id</div><div class="ttdoc">Chave primária da ordem de serviço.</div><div class="ttdef"><b>Definição</b> <a href="os__model_8h_source.html#l00018">os_model.h:18</a></div></div>
+<div class="ttc" id="astructOSData_html_a5d2521eebdadfdf58dc9b77ac7da173e"><div class="ttname"><a href="structOSData.html#a5d2521eebdadfdf58dc9b77ac7da173e">OSData::material</a></div><div class="ttdeci">QString material</div><div class="ttdoc">Material escolhido pelo cliente.</div><div class="ttdef"><b>Definição</b> <a href="os__model_8h_source.html#l00028">os_model.h:28</a></div></div>
+<div class="ttc" id="astructOSData_html_aa946424cd35e28dd2c60ea43e99c61bd"><div class="ttname"><a href="structOSData.html#aa946424cd35e28dd2c60ea43e99c61bd">OSData::prazo</a></div><div class="ttdeci">QString prazo</div><div class="ttdoc">Data prevista de entrega no formato ISO.</div><div class="ttdef"><b>Definição</b> <a href="os__model_8h_source.html#l00030">os_model.h:30</a></div></div>
+<div class="ttc" id="astructOSData_html_ab3ae999aaa4d67c7f0a79d6cceafa826"><div class="ttname"><a href="structOSData.html#ab3ae999aaa4d67c7f0a79d6cceafa826">OSData::dificuldade</a></div><div class="ttdeci">QString dificuldade</div><div class="ttdoc">Nível de dificuldade estimado.</div><div class="ttdef"><b>Definição</b> <a href="os__model_8h_source.html#l00036">os_model.h:36</a></div></div>
+<div class="ttc" id="astructOSData_html_abd64de056f1b97223bbee4b0b75a795f"><div class="ttname"><a href="structOSData.html#abd64de056f1b97223bbee4b0b75a795f">OSData::descricao</a></div><div class="ttdeci">QString descricao</div><div class="ttdoc">Descrição do serviço contratado.</div><div class="ttdef"><b>Definição</b> <a href="os__model_8h_source.html#l00024">os_model.h:24</a></div></div>
+<div class="ttc" id="astructOSData_html_adebdedab567da0afb533bf8b6ac0787d"><div class="ttname"><a href="structOSData.html#adebdedab567da0afb533bf8b6ac0787d">OSData::status</a></div><div class="ttdeci">QString status</div><div class="ttdoc">Estado atual da ordem de serviço.</div><div class="ttdef"><b>Definição</b> <a href="os__model_8h_source.html#l00032">os_model.h:32</a></div></div>
+<div class="ttc" id="astructOSData_html_ae0be4376eabe0123dd85e591dcbd5924"><div class="ttname"><a href="structOSData.html#ae0be4376eabe0123dd85e591dcbd5924">OSData::cliente</a></div><div class="ttdeci">QString cliente</div><div class="ttdoc">Nome do cliente solicitante.</div><div class="ttdef"><b>Definição</b> <a href="os__model_8h_source.html#l00020">os_model.h:20</a></div></div>
+<div class="ttc" id="astructOSData_html_ae1ea6cd9db6950de0880db5ecbd23b40"><div class="ttname"><a href="structOSData.html#ae1ea6cd9db6950de0880db5ecbd23b40">OSData::prioridade</a></div><div class="ttdeci">QString prioridade</div><div class="ttdoc">Prioridade operacional.</div><div class="ttdef"><b>Definição</b> <a href="os__model_8h_source.html#l00034">os_model.h:34</a></div></div>
+<div class="ttc" id="astructOSData_html_af8008c6fde01ad2320dab113a7ebd0f4"><div class="ttname"><a href="structOSData.html#af8008c6fde01ad2320dab113a7ebd0f4">OSData::medidas</a></div><div class="ttdeci">QString medidas</div><div class="ttdoc">Medidas informadas para produção.</div><div class="ttdef"><b>Definição</b> <a href="os__model_8h_source.html#l00026">os_model.h:26</a></div></div>
+<div class="ttc" id="astructOSData_html_af91d8aeb8d179597d6548eb70f3f0f70"><div class="ttname"><a href="structOSData.html#af91d8aeb8d179597d6548eb70f3f0f70">OSData::dataAbertura</a></div><div class="ttdeci">QString dataAbertura</div><div class="ttdoc">Data de abertura no formato ISO.</div><div class="ttdef"><b>Definição</b> <a href="os__model_8h_source.html#l00038">os_model.h:38</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-</div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="dir_09e761304027c904456130627fd4dcf5.html">includes</a></li><li class="navelem"><a href="os__model_8h.html">os_model.h</a></li>
-    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+    <li class="navelem"><a class="el" href="dir_09e761304027c904456130627fd4dcf5.html">includes</a></li><li class="navelem"><a class="el" href="os__model_8h.html">os_model.h</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

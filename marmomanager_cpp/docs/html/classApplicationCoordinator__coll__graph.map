@@ -1,0 +1,5 @@
+<map id="ApplicationCoordinator" name="ApplicationCoordinator">
+<area shape="rect" id="Node000001" title="Ponto de entrada da camada de apresentação." alt="" coords="5,119,193,204"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="66,5,133,71"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="102,85,102,119,97,119,97,85"/>
+</map>

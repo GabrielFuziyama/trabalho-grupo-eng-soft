@@ -4,17 +4,16 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MarmoManager: Arquitetura e Diagrama de Classes</title>
+<title>MarmoManager: MarmoManager 1.1</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<script type="text/javascript" src="clipboard.js"></script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="navtreedata.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript" src="cookie.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -31,29 +30,30 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MarmoManager<span id="projectnumber">&#160;1.0</span>
+   <div id="projectname">MarmoManager<span id="projectnumber">&#160;1.1</span>
    </div>
-   <div id="projectbrief">Sistema em C++ e Qt de Gerenciamento de Ordens de Serviço</div>
+   <div id="projectbrief">Sistema em C++/Qt para gerenciamento de ordens de serviço</div>
   </td>
  </tr>
  </tbody>
 </table>
 </div>
 <!-- end header part -->
-<!-- Gerado por Doxygen 1.16.1 -->
+<!-- Gerado por Doxygen 1.9.8 -->
 <script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "search/",'.html');
-</script>
-<script type="text/javascript">
-$(function() { codefold.init(); });
+/* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
-  initMenu('',true,false,'search.php','Localizar',true);
-  $(function() { init_search(); });
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
 });
+/* @license-end */
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
@@ -63,14 +63,15 @@ $(function() {
       <div id="nav-sync" class="sync"></div>
     </div>
   </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
+  <div id="splitbar" style="-moz-user-select:none;"
        class="ui-resizable-handle">
   </div>
 </div>
 <script type="text/javascript">
-$(function(){initNavTree('index.html','',''); });
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('index.html',''); initResizable(); });
+/* @license-end */
 </script>
-<div id="container">
 <div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -94,98 +95,45 @@ $(function(){initNavTree('index.html','',''); });
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">Arquitetura e Diagrama de Classes </div></div>
+  <div class="headertitle"><div class="title">MarmoManager 1.1 </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2 class="doxsection"><a class="anchor" id="autotoc_md0"></a>
-Visão Geral do Sistema MarmoManager</h2>
-<p>O MarmoManager foi reescrito em <b>C++</b> sob rigorosos Padrões de Projeto e separação em camadas (MVC). Como o sistema gráfico C++ não possui dependências nativas como o Graphviz, nós preparamos abaixo um diagrama fluido, vetorial e interativo desenhado via <b>Mermaid.js</b>, que detalha perfeitamente a Hierarquia de Classes e os Padrões Arquiteturais:</p>
-<p> 
-<div class="mermaid">
-classDiagram
-    class Database {
-        <<Singleton>>
-        -QString m_dbName
-        -QSqlDatabase m_db
-        -Database()
-        +getInstance() Database$
-        +getConnection() QSqlDatabase
-        +initDb() void
-    }
-
-    class OSRepository {
-        <<DAO / Model>>
-        +create(...) int
-        +updateStatus(...) void
-        +fetchAll(...) QVector~OSData~
-    }
-
-    class HistoricoRepository {
-        <<DAO / Model>>
-        +create(...) void
-        +getByOsId(...) QVector~HistoricoData~
-    }
-
-    class OSController {
-        <<Controller>>
-        -OSRepository m_osRepo
-        -HistoricoRepository m_histRepo
-        +cadastrarOS(...) int
-        +atualizarStatusOS(...) void
-        +listarOS(...) QVector~OSData~
-        +obterHistorico(...) QVector~HistoricoData~
-    }
-
-    class QMainWindow {
-        <<Qt5>>
-    }
-
-    class QDialog {
-        <<Qt5>>
-    }
-
-    class MarmoManagerApp {
-        <<View>>
-        -OSController m_controller
-        +salvarOS()
-        +loadOSData()
-        +atualizarStatus()
-    }
-
-    class StatusHistoryDialog {
-        <<View>>
-        -OSController* m_controller
-        +loadHistory()
-    }
-
-    %% Hierarquia de Herança do Qt
-    QMainWindow <|-- MarmoManagerApp : Herda
-    QDialog <|-- StatusHistoryDialog : Herda
-
-    %% Relações de Composição e Uso (MVC)
-    MarmoManagerApp --> OSController : Comunica
-    StatusHistoryDialog --> OSController : Comunica
-    
-    OSController *-- OSRepository : Instancia
-    OSController *-- HistoricoRepository : Instancia
-
-    %% Uso do Singleton
-    OSRepository ..> Database : Usa (Singleton)
-    HistoricoRepository ..> Database : Usa (Singleton)
-</div>
-</p>
-<h3 class="doxsection"><a class="anchor" id="autotoc_md1"></a>
-Componentização</h3>
-<p>Toda a lógica de Controllers e Repositories (Model) é compilada como uma biblioteca dinâmica (<span class="tt">libmarmocore.so</span>). As Views (<span class="tt"><a class="el" href="classMarmoManagerApp.html" title="Classe principal de Interface Gráfica (View) para a aplicação.">MarmoManagerApp</a></span> e <span class="tt"><a class="el" href="classStatusHistoryDialog.html" title="Dialog (janela modal) para exibir o histórico da OS.">StatusHistoryDialog</a></span>) são empacotadas no executável final e apenas consomem a biblioteca dinâmica. </p>
+<div class="textblock"><h1><a class="anchor" id="overview"></a>
+Visão geral</h1>
+<p>O MarmoManager é uma aplicação desktop em C++17, Qt 5 e SQLite para cadastrar, consultar e acompanhar ordens de serviço de uma marmoraria. O acesso exige autenticação e distingue o perfil master dos usuários padrão.</p>
+<h1><a class="anchor" id="architecture"></a>
+Arquitetura em três camadas</h1>
+<p>Cada camada é compilada como um componente compartilhado independente. No Linux os componentes usam a extensão <code>.so</code>; no Windows, a mesma configuração CMake produz <code>.dll</code>.</p>
+<div class="dotgraph">
+<iframe scrolling="no" frameborder="0" src="dot_inline_dotgraph_1.svg" width="1371" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<ul>
+<li><b>Apresentação:</b> <code><a class="el" href="classApplicationCoordinator.html" title="Ponto de entrada da camada de apresentação.">ApplicationCoordinator</a></code>, <code><a class="el" href="classLoginDialog.html" title="Captura credenciais e apresenta o resultado seguro da autenticação.">LoginDialog</a></code>, <code><a class="el" href="classMarmoManagerApp.html" title="Classe principal de Interface Gráfica (View) para a aplicação.">MarmoManagerApp</a></code> e <code><a class="el" href="classStatusHistoryDialog.html" title="Dialog (janela modal) para exibir o histórico da OS.">StatusHistoryDialog</a></code>. Conhece somente contratos e controladores.</li>
+<li><b>Lógica de negócios:</b> <code><a class="el" href="classApplicationController.html" title="Expõe à apresentação as operações de ciclo de vida da aplicação.">ApplicationController</a></code>, <code><a class="el" href="classAuthController.html" title="Serviço da camada de negócios para controle de acesso.">AuthController</a></code> e <code><a class="el" href="classOSController.html" title="Classe Controller na arquitetura MVC.">OSController</a></code>. Valida entrada, aplica autorização e coordena casos de uso.</li>
+<li><b>Acesso a dados:</b> <code><a class="el" href="classDatabase.html" title="Classe Singleton para gerenciar a conexão com o banco de dados SQLite.">Database</a></code>, repositórios e <code><a class="el" href="classPasswordHasher.html" title="Utilitário sem estado para hash de senha com salt aleatório.">PasswordHasher</a></code>. É o único componente que executa SQL ou conhece hashes persistidos.</li>
+</ul>
+<p>Os controladores usam implementação encapsulada para que seus cabeçalhos não exponham DAOs. O executável inclui apenas a fachada da apresentação.</p>
+<h1><a class="anchor" id="database"></a>
+Banco relacional</h1>
+<p>O SQLite mantém as tabelas <code>usuarios</code>, <code>os</code> e <code>historico_os</code>. Há chaves primárias, unicidade do nome de usuário, chave estrangeira do histórico para a OS e restrições para perfil e estado ativo. A criação e as migrações são idempotentes em <a class="el" href="classDatabase.html#a6747ce1b1f980cd917c9c006545e2b2a" title="Inicializa o banco de dados criando as tabelas necessárias.">Database::initDb()</a>.</p>
+<h1><a class="anchor" id="security"></a>
+Autenticação</h1>
+<p>As senhas nunca são gravadas em texto puro. <a class="el" href="classPasswordHasher.html" title="Utilitário sem estado para hash de senha com salt aleatório.">PasswordHasher</a> cria salt aleatório e deriva um digest SHA-256 iterado. Apenas um master pode existir; ele gerencia usuários padrão, enquanto cada usuário pode alterar a própria senha.</p>
+<h1><a class="anchor" id="testing"></a>
+Testes automatizados</h1>
+<ul>
+<li><code>CoreTests</code>: regras e persistência;</li>
+<li><code>GuiTests</code>: cadastro e consulta de OS;</li>
+<li><code>LoginGuiTests</code>: comportamento funcional da tela de login;</li>
+<li><code>AcceptanceBDDTests</code>: cenários Dado/Quando/Então correspondentes aos arquivos Gherkin em <code>tests/acceptance/features</code>.</li>
+</ul>
+<p>Todos são registrados no CTest e executados por <code>make test</code>. </p>
 </div></div><!-- PageDoc -->
-<a href="doxygen_crawl.html"></a>
 </div><!-- contents -->
 </div><!-- doc-content -->
-</div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

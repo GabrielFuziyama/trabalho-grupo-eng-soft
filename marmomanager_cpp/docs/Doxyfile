@@ -1,56 +1,51 @@
-# Doxyfile Completo e Configurado para o MarmoManager (C++)
-
 PROJECT_NAME           = "MarmoManager"
-PROJECT_NUMBER         = "1.0"
-PROJECT_BRIEF          = "Sistema em C++ e Qt de Gerenciamento de Ordens de Serviço"
+PROJECT_NUMBER         = "1.1"
+PROJECT_BRIEF          = "Sistema em C++/Qt para gerenciamento de ordens de serviço"
 
-# Define que a saída será gerada na pasta atual (docs/)
 OUTPUT_DIRECTORY       = .
-
-# Idioma da documentação
 OUTPUT_LANGUAGE        = Portuguese
 
-# Extrair todas as classes e funções (incluindo privadas e estáticas)
-EXTRACT_ALL            = YES
-EXTRACT_PRIVATE        = YES
-EXTRACT_STATIC         = YES
-
-# Permitir a visualização do código-fonte (.cpp) na documentação
-SOURCE_BROWSER         = YES
-
-# Diretórios onde o Doxygen vai procurar os arquivos .h e .cpp
-INPUT                  = ../includes ../src ../tests mainpage.dox
-
-# Procurar recursivamente dentro das pastas INPUT
+INPUT                  = ../includes ../src mainpage.dox
 RECURSIVE              = YES
+FILE_PATTERNS          = *.h *.cpp *.dox
+EXCLUDE_PATTERNS       = */build/* */docs/html/*
 
-# Habilitar saída HTML com menu lateral e barra de busca
+EXTRACT_ALL            = NO
+EXTRACT_PRIVATE        = NO
+EXTRACT_STATIC         = NO
+HIDE_UNDOC_MEMBERS     = NO
+HIDE_UNDOC_CLASSES     = NO
+JAVADOC_AUTOBRIEF      = YES
+QT_AUTOBRIEF           = YES
+
+WARNINGS               = YES
+WARN_IF_UNDOCUMENTED   = YES
+WARN_IF_DOC_ERROR      = YES
+WARN_NO_PARAMDOC       = YES
+
+SOURCE_BROWSER         = YES
+INLINE_SOURCES         = NO
+REFERENCED_BY_RELATION = YES
+REFERENCES_RELATION    = YES
+
 GENERATE_HTML          = YES
 HTML_OUTPUT            = html
 GENERATE_TREEVIEW      = YES
 SEARCHENGINE           = YES
+HTML_HEADER            = header.html
 
-# Desabilitar saída LATEX (Pdf) para focar apenas no HTML e deixar a compilação mais rápida
 GENERATE_LATEX         = NO
 HAVE_DOT               = YES
 UML_LOOK               = YES
+UML_LIMIT_NUM_FIELDS   = 50
 CLASS_GRAPH            = YES
 COLLABORATION_GRAPH    = YES
-INCLUDE_GRAPH          = YES
-
-# Custom HTML header for Mermaid.js support
-HTML_HEADER            = header.html
-
-# Mostrar todos os atributos e métodos nos diagramas UML
-UML_LIMIT_NUM_FIELDS   = 50
-
-# Grafos estendidos (Caixas e setas)
 TEMPLATE_RELATIONS     = YES
+INCLUDE_GRAPH          = YES
 INCLUDED_BY_GRAPH      = YES
-CALL_GRAPH             = YES
-CALLER_GRAPH           = YES
+CALL_GRAPH             = NO
+CALLER_GRAPH           = NO
 DIRECTORY_GRAPH        = YES
 DOT_IMAGE_FORMAT       = svg
 INTERACTIVE_SVG        = YES
 MAX_DOT_GRAPH_DEPTH    = 0
-DOT_TRANSPARENT        = YES

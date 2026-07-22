@@ -4,6 +4,7 @@
 #include <QPushButton>
 
 #include "main_window.h"
+#include "auth_controller.h"
 #include "database.h"
 
 class TestGUI: public QObject
@@ -19,6 +20,7 @@ private slots:
     
     void testConsultarOrdensDeServicoPorNomeDoCliente_data();
     void testConsultarOrdensDeServicoPorNomeDoCliente();
+    void testPermissoesVisuaisPorPerfil();
 
     void timeOutMsgBox();
 
@@ -30,10 +32,30 @@ private:
 
 void TestGUI::initTestCase() {
     // Setup test database
+    QFile::remove("test_marmomanager_gui.db");
     Database::getInstance().setDbName("test_marmomanager_gui.db");
     Database::getInstance().initDb();
     
     app = new MarmoManagerApp();
+}
+
+void TestGUI::testPermissoesVisuaisPorPerfil() {
+    AuthController auth;
+    const UserData master = auth.authenticate("master", "Master@123").user;
+    const int id = auth.createStandardUser(
+        master, "Operador GUI", "operador.gui", "Operador123", "Operador123");
+    QVERIFY(id > 0);
+    const UserData standard = auth.authenticate("operador.gui", "Operador123").user;
+
+    MarmoManagerApp masterWindow(master);
+    QVERIFY(masterWindow.m_tabs->indexOf(masterWindow.m_tabUsuarios) >= 0);
+    QCOMPARE(masterWindow.m_updateResponsavel->text(), master.nome);
+    QVERIFY(masterWindow.m_updateResponsavel->isReadOnly());
+
+    MarmoManagerApp standardWindow(standard);
+    QCOMPARE(standardWindow.m_tabs->indexOf(standardWindow.m_tabUsuarios), -1);
+    QCOMPARE(standardWindow.m_updateResponsavel->text(), standard.nome);
+    QVERIFY(standardWindow.m_updateResponsavel->isReadOnly());
 }
 
 void TestGUI::cleanupTestCase() {

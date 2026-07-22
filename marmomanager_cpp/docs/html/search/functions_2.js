@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['database_0',['Database',['../classDatabase.html#a4703c80e6969d33565ea340f768fdadf',1,'Database::Database()'],['../classDatabase.html#a83f8b6d2941a4aee50f225e08e97291c',1,'Database::Database(const Database &amp;)=delete']]]
+  ['fetchall_0',['fetchall',['../classOSRepository.html#af02690680d93fe471b48a07ac58587a4',1,'OSRepository::fetchAll()'],['../classUserRepository.html#adcf15f7bc6c25ff6e8f1dbce2807a4d3',1,'UserRepository::fetchAll() const']]],
+  ['findbyid_1',['findById',['../classUserRepository.html#ae18d18ed35ca153cfc9f3f9b4c034a66',1,'UserRepository']]]
 ];

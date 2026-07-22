@@ -1,9 +1,5 @@
 var searchData=
 [
-  ['historico_5frepository_2ecpp_0',['historico_repository.cpp',['../historico__repository_8cpp.html',1,'']]],
-  ['historico_5frepository_2eh_1',['historico_repository.h',['../historico__repository_8h.html',1,'']]],
-  ['historicodata_2',['HistoricoData',['../structHistoricoData.html',1,'']]],
-  ['historicorepository_3',['HistoricoRepository',['../classHistoricoRepository.html',1,'HistoricoRepository'],['../classHistoricoRepository.html#af6f0680358a4e5da74efc6f81e243ffc',1,'HistoricoRepository::HistoricoRepository()']]],
-  ['history_5fdialog_2ecpp_4',['history_dialog.cpp',['../history__dialog_8cpp.html',1,'']]],
-  ['history_5fdialog_2eh_5',['history_dialog.h',['../history__dialog_8h.html',1,'']]]
+  ['fetchall_0',['fetchall',['../classOSRepository.html#af02690680d93fe471b48a07ac58587a4',1,'OSRepository::fetchAll()'],['../classUserRepository.html#adcf15f7bc6c25ff6e8f1dbce2807a4d3',1,'UserRepository::fetchAll() const']]],
+  ['findbyid_1',['findById',['../classUserRepository.html#ae18d18ed35ca153cfc9f3f9b4c034a66',1,'UserRepository']]]
 ];

@@ -1,9 +1,7 @@
-<map id="/home/arthurteixeira/Músicas/trabalho&#45;grupo&#45;eng&#45;soft/trabalho&#45;grupo&#45;eng&#45;soft/marmomanager_cpp/src/ui/main_window.h" name="/home/arthurteixeira/Músicas/trabalho&#45;grupo&#45;eng&#45;soft/trabalho&#45;grupo&#45;eng&#45;soft/marmomanager_cpp/src/ui/main_window.h">
-<area shape="rect" id="Node000001" title="Cabeçalho para a view principal MarmoManagerApp." alt="" coords="224,5,418,96"/>
-<area shape="rect" id="Node000002" href="$main_8cpp.html" title=" " alt="" coords="5,144,200,235"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="239,103,176,146,173,141,235,106"/>
-<area shape="rect" id="Node000003" href="$main__window_8cpp.html" title=" " alt="" coords="224,144,418,235"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="323,110,323,145,319,142,319,114"/>
-<area shape="rect" id="Node000004" href="$test__func__gui_8cpp.html" title=" " alt="" coords="443,144,637,235"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="406,102,471,143,465,143,405,107"/>
+<map id="/home/daniel/Área de trabalho/Engenharia_1/Sprint1&#45;Grupo/marmomanager_cpp/src/ui/main_window.h" name="/home/daniel/Área de trabalho/Engenharia_1/Sprint1&#45;Grupo/marmomanager_cpp/src/ui/main_window.h">
+<area shape="rect" id="Node000001" title="Cabeçalho para a view principal MarmoManagerApp." alt="" coords="163,5,403,75"/>
+<area shape="rect" id="Node000002" href="$application__coordinator_8cpp_source.html" title=" " alt="" coords="5,123,280,192"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="233,86,186,124,182,120,230,81"/>
+<area shape="rect" id="Node000003" href="$main__window_8cpp_source.html" title=" " alt="" coords="304,123,544,192"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="336,81,384,120,381,124,333,86"/>
 </map>

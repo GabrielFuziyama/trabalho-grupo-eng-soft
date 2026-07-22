@@ -1,0 +1,7 @@
+<map id="Representação gráfica da hiearquia da classe" name="Representação gráfica da hiearquia da classe">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,31,80,56"/>
+<area shape="rect" id="Node000001" href="$classLoginDialog.html" title="Captura credenciais e apresenta o resultado seguro da autenticação." alt="" coords="155,5,253,31"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="93,33,154,23,155,28,94,38"/>
+<area shape="rect" id="Node000002" href="$classStatusHistoryDialog.html" title="Dialog (janela modal) para exibir o histórico da OS." alt="" coords="128,55,280,80"/>
+<area shape="poly" id="edge2_Node000000_Node000002" title=" " alt="" coords="94,48,128,53,128,59,93,53"/>
+</map>

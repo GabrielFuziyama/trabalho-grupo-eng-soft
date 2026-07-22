@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['marmomanagerapp_0',['MarmoManagerApp',['../classMarmoManagerApp.html',1,'']]]
+  ['historicodata_0',['HistoricoData',['../structHistoricoData.html',1,'']]],
+  ['historicorepository_1',['HistoricoRepository',['../classHistoricoRepository.html',1,'']]]
 ];

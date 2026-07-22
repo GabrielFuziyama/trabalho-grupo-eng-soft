@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['listaros_0',['listarOS',['../classOSController.html#afd1d011ebad47d2bc7f358c4ef8120b9',1,'OSController']]],
-  ['loadhistory_1',['loadHistory',['../classStatusHistoryDialog.html#abbb9fb2b136a1eaf38d7dd82de2ff051',1,'StatusHistoryDialog']]],
-  ['loadosdata_2',['loadOSData',['../classMarmoManagerApp.html#a980978dc7049dfaddeed39eb809219e8',1,'MarmoManagerApp']]]
+  ['marmomanagerapp_0',['marmomanagerapp',['../classMarmoManagerApp.html#a43323a0e85c1887feb435874b2bcc055',1,'MarmoManagerApp::MarmoManagerApp(QWidget *parent=nullptr)'],['../classMarmoManagerApp.html#af9a9405758838121877d551f46bb7ae3',1,'MarmoManagerApp::MarmoManagerApp(const UserData &amp;authenticatedUser, QWidget *parent=nullptr)']]]
 ];

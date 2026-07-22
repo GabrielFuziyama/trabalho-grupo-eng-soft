@@ -1,0 +1,15 @@
+<map id="/home/daniel/Área de trabalho/Engenharia_1/Sprint1&#45;Grupo/marmomanager_cpp/src/ui/login_dialog.h" name="/home/daniel/Área de trabalho/Engenharia_1/Sprint1&#45;Grupo/marmomanager_cpp/src/ui/login_dialog.h">
+<area shape="rect" id="Node000001" title="Tela modal de autenticação do MarmoManager." alt="" coords="122,5,362,75"/>
+<area shape="rect" id="Node000002" href="$auth__controller_8h.html" title="Regras de negócio de autenticação, autorização e usuários." alt="" coords="114,123,245,148"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="222,76,197,113,193,110,217,73"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="269,123,343,148"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="267,73,292,110,288,113,263,76"/>
+<area shape="rect" id="Node000003" href="$user__model_8h.html" title="Contratos de dados compartilhados para autenticação e sessão." alt="" coords="5,196,116,221"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="162,150,93,191,91,186,159,146"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="141,196,218,221"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="182,148,182,182,177,182,177,148"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="243,196,316,221"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="197,146,253,186,250,190,194,150"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="25,269,96,295"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="63,222,63,256,58,256,58,222"/>
+</map>

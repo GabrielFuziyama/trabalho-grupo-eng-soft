@@ -1,0 +1,11 @@
+<map id="/home/daniel/Área de trabalho/Engenharia_1/Sprint1&#45;Grupo/marmomanager_cpp/includes/auth_controller.h" name="/home/daniel/Área de trabalho/Engenharia_1/Sprint1&#45;Grupo/marmomanager_cpp/includes/auth_controller.h">
+<area shape="rect" id="Node000001" title="Regras de negócio de autenticação, autorização e usuários." alt="" coords="59,5,299,75"/>
+<area shape="rect" id="Node000002" href="$user__model_8h.html" title="Contratos de dados compartilhados para autenticação e sessão." alt="" coords="5,123,116,148"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="138,77,88,116,85,112,135,73"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="141,123,218,148"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="182,75,182,109,177,109,177,75"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="243,123,316,148"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="217,73,259,111,255,115,214,77"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="25,196,96,221"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="63,148,63,182,58,182,58,148"/>
+</map>

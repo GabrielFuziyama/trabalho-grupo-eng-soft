@@ -1,87 +1,61 @@
 /**
-\mainpage Arquitetura e Diagrama de Classes
+\mainpage MarmoManager 1.1
 
-## Visão Geral do Sistema MarmoManager
+\section overview Visão geral
 
-O MarmoManager foi reescrito em **C++** sob rigorosos Padrões de Projeto e separação em camadas (MVC). 
-Como o sistema gráfico C++ não possui dependências nativas como o Graphviz, nós preparamos abaixo um diagrama fluido, vetorial e interativo desenhado via **Mermaid.js**, que detalha perfeitamente a Hierarquia de Classes e os Padrões Arquiteturais:
+O MarmoManager é uma aplicação desktop em C++17, Qt 5 e SQLite para cadastrar,
+consultar e acompanhar ordens de serviço de uma marmoraria. O acesso exige
+autenticação e distingue o perfil master dos usuários padrão.
 
-\htmlonly
-<div class="mermaid">
-classDiagram
-    class Database {
-        <<Singleton>>
-        -QString m_dbName
-        -QSqlDatabase m_db
-        -Database()
-        +getInstance() Database$
-        +getConnection() QSqlDatabase
-        +initDb() void
-    }
+\section architecture Arquitetura em três camadas
 
-    class OSRepository {
-        <<DAO / Model>>
-        +create(...) int
-        +updateStatus(...) void
-        +fetchAll(...) QVector~OSData~
-    }
+Cada camada é compilada como um componente compartilhado independente. No
+Linux os componentes usam a extensão `.so`; no Windows, a mesma configuração
+CMake produz `.dll`.
 
-    class HistoricoRepository {
-        <<DAO / Model>>
-        +create(...) void
-        +getByOsId(...) QVector~HistoricoData~
-    }
+\dot
+digraph components {
+    rankdir=LR;
+    node [shape=box];
+    exe [label="marmomanager_app\nExecutável"];
+    ui [label="libmarmomanager_presentation\nApresentação"];
+    business [label="libmarmomanager_business\nLógica de negócios"];
+    data [label="libmarmomanager_data\nAcesso a dados"];
+    sqlite [label="SQLite", shape=cylinder];
+    exe -> ui -> business -> data -> sqlite;
+}
+\enddot
 
-    class OSController {
-        <<Controller>>
-        -OSRepository m_osRepo
-        -HistoricoRepository m_histRepo
-        +cadastrarOS(...) int
-        +atualizarStatusOS(...) void
-        +listarOS(...) QVector~OSData~
-        +obterHistorico(...) QVector~HistoricoData~
-    }
+- **Apresentação:** `ApplicationCoordinator`, `LoginDialog`, `MarmoManagerApp`
+  e `StatusHistoryDialog`. Conhece somente contratos e controladores.
+- **Lógica de negócios:** `ApplicationController`, `AuthController` e
+  `OSController`. Valida entrada, aplica autorização e coordena casos de uso.
+- **Acesso a dados:** `Database`, repositórios e `PasswordHasher`. É o único
+  componente que executa SQL ou conhece hashes persistidos.
 
-    class QMainWindow {
-        <<Qt5>>
-    }
+Os controladores usam implementação encapsulada para que seus cabeçalhos não
+exponham DAOs. O executável inclui apenas a fachada da apresentação.
 
-    class QDialog {
-        <<Qt5>>
-    }
+\section database Banco relacional
 
-    class MarmoManagerApp {
-        <<View>>
-        -OSController m_controller
-        +salvarOS()
-        +loadOSData()
-        +atualizarStatus()
-    }
+O SQLite mantém as tabelas `usuarios`, `os` e `historico_os`. Há chaves
+primárias, unicidade do nome de usuário, chave estrangeira do histórico para a
+OS e restrições para perfil e estado ativo. A criação e as migrações são
+idempotentes em Database::initDb().
 
-    class StatusHistoryDialog {
-        <<View>>
-        -OSController* m_controller
-        +loadHistory()
-    }
+\section security Autenticação
 
-    %% Hierarquia de Herança do Qt
-    QMainWindow <|-- MarmoManagerApp : Herda
-    QDialog <|-- StatusHistoryDialog : Herda
+As senhas nunca são gravadas em texto puro. PasswordHasher cria salt aleatório
+e deriva um digest SHA-256 iterado. Apenas um master pode existir; ele gerencia
+usuários padrão, enquanto cada usuário pode alterar a própria senha.
 
-    %% Relações de Composição e Uso (MVC)
-    MarmoManagerApp --> OSController : Comunica
-    StatusHistoryDialog --> OSController : Comunica
-    
-    OSController *-- OSRepository : Instancia
-    OSController *-- HistoricoRepository : Instancia
+\section testing Testes automatizados
 
-    %% Uso do Singleton
-    OSRepository ..> Database : Usa (Singleton)
-    HistoricoRepository ..> Database : Usa (Singleton)
-</div>
-\endhtmlonly
+- `CoreTests`: regras e persistência;
+- `GuiTests`: cadastro e consulta de OS;
+- `LoginGuiTests`: comportamento funcional da tela de login;
+- `AcceptanceBDDTests`: cenários Dado/Quando/Então correspondentes aos arquivos
+  Gherkin em `tests/acceptance/features`.
 
-### Componentização
-* Toda a lógica de Controllers e Repositories (Model) é compilada como uma biblioteca dinâmica (`libmarmocore.so`).
-* As Views (`MarmoManagerApp` e `StatusHistoryDialog`) são empacotadas no executável final e apenas consomem a biblioteca dinâmica.
+Todos são registrados no CTest e executados por `make test`.
 */

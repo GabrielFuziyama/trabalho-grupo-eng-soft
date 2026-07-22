@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['id_0',['id',['../structOSData.html#a442258eb8d12c60ad94e856ef340d7e2',1,'OSData::id'],['../structHistoricoData.html#af7fdead2a20a957e5add573395fa21a4',1,'HistoricoData::id']]]
+  ['material_0',['material',['../structOSData.html#a5d2521eebdadfdf58dc9b77ac7da173e',1,'OSData']]],
+  ['medidas_1',['medidas',['../structOSData.html#af8008c6fde01ad2320dab113a7ebd0f4',1,'OSData']]],
+  ['message_2',['message',['../structAuthenticationResult.html#a50ef3cc11e0ab669d0afd26f820b55ce',1,'AuthenticationResult']]]
 ];

@@ -17,6 +17,7 @@
 #include <QRadioButton>
 #include <QButtonGroup>
 #include "os_controller.h"
+#include "auth_controller.h"
 
 /**
  * @class MarmoManagerApp
@@ -27,7 +28,22 @@ class MarmoManagerApp : public QMainWindow {
     friend class TestGUI;
 
 public:
-    MarmoManagerApp(QWidget* parent = nullptr);
+    /**
+     * @brief Construtor auxiliar sem sessão, utilizado por testes isolados da view.
+     * @param parent Widget Qt proprietário.
+     */
+    explicit MarmoManagerApp(QWidget* parent = nullptr);
+
+    /**
+     * @brief Cria a janela para um usuário autenticado e aplica seu perfil.
+     * @param authenticatedUser Dados seguros da sessão atual.
+     * @param parent Widget Qt proprietário.
+     */
+    explicit MarmoManagerApp(const UserData& authenticatedUser, QWidget* parent = nullptr);
+
+signals:
+    /** Emitido quando o usuário solicita encerrar somente a sessão atual. */
+    void logoutRequested();
 
 private slots:
     void salvarOS();
@@ -35,19 +51,31 @@ private slots:
     void atualizarStatus();
     void verHistorico();
     void onTabChanged(int index);
+    void cadastrarUsuario();
+    void loadUsers();
+    void alternarUsuarioAtivo();
+    void redefinirSenhaUsuario();
+    void alterarMinhaSenha();
 
 private:
     void setupCadastroTab();
     void setupConsultaTab();
+    void setupUsuariosTab();
+    void setupSessionMenu();
+    void applyUserPermissions();
     void clearCadastroForm();
     int getSelectedOsId() const;
     QString getSelectedOsStatus() const;
+    int getSelectedUserId() const;
 
     OSController m_controller;
+    AuthController m_authController;
+    UserData m_loggedUser;
 
     QTabWidget* m_tabs;
     QWidget* m_tabCadastro;
     QWidget* m_tabConsulta;
+    QWidget* m_tabUsuarios;
 
     // Cadastro form widgets
     QLineEdit* m_cadCliente;
@@ -77,6 +105,13 @@ private:
     QTableWidget* m_osTable;
     QComboBox* m_updateStatusCombo;
     QLineEdit* m_updateResponsavel;
+
+    // Master-only user management widgets
+    QLineEdit* m_userNome;
+    QLineEdit* m_userUsername;
+    QLineEdit* m_userPassword;
+    QLineEdit* m_userPasswordConfirmation;
+    QTableWidget* m_usersTable;
 };
 
 #endif // MAIN_WINDOW_H

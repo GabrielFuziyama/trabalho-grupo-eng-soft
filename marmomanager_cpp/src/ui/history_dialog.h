@@ -18,6 +18,12 @@ class StatusHistoryDialog : public QDialog {
     Q_OBJECT
 
 public:
+    /**
+     * @brief Cria o diálogo e carrega o histórico da ordem indicada.
+     * @param osId Identificador da ordem de serviço.
+     * @param controller Serviço de negócio usado na consulta.
+     * @param parent Widget Qt proprietário do diálogo.
+     */
     StatusHistoryDialog(int osId, OSController* controller, QWidget* parent = nullptr);
 
 private:

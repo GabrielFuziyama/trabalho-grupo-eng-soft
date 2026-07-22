@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['listaros_0',['listarOS',['../classOSController.html#afd1d011ebad47d2bc7f358c4ef8120b9',1,'OSController']]],
-  ['loadhistory_1',['loadHistory',['../classStatusHistoryDialog.html#abbb9fb2b136a1eaf38d7dd82de2ff051',1,'StatusHistoryDialog']]],
-  ['loadosdata_2',['loadOSData',['../classMarmoManagerApp.html#a980978dc7049dfaddeed39eb809219e8',1,'MarmoManagerApp']]]
+  ['hash_0',['hash',['../classPasswordHasher.html#a519ec793b1b3f8914aebeadcee7877e0',1,'PasswordHasher']]],
+  ['historico_5frepository_2eh_1',['historico_repository.h',['../historico__repository_8h.html',1,'']]],
+  ['historicodata_2',['HistoricoData',['../structHistoricoData.html',1,'']]],
+  ['historicorepository_3',['historicorepository',['../classHistoricoRepository.html',1,'HistoricoRepository'],['../classHistoricoRepository.html#af6f0680358a4e5da74efc6f81e243ffc',1,'HistoricoRepository::HistoricoRepository()']]],
+  ['history_5fdialog_2eh_4',['history_dialog.h',['../history__dialog_8h.html',1,'']]]
 ];

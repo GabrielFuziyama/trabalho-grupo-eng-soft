@@ -1,0 +1,176 @@
+<!-- HTML header for doxygen 1.16.1-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MarmoManager: Código-Fonte de /home/daniel/Área de trabalho/Engenharia_1/Sprint1-Grupo/marmomanager_cpp/includes/auth_controller.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true });
+</script>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MarmoManager<span id="projectnumber">&#160;1.1</span>
+   </div>
+   <div id="projectbrief">Sistema em C++/Qt para gerenciamento de ordens de serviço</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;"
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('auth__controller_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">auth_controller.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="auth__controller_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef AUTH_CONTROLLER_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define AUTH_CONTROLLER_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="user__model_8h.html">user_model.h</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;QVector&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">class </span><a class="code hl_class" href="classUserRepository.html">UserRepository</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="};">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="classAuthController.html">   23</a></span><span class="keyword">class </span><a class="code hl_class" href="classAuthController.html">AuthController</a> {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <a class="code hl_function" href="classAuthController.html#a2fb8a6b7e48e7bb8f7e9b52d2560e660">AuthController</a>();</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classAuthController.html#a57a00369a459ab124a31f55c10d35878">   28</a></span>    <a class="code hl_function" href="classAuthController.html#a57a00369a459ab124a31f55c10d35878">~AuthController</a>();</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <a class="code hl_function" href="classAuthController.html#a2fb8a6b7e48e7bb8f7e9b52d2560e660">AuthController</a>(<span class="keyword">const</span> <a class="code hl_class" href="classAuthController.html">AuthController</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <a class="code hl_class" href="classAuthController.html">AuthController</a>&amp; operator=(<span class="keyword">const</span> <a class="code hl_class" href="classAuthController.html">AuthController</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <a class="code hl_struct" href="structAuthenticationResult.html">AuthenticationResult</a> <a class="code hl_function" href="classAuthController.html#a6dc33c277c44d2b6bb39ae1e0bf0a001">authenticate</a>(<span class="keyword">const</span> QString&amp; username, <span class="keyword">const</span> QString&amp; password) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classAuthController.html#a3de0ba95b8ce8f9a5b7c1b3a1c046638">createStandardUser</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structUserData.html">UserData</a>&amp; actor, <span class="keyword">const</span> QString&amp; nome,</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                           <span class="keyword">const</span> QString&amp; username, <span class="keyword">const</span> QString&amp; password,</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                           <span class="keyword">const</span> QString&amp; passwordConfirmation);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classAuthController.html#a38b441addf6010a801fddcad78aa0765">setUserActive</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structUserData.html">UserData</a>&amp; actor, <span class="keywordtype">int</span> userId, <span class="keywordtype">bool</span> active);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classAuthController.html#a521b31d6638a49a7c8dac37af3ae005d">resetUserPassword</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structUserData.html">UserData</a>&amp; actor, <span class="keywordtype">int</span> userId,</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                           <span class="keyword">const</span> QString&amp; newPassword, <span class="keyword">const</span> QString&amp; confirmation);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classAuthController.html#abc9eb1fd5fec1930c974949e453a8ee3">changeOwnPassword</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structUserData.html">UserData</a>&amp; user, <span class="keyword">const</span> QString&amp; currentPassword,</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                           <span class="keyword">const</span> QString&amp; newPassword, <span class="keyword">const</span> QString&amp; confirmation);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    QVector&lt;UserData&gt; <a class="code hl_function" href="classAuthController.html#aa6e9d2ddf87d5865fcdc9f11f07dd8f8">listUsers</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structUserData.html">UserData</a>&amp; actor) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classAuthController.html#a5633e81f0c747f1c785e97cd4786a22d">isUsingInitialMasterPassword</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> requireMaster(<span class="keyword">const</span> <a class="code hl_struct" href="structUserData.html">UserData</a>&amp; actor);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> validatePassword(<span class="keyword">const</span> QString&amp; password, <span class="keyword">const</span> QString&amp; confirmation);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    std::unique_ptr&lt;UserRepository&gt; m_repository;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>};</div>
+</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="preprocessor">#endif </span><span class="comment">// AUTH_CONTROLLER_H</span></div>
+<div class="ttc" id="aclassAuthController_html"><div class="ttname"><a href="classAuthController.html">AuthController</a></div><div class="ttdoc">Serviço da camada de negócios para controle de acesso.</div><div class="ttdef"><b>Definição</b> <a href="auth__controller_8h_source.html#l00023">auth_controller.h:23</a></div></div>
+<div class="ttc" id="aclassAuthController_html_a2fb8a6b7e48e7bb8f7e9b52d2560e660"><div class="ttname"><a href="classAuthController.html#a2fb8a6b7e48e7bb8f7e9b52d2560e660">AuthController::AuthController</a></div><div class="ttdeci">AuthController()</div><div class="ttdoc">Constrói o controlador e sua dependência privada de persistência.</div><div class="ttdef"><b>Definição</b> <a href="auth__controller_8cpp_source.html#l00007">auth_controller.cpp:7</a></div></div>
+<div class="ttc" id="aclassAuthController_html_a38b441addf6010a801fddcad78aa0765"><div class="ttname"><a href="classAuthController.html#a38b441addf6010a801fddcad78aa0765">AuthController::setUserActive</a></div><div class="ttdeci">void setUserActive(const UserData &amp;actor, int userId, bool active)</div><div class="ttdoc">Ativa ou desativa um usuário padrão.</div><div class="ttdef"><b>Definição</b> <a href="auth__controller_8cpp_source.html#l00040">auth_controller.cpp:40</a></div></div>
+<div class="ttc" id="aclassAuthController_html_a3de0ba95b8ce8f9a5b7c1b3a1c046638"><div class="ttname"><a href="classAuthController.html#a3de0ba95b8ce8f9a5b7c1b3a1c046638">AuthController::createStandardUser</a></div><div class="ttdeci">int createStandardUser(const UserData &amp;actor, const QString &amp;nome, const QString &amp;username, const QString &amp;password, const QString &amp;passwordConfirmation)</div><div class="ttdoc">Cadastra um usuário de perfil padrão.</div><div class="ttdef"><b>Definição</b> <a href="auth__controller_8cpp_source.html#l00019">auth_controller.cpp:19</a></div></div>
+<div class="ttc" id="aclassAuthController_html_a521b31d6638a49a7c8dac37af3ae005d"><div class="ttname"><a href="classAuthController.html#a521b31d6638a49a7c8dac37af3ae005d">AuthController::resetUserPassword</a></div><div class="ttdeci">void resetUserPassword(const UserData &amp;actor, int userId, const QString &amp;newPassword, const QString &amp;confirmation)</div><div class="ttdoc">Redefine a senha de um usuário padrão.</div><div class="ttdef"><b>Definição</b> <a href="auth__controller_8cpp_source.html#l00054">auth_controller.cpp:54</a></div></div>
+<div class="ttc" id="aclassAuthController_html_a5633e81f0c747f1c785e97cd4786a22d"><div class="ttname"><a href="classAuthController.html#a5633e81f0c747f1c785e97cd4786a22d">AuthController::isUsingInitialMasterPassword</a></div><div class="ttdeci">bool isUsingInitialMasterPassword() const</div><div class="ttdef"><b>Definição</b> <a href="auth__controller_8cpp_source.html#l00090">auth_controller.cpp:90</a></div></div>
+<div class="ttc" id="aclassAuthController_html_a57a00369a459ab124a31f55c10d35878"><div class="ttname"><a href="classAuthController.html#a57a00369a459ab124a31f55c10d35878">AuthController::~AuthController</a></div><div class="ttdeci">~AuthController()</div><div class="ttdoc">Libera a implementação de persistência encapsulada.</div></div>
+<div class="ttc" id="aclassAuthController_html_a6dc33c277c44d2b6bb39ae1e0bf0a001"><div class="ttname"><a href="classAuthController.html#a6dc33c277c44d2b6bb39ae1e0bf0a001">AuthController::authenticate</a></div><div class="ttdeci">AuthenticationResult authenticate(const QString &amp;username, const QString &amp;password) const</div><div class="ttdoc">Autentica credenciais informadas na tela de login.</div><div class="ttdef"><b>Definição</b> <a href="auth__controller_8cpp_source.html#l00012">auth_controller.cpp:12</a></div></div>
+<div class="ttc" id="aclassAuthController_html_aa6e9d2ddf87d5865fcdc9f11f07dd8f8"><div class="ttname"><a href="classAuthController.html#aa6e9d2ddf87d5865fcdc9f11f07dd8f8">AuthController::listUsers</a></div><div class="ttdeci">QVector&lt; UserData &gt; listUsers(const UserData &amp;actor) const</div><div class="ttdoc">Lista usuários para a área administrativa.</div><div class="ttdef"><b>Definição</b> <a href="auth__controller_8cpp_source.html#l00085">auth_controller.cpp:85</a></div></div>
+<div class="ttc" id="aclassAuthController_html_abc9eb1fd5fec1930c974949e453a8ee3"><div class="ttname"><a href="classAuthController.html#abc9eb1fd5fec1930c974949e453a8ee3">AuthController::changeOwnPassword</a></div><div class="ttdeci">void changeOwnPassword(const UserData &amp;user, const QString &amp;currentPassword, const QString &amp;newPassword, const QString &amp;confirmation)</div><div class="ttdoc">Altera a senha do próprio usuário autenticado.</div><div class="ttdef"><b>Definição</b> <a href="auth__controller_8cpp_source.html#l00070">auth_controller.cpp:70</a></div></div>
+<div class="ttc" id="aclassUserRepository_html"><div class="ttname"><a href="classUserRepository.html">UserRepository</a></div><div class="ttdoc">Encapsula todos os comandos SQL relacionados à tabela usuarios.</div><div class="ttdef"><b>Definição</b> <a href="user__repository_8h_source.html#l00018">user_repository.h:18</a></div></div>
+<div class="ttc" id="astructAuthenticationResult_html"><div class="ttname"><a href="structAuthenticationResult.html">AuthenticationResult</a></div><div class="ttdoc">Resposta completa produzida pela autenticação.</div><div class="ttdef"><b>Definição</b> <a href="user__model_8h_source.html#l00055">user_model.h:55</a></div></div>
+<div class="ttc" id="astructUserData_html"><div class="ttname"><a href="structUserData.html">UserData</a></div><div class="ttdoc">Dados públicos de um usuário, sem informações sensíveis.</div><div class="ttdef"><b>Definição</b> <a href="user__model_8h_source.html#l00015">user_model.h:15</a></div></div>
+<div class="ttc" id="auser__model_8h_html"><div class="ttname"><a href="user__model_8h.html">user_model.h</a></div><div class="ttdoc">Contratos de dados compartilhados para autenticação e sessão.</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_09e761304027c904456130627fd4dcf5.html">includes</a></li><li class="navelem"><a class="el" href="auth__controller_8h.html">auth_controller.h</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

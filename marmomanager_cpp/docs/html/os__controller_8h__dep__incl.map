@@ -1,20 +1,16 @@
-<map id="/home/arthurteixeira/Músicas/trabalho&#45;grupo&#45;eng&#45;soft/trabalho&#45;grupo&#45;eng&#45;soft/marmomanager_cpp/includes/os_controller.h" name="/home/arthurteixeira/Músicas/trabalho&#45;grupo&#45;eng&#45;soft/trabalho&#45;grupo&#45;eng&#45;soft/marmomanager_cpp/includes/os_controller.h">
-<area shape="rect" id="Node000001" title="Cabeçalho da classe OSController." alt="" coords="333,5,528,96"/>
-<area shape="rect" id="Node000002" href="$os__controller_8cpp.html" title=" " alt="" coords="5,144,200,235"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="317,100,202,150,199,145,321,96"/>
-<area shape="rect" id="Node000003" href="$history__dialog_8h.html" title="Cabeçalho para a view StatusHistoryDialog." alt="" coords="224,144,418,235"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="387,107,359,145,355,141,383,110"/>
-<area shape="rect" id="Node000006" href="$main__window_8h.html" title="Cabeçalho para a view principal MarmoManagerApp." alt="" coords="443,144,637,235"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="477,106,507,144,501,143,475,111"/>
-<area shape="rect" id="Node000009" href="$test__core_8cpp.html" title=" " alt="" coords="661,144,856,235"/>
-<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="542,96,663,147,658,148,542,101"/>
-<area shape="rect" id="Node000004" href="$history__dialog_8cpp.html" title=" " alt="" coords="5,283,200,373"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="239,242,176,284,173,280,235,244"/>
-<area shape="rect" id="Node000005" href="$main__window_8cpp.html" title=" " alt="" coords="224,283,418,373"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="323,248,323,283,319,281,319,252"/>
-<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="458,242,394,284,392,280,453,244"/>
-<area shape="rect" id="Node000007" href="$main_8cpp.html" title=" " alt="" coords="443,283,637,373"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="542,248,542,284,538,280,538,252"/>
-<area shape="rect" id="Node000008" href="$test__func__gui_8cpp.html" title=" " alt="" coords="661,283,856,373"/>
-<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="625,240,689,282,684,282,623,246"/>
+<map id="/home/daniel/Área de trabalho/Engenharia_1/Sprint1&#45;Grupo/marmomanager_cpp/includes/os_controller.h" name="/home/daniel/Área de trabalho/Engenharia_1/Sprint1&#45;Grupo/marmomanager_cpp/includes/os_controller.h">
+<area shape="rect" id="Node000001" title="Cabeçalho da classe OSController." alt="" coords="269,5,509,75"/>
+<area shape="rect" id="Node000002" href="$os__controller_8cpp_source.html" title=" " alt="" coords="5,123,245,192"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="301,83,204,125,201,120,299,78"/>
+<area shape="rect" id="Node000003" href="$history__dialog_8h.html" title="Cabeçalho para a view StatusHistoryDialog." alt="" coords="269,123,509,192"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="392,89,392,122,387,122,387,89"/>
+<area shape="rect" id="Node000006" href="$main__window_8h.html" title="Cabeçalho para a view principal MarmoManagerApp." alt="" coords="533,123,773,192"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="480,78,577,120,575,125,478,83"/>
+<area shape="rect" id="Node000004" href="$history__dialog_8cpp_source.html" title=" " alt="" coords="137,240,377,309"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="342,203,298,242,294,238,339,199"/>
+<area shape="rect" id="Node000005" href="$main__window_8cpp_source.html" title=" " alt="" coords="401,240,641,309"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="440,199,484,238,481,242,436,203"/>
+<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="606,203,562,242,558,238,603,199"/>
+<area shape="rect" id="Node000007" href="$application__coordinator_8cpp_source.html" title=" " alt="" coords="665,240,940,309"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="709,198,760,238,757,242,706,203"/>
 </map>

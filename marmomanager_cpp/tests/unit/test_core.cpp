@@ -3,12 +3,16 @@
 #include "os_repository.h"
 #include "historico_repository.h"
 #include "os_controller.h"
+#include "auth_controller.h"
+#include <QSqlQuery>
+#include <QFileInfo>
 class TestCore : public QObject {
     Q_OBJECT
 
 private slots:
     void initTestCase() {
         // Setup in-memory or test database
+        QFile::remove("test_marmomanager_cpp.db");
         Database::getInstance().setDbName("test_marmomanager_cpp.db");
         Database::getInstance().initDb();
     }
@@ -21,6 +25,103 @@ private slots:
         Database& db1 = Database::getInstance();
         Database& db2 = Database::getInstance();
         QCOMPARE(&db1, &db2);
+    }
+
+    void testInitialMasterAuthentication() {
+        AuthController controller;
+        const auto result = controller.authenticate("master", "Master@123");
+        QCOMPARE(result.status, AuthenticationStatus::Success);
+        QVERIFY(result.user.isMaster());
+        QVERIFY(result.user.isAuthenticated());
+
+        const auto invalid = controller.authenticate("master", "senha-incorreta");
+        QCOMPARE(invalid.status, AuthenticationStatus::InvalidCredentials);
+
+        QSqlQuery query(Database::getInstance().getConnection());
+        QVERIFY(query.exec("SELECT senha_hash FROM usuarios WHERE username = 'master'"));
+        QVERIFY(query.next());
+        QVERIFY(query.value(0).toString() != QString("Master@123"));
+        QVERIFY(query.value(0).toString().startsWith("v1$"));
+    }
+
+    void testRelationalDatabaseSchema() {
+        QSqlQuery query(Database::getInstance().getConnection());
+
+        QVERIFY(query.exec("PRAGMA foreign_keys"));
+        QVERIFY(query.next());
+        QCOMPARE(query.value(0).toInt(), 1);
+
+        QVERIFY(query.exec("SELECT name FROM sqlite_master WHERE type = 'table' "
+                           "AND name IN ('usuarios', 'os', 'historico_os')"));
+        int tableCount = 0;
+        while (query.next()) {
+            ++tableCount;
+        }
+        QCOMPARE(tableCount, 3);
+
+        QVERIFY(query.exec("PRAGMA foreign_key_list(historico_os)"));
+        QVERIFY(query.next());
+        QCOMPARE(query.value("table").toString(), QString("os"));
+        QCOMPARE(query.value("from").toString(), QString("os_id"));
+        QCOMPARE(query.value("to").toString(), QString("id"));
+
+        QSqlQuery invalidHistory(Database::getInstance().getConnection());
+        invalidHistory.prepare(
+            "INSERT INTO historico_os (os_id, status_anterior, status_novo, data_alteracao, responsavel) "
+            "VALUES (-999, 'N/A', 'Aberta', '2026-07-22 12:00:00', 'Teste')");
+        QVERIFY(!invalidHistory.exec());
+    }
+
+    void testDatabasePersistsAfterReconnect() {
+        QFileInfo databaseFile("test_marmomanager_cpp.db");
+        QVERIFY(databaseFile.exists());
+        QVERIFY(databaseFile.size() > 0);
+
+        QSqlDatabase connection = Database::getInstance().getConnection();
+        connection.close();
+
+        QSqlDatabase reopened = Database::getInstance().getConnection();
+        QVERIFY(reopened.isOpen());
+        QCOMPARE(reopened.databaseName(), QString("test_marmomanager_cpp.db"));
+
+        QSqlQuery query(reopened);
+        QVERIFY(query.exec("SELECT COUNT(*) FROM usuarios WHERE perfil = 'master'"));
+        QVERIFY(query.next());
+        QCOMPARE(query.value(0).toInt(), 1);
+    }
+
+    void testStandardUserLifecycleAndPermissions() {
+        AuthController controller;
+        const UserData master = controller.authenticate("master", "Master@123").user;
+
+        const int userId = controller.createStandardUser(
+            master, "Funcionário Teste", "func.teste", "Teste123", "Teste123");
+        QVERIFY(userId > 0);
+
+        auto login = controller.authenticate("FUNC.TESTE", "Teste123");
+        QCOMPARE(login.status, AuthenticationStatus::Success);
+        QVERIFY(!login.user.isMaster());
+
+        bool denied = false;
+        try {
+            controller.createStandardUser(login.user, "Outro Usuário", "outro.user", "Teste123", "Teste123");
+        } catch (const std::invalid_argument&) {
+            denied = true;
+        }
+        QVERIFY(denied);
+
+        controller.setUserActive(master, userId, false);
+        QCOMPARE(controller.authenticate("func.teste", "Teste123").status,
+                 AuthenticationStatus::Inactive);
+
+        controller.resetUserPassword(master, userId, "NovaSenha123", "NovaSenha123");
+        controller.setUserActive(master, userId, true);
+        login = controller.authenticate("func.teste", "NovaSenha123");
+        QCOMPARE(login.status, AuthenticationStatus::Success);
+
+        controller.changeOwnPassword(login.user, "NovaSenha123", "SenhaFinal456", "SenhaFinal456");
+        QCOMPARE(controller.authenticate("func.teste", "SenhaFinal456").status,
+                 AuthenticationStatus::Success);
     }
 
     void testCreateOs() {

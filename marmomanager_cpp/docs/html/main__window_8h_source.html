@@ -4,17 +4,16 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MarmoManager: Código-Fonte de /home/arthurteixeira/Músicas/trabalho-grupo-eng-soft/trabalho-grupo-eng-soft/marmomanager_cpp/src/ui/main_window.h</title>
+<title>MarmoManager: Código-Fonte de /home/daniel/Área de trabalho/Engenharia_1/Sprint1-Grupo/marmomanager_cpp/src/ui/main_window.h</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<script type="text/javascript" src="clipboard.js"></script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="navtreedata.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript" src="cookie.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -31,31 +30,37 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MarmoManager<span id="projectnumber">&#160;1.0</span>
+   <div id="projectname">MarmoManager<span id="projectnumber">&#160;1.1</span>
    </div>
-   <div id="projectbrief">Sistema em C++ e Qt de Gerenciamento de Ordens de Serviço</div>
+   <div id="projectbrief">Sistema em C++/Qt para gerenciamento de ordens de serviço</div>
   </td>
  </tr>
  </tbody>
 </table>
 </div>
 <!-- end header part -->
-<!-- Gerado por Doxygen 1.16.1 -->
+<!-- Gerado por Doxygen 1.9.8 -->
 <script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "search/",'.html');
-</script>
-<script type="text/javascript">
-$(function() { codefold.init(); });
+/* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
-  initMenu('',true,false,'search.php','Localizar',true);
-  $(function() { init_search(); });
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
 });
+/* @license-end */
 </script>
 <div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -63,14 +68,15 @@ $(function() {
       <div id="nav-sync" class="sync"></div>
     </div>
   </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
+  <div id="splitbar" style="-moz-user-select:none;"
        class="ui-resizable-handle">
   </div>
 </div>
 <script type="text/javascript">
-$(function(){initNavTree('main__window_8h_source.html','',''); });
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('main__window_8h_source.html',''); initResizable(); });
+/* @license-end */
 </script>
-<div id="container">
 <div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -97,8 +103,7 @@ $(function(){initNavTree('main__window_8h_source.html','',''); });
   <div class="headertitle"><div class="title">main_window.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="main__window_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<a href="main__window_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef MAIN_WINDOW_H</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#define MAIN_WINDOW_H</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
@@ -113,116 +118,106 @@ $(function(){initNavTree('main__window_8h_source.html','',''); });
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;QRadioButton&gt;</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;QButtonGroup&gt;</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &quot;<a class="code" href="os__controller_8h.html">os_controller.h</a>&quot;</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span></div>
-<div class="foldopen" id="foldopen00025" data-start="{" data-end="};">
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="classMarmoManagerApp.html">   25</a></span><span class="keyword">class </span><a class="code hl_function" href="classMarmoManagerApp.html#a43323a0e85c1887feb435874b2bcc055">MarmoManagerApp</a> : <span class="keyword">public</span> QMainWindow {</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    Q_OBJECT</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="classMarmoManagerApp.html#aaaa5381ce4c2b5b1f7917fc534005e88">   27</a></span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_friend" href="classMarmoManagerApp.html#aaaa5381ce4c2b5b1f7917fc534005e88">TestGUI</a>;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <a class="code hl_function" href="classMarmoManagerApp.html#a43323a0e85c1887feb435874b2bcc055">MarmoManagerApp</a>(QWidget* parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">private</span> slots:</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classMarmoManagerApp.html#abe6179ce37dbb78c1dc320a9ce6bb658">salvarOS</a>();</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classMarmoManagerApp.html#a980978dc7049dfaddeed39eb809219e8">loadOSData</a>();</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classMarmoManagerApp.html#ae9274b8e82144862ae92889e0546eaa2">atualizarStatus</a>();</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classMarmoManagerApp.html#af9faa6ff4f367eb34150c48b131f03a0">verHistorico</a>();</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classMarmoManagerApp.html#a10a26a55d69244fde9fb76f14184fdb8">onTabChanged</a>(<span class="keywordtype">int</span> index);</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classMarmoManagerApp.html#aad97cb1b8b318c55b65b8e97fb2c926d">setupCadastroTab</a>();</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classMarmoManagerApp.html#aaa4093f9a540417273a7a5849da18c27">setupConsultaTab</a>();</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classMarmoManagerApp.html#abdb2159fa5062a8a4586def7783ca91d">clearCadastroForm</a>();</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classMarmoManagerApp.html#a871003c283fb550e298bafb52ce14c1a">getSelectedOsId</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    QString <a class="code hl_function" href="classMarmoManagerApp.html#a55126ad8dac77503a4c3eb0741e739cd">getSelectedOsStatus</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classMarmoManagerApp.html#afd73d59a29b6b020a0db3c260e90c196">   46</a></span>    <a class="code hl_class" href="classOSController.html">OSController</a> <a class="code hl_variable" href="classMarmoManagerApp.html#afd73d59a29b6b020a0db3c260e90c196">m_controller</a>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &quot;<a class="code" href="auth__controller_8h.html">auth_controller.h</a>&quot;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="foldopen" id="foldopen00026" data-start="{" data-end="};">
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="classMarmoManagerApp.html">   26</a></span><span class="keyword">class </span><a class="code hl_class" href="classMarmoManagerApp.html">MarmoManagerApp</a> : <span class="keyword">public</span> QMainWindow {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    Q_OBJECT</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keyword">friend</span> <span class="keyword">class </span>TestGUI;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keyword">explicit</span> <a class="code hl_class" href="classMarmoManagerApp.html">MarmoManagerApp</a>(QWidget* parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">explicit</span> <a class="code hl_class" href="classMarmoManagerApp.html">MarmoManagerApp</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structUserData.html">UserData</a>&amp; authenticatedUser, QWidget* parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>signals:</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classMarmoManagerApp.html#a9bc82cc1d02a8c2f3135368308b21ffb">   46</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="classMarmoManagerApp.html#a9bc82cc1d02a8c2f3135368308b21ffb">logoutRequested</a>();</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classMarmoManagerApp.html#a2aa71fccf9c0c2bded6a722a11616165">   48</a></span>    QTabWidget* <a class="code hl_variable" href="classMarmoManagerApp.html#a2aa71fccf9c0c2bded6a722a11616165">m_tabs</a>;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classMarmoManagerApp.html#acd9f6bf80549180494c0a18085c0547f">   49</a></span>    QWidget* <a class="code hl_variable" href="classMarmoManagerApp.html#acd9f6bf80549180494c0a18085c0547f">m_tabCadastro</a>;</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="classMarmoManagerApp.html#a2196fad20c0ffb3eebc1478aa60a61ef">   50</a></span>    QWidget* <a class="code hl_variable" href="classMarmoManagerApp.html#a2196fad20c0ffb3eebc1478aa60a61ef">m_tabConsulta</a>;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="comment">// Cadastro form widgets</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="classMarmoManagerApp.html#a2c58ffb358d3c01ac6c26217df01193c">   53</a></span>    QLineEdit* <a class="code hl_variable" href="classMarmoManagerApp.html#a2c58ffb358d3c01ac6c26217df01193c">m_cadCliente</a>;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classMarmoManagerApp.html#addfc031c02fc58d2463de544217b1ae6">   54</a></span>    QLineEdit* <a class="code hl_variable" href="classMarmoManagerApp.html#addfc031c02fc58d2463de544217b1ae6">m_cadContato</a>;</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="classMarmoManagerApp.html#ac8885e29a66da91cf7e5a77e7ae17b09">   55</a></span>    QTextEdit* <a class="code hl_variable" href="classMarmoManagerApp.html#ac8885e29a66da91cf7e5a77e7ae17b09">m_cadDescricao</a>;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classMarmoManagerApp.html#abc7a8d665aa26cf475803cc8bb080fa3">   56</a></span>    QLineEdit* <a class="code hl_variable" href="classMarmoManagerApp.html#abc7a8d665aa26cf475803cc8bb080fa3">m_cadMedidas</a>;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="classMarmoManagerApp.html#a55e4edd548cb7b3e95bb6431f8465955">   57</a></span>    QLineEdit* <a class="code hl_variable" href="classMarmoManagerApp.html#a55e4edd548cb7b3e95bb6431f8465955">m_cadMaterial</a>;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="classMarmoManagerApp.html#a3309aac1a72c0c23630cf98ea4484d16">   58</a></span>    QDateEdit* <a class="code hl_variable" href="classMarmoManagerApp.html#a3309aac1a72c0c23630cf98ea4484d16">m_cadPrazo</a>;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="classMarmoManagerApp.html#a87ab6463e5ccca0764d5cf3cb3edbf87">   59</a></span>    QComboBox* <a class="code hl_variable" href="classMarmoManagerApp.html#a87ab6463e5ccca0764d5cf3cb3edbf87">m_cadStatus</a>;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="classMarmoManagerApp.html#ac8be6763e1f6cfcb79f984d6b802a347">   61</a></span>    QButtonGroup* <a class="code hl_variable" href="classMarmoManagerApp.html#ac8be6763e1f6cfcb79f984d6b802a347">m_grupoPrioridade</a>;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="classMarmoManagerApp.html#a212159600db5d8713c42aeac509316a9">   62</a></span>    QRadioButton* <a class="code hl_variable" href="classMarmoManagerApp.html#a212159600db5d8713c42aeac509316a9">m_prioAlta</a>;</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="classMarmoManagerApp.html#aa44a3d611e560389c79e2afe429fc712">   63</a></span>    QRadioButton* <a class="code hl_variable" href="classMarmoManagerApp.html#aa44a3d611e560389c79e2afe429fc712">m_prioMedia</a>;</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="classMarmoManagerApp.html#a5fcc3aab889c45f2510266fbd0d44028">   64</a></span>    QRadioButton* <a class="code hl_variable" href="classMarmoManagerApp.html#a5fcc3aab889c45f2510266fbd0d44028">m_prioBaixa</a>;</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="classMarmoManagerApp.html#aef1a624966bec84e3a0db5b82ad958f5">   66</a></span>    QButtonGroup* <a class="code hl_variable" href="classMarmoManagerApp.html#aef1a624966bec84e3a0db5b82ad958f5">m_grupoDificuldade</a>;</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="classMarmoManagerApp.html#adae30c1037c530d8ad948713c7257834">   67</a></span>    QRadioButton* <a class="code hl_variable" href="classMarmoManagerApp.html#adae30c1037c530d8ad948713c7257834">m_difAlta</a>;</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="classMarmoManagerApp.html#afdee46c93ef87fb3548223cdc47189c8">   68</a></span>    QRadioButton* <a class="code hl_variable" href="classMarmoManagerApp.html#afdee46c93ef87fb3548223cdc47189c8">m_difMedia</a>;</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="classMarmoManagerApp.html#ad2bcafb94f5e6e15cbc1b191ff9b3a74">   69</a></span>    QRadioButton* <a class="code hl_variable" href="classMarmoManagerApp.html#ad2bcafb94f5e6e15cbc1b191ff9b3a74">m_difBaixa</a>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="keyword">private</span> slots:</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordtype">void</span> salvarOS();</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordtype">void</span> loadOSData();</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordtype">void</span> atualizarStatus();</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordtype">void</span> verHistorico();</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordtype">void</span> onTabChanged(<span class="keywordtype">int</span> index);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordtype">void</span> cadastrarUsuario();</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordtype">void</span> loadUsers();</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordtype">void</span> alternarUsuarioAtivo();</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordtype">void</span> redefinirSenhaUsuario();</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordtype">void</span> alterarMinhaSenha();</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordtype">void</span> setupCadastroTab();</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordtype">void</span> setupConsultaTab();</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keywordtype">void</span> setupUsuariosTab();</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordtype">void</span> setupSessionMenu();</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordtype">void</span> applyUserPermissions();</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordtype">void</span> clearCadastroForm();</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordtype">int</span> getSelectedOsId() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    QString getSelectedOsStatus() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordtype">int</span> getSelectedUserId() <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="comment">// Consulta form widgets</span></div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="classMarmoManagerApp.html#a778265e67540a03895aab7c69e3f148a">   72</a></span>    QLineEdit* <a class="code hl_variable" href="classMarmoManagerApp.html#a778265e67540a03895aab7c69e3f148a">m_searchInput</a>;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="classMarmoManagerApp.html#a0e4d1a2bed757013ffb48b3ea3c9bf18">   73</a></span>    QComboBox* <a class="code hl_variable" href="classMarmoManagerApp.html#a0e4d1a2bed757013ffb48b3ea3c9bf18">m_searchStatus</a>;</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="classMarmoManagerApp.html#a0fcd0ca1f9b4434499f6891364057c43">   74</a></span>    QCheckBox* <a class="code hl_variable" href="classMarmoManagerApp.html#a0fcd0ca1f9b4434499f6891364057c43">m_searchUseDate</a>;</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="classMarmoManagerApp.html#a909b1d1c7f8aa4a36a26ebd43c695c14">   75</a></span>    QDateEdit* <a class="code hl_variable" href="classMarmoManagerApp.html#a909b1d1c7f8aa4a36a26ebd43c695c14">m_searchDataInicio</a>;</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="classMarmoManagerApp.html#aaf5134e0cefaa2885c02f56cf5c9fcc6">   76</a></span>    QDateEdit* <a class="code hl_variable" href="classMarmoManagerApp.html#aaf5134e0cefaa2885c02f56cf5c9fcc6">m_searchDataFim</a>;</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="classMarmoManagerApp.html#aa8e6f513ebcb72386dc597c94ab1ede5">   77</a></span>    QTableWidget* <a class="code hl_variable" href="classMarmoManagerApp.html#aa8e6f513ebcb72386dc597c94ab1ede5">m_osTable</a>;</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="classMarmoManagerApp.html#abaee48a4cfca02b7efc6d36adc68a662">   78</a></span>    QComboBox* <a class="code hl_variable" href="classMarmoManagerApp.html#abaee48a4cfca02b7efc6d36adc68a662">m_updateStatusCombo</a>;</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="classMarmoManagerApp.html#a71cdd84b1a2d5e2b74d3742f5ddc8d1b">   79</a></span>    QLineEdit* <a class="code hl_variable" href="classMarmoManagerApp.html#a71cdd84b1a2d5e2b74d3742f5ddc8d1b">m_updateResponsavel</a>;</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>};</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <a class="code hl_class" href="classOSController.html">OSController</a> m_controller;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <a class="code hl_class" href="classAuthController.html">AuthController</a> m_authController;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <a class="code hl_struct" href="structUserData.html">UserData</a> m_loggedUser;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    QTabWidget* m_tabs;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    QWidget* m_tabCadastro;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    QWidget* m_tabConsulta;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    QWidget* m_tabUsuarios;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="comment">// Cadastro form widgets</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    QLineEdit* m_cadCliente;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    QLineEdit* m_cadContato;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    QTextEdit* m_cadDescricao;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    QLineEdit* m_cadMedidas;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    QLineEdit* m_cadMaterial;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    QDateEdit* m_cadPrazo;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    QComboBox* m_cadStatus;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    QButtonGroup* m_grupoPrioridade;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    QRadioButton* m_prioAlta;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    QRadioButton* m_prioMedia;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    QRadioButton* m_prioBaixa;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    QButtonGroup* m_grupoDificuldade;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    QRadioButton* m_difAlta;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    QRadioButton* m_difMedia;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    QRadioButton* m_difBaixa;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="comment">// Consulta form widgets</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    QLineEdit* m_searchInput;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    QComboBox* m_searchStatus;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    QCheckBox* m_searchUseDate;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    QDateEdit* m_searchDataInicio;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    QDateEdit* m_searchDataFim;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    QTableWidget* m_osTable;</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    QComboBox* m_updateStatusCombo;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    QLineEdit* m_updateResponsavel;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <span class="comment">// Master-only user management widgets</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    QLineEdit* m_userNome;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    QLineEdit* m_userUsername;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    QLineEdit* m_userPassword;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    QLineEdit* m_userPasswordConfirmation;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    QTableWidget* m_usersTable;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>};</div>
 </div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="preprocessor">#endif </span><span class="comment">// MAIN_WINDOW_H</span></div>
-<div class="ttc" id="aclassMarmoManagerApp_html_a0e4d1a2bed757013ffb48b3ea3c9bf18"><div class="ttname"><a href="classMarmoManagerApp.html#a0e4d1a2bed757013ffb48b3ea3c9bf18">MarmoManagerApp::m_searchStatus</a></div><div class="ttdeci">QComboBox * m_searchStatus</div><div class="ttdef"><b>Definição</b> <a href="#l00073">main_window.h:73</a></div></div>
-<div class="ttc" id="aclassMarmoManagerApp_html_a0fcd0ca1f9b4434499f6891364057c43"><div class="ttname"><a href="classMarmoManagerApp.html#a0fcd0ca1f9b4434499f6891364057c43">MarmoManagerApp::m_searchUseDate</a></div><div class="ttdeci">QCheckBox * m_searchUseDate</div><div class="ttdef"><b>Definição</b> <a href="#l00074">main_window.h:74</a></div></div>
-<div class="ttc" id="aclassMarmoManagerApp_html_a10a26a55d69244fde9fb76f14184fdb8"><div class="ttname"><a href="classMarmoManagerApp.html#a10a26a55d69244fde9fb76f14184fdb8">MarmoManagerApp::onTabChanged</a></div><div class="ttdeci">void onTabChanged(int index)</div><div class="ttdef"><b>Definição</b> <a href="main__window_8cpp_source.html#l00267">main_window.cpp:267</a></div></div>
-<div class="ttc" id="aclassMarmoManagerApp_html_a212159600db5d8713c42aeac509316a9"><div class="ttname"><a href="classMarmoManagerApp.html#a212159600db5d8713c42aeac509316a9">MarmoManagerApp::m_prioAlta</a></div><div class="ttdeci">QRadioButton * m_prioAlta</div><div class="ttdef"><b>Definição</b> <a href="#l00062">main_window.h:62</a></div></div>
-<div class="ttc" id="aclassMarmoManagerApp_html_a2196fad20c0ffb3eebc1478aa60a61ef"><div class="ttname"><a href="classMarmoManagerApp.html#a2196fad20c0ffb3eebc1478aa60a61ef">MarmoManagerApp::m_tabConsulta</a></div><div class="ttdeci">QWidget * m_tabConsulta</div><div class="ttdef"><b>Definição</b> <a href="#l00050">main_window.h:50</a></div></div>
-<div class="ttc" id="aclassMarmoManagerApp_html_a2aa71fccf9c0c2bded6a722a11616165"><div class="ttname"><a href="classMarmoManagerApp.html#a2aa71fccf9c0c2bded6a722a11616165">MarmoManagerApp::m_tabs</a></div><div class="ttdeci">QTabWidget * m_tabs</div><div class="ttdef"><b>Definição</b> <a href="#l00048">main_window.h:48</a></div></div>
-<div class="ttc" id="aclassMarmoManagerApp_html_a2c58ffb358d3c01ac6c26217df01193c"><div class="ttname"><a href="classMarmoManagerApp.html#a2c58ffb358d3c01ac6c26217df01193c">MarmoManagerApp::m_cadCliente</a></div><div class="ttdeci">QLineEdit * m_cadCliente</div><div class="ttdef"><b>Definição</b> <a href="#l00053">main_window.h:53</a></div></div>
-<div class="ttc" id="aclassMarmoManagerApp_html_a3309aac1a72c0c23630cf98ea4484d16"><div class="ttname"><a href="classMarmoManagerApp.html#a3309aac1a72c0c23630cf98ea4484d16">MarmoManagerApp::m_cadPrazo</a></div><div class="ttdeci">QDateEdit * m_cadPrazo</div><div class="ttdef"><b>Definição</b> <a href="#l00058">main_window.h:58</a></div></div>
-<div class="ttc" id="aclassMarmoManagerApp_html_a43323a0e85c1887feb435874b2bcc055"><div class="ttname"><a href="classMarmoManagerApp.html#a43323a0e85c1887feb435874b2bcc055">MarmoManagerApp::MarmoManagerApp</a></div><div class="ttdeci">MarmoManagerApp(QWidget *parent=nullptr)</div><div class="ttdef"><b>Definição</b> <a href="main__window_8cpp_source.html#l00013">main_window.cpp:13</a></div></div>
-<div class="ttc" id="aclassMarmoManagerApp_html_a55126ad8dac77503a4c3eb0741e739cd"><div class="ttname"><a href="classMarmoManagerApp.html#a55126ad8dac77503a4c3eb0741e739cd">MarmoManagerApp::getSelectedOsStatus</a></div><div class="ttdeci">QString getSelectedOsStatus() const</div><div class="ttdef"><b>Definição</b> <a href="main__window_8cpp_source.html#l00228">main_window.cpp:228</a></div></div>
-<div class="ttc" id="aclassMarmoManagerApp_html_a55e4edd548cb7b3e95bb6431f8465955"><div class="ttname"><a href="classMarmoManagerApp.html#a55e4edd548cb7b3e95bb6431f8465955">MarmoManagerApp::m_cadMaterial</a></div><div class="ttdeci">QLineEdit * m_cadMaterial</div><div class="ttdef"><b>Definição</b> <a href="#l00057">main_window.h:57</a></div></div>
-<div class="ttc" id="aclassMarmoManagerApp_html_a5fcc3aab889c45f2510266fbd0d44028"><div class="ttname"><a href="classMarmoManagerApp.html#a5fcc3aab889c45f2510266fbd0d44028">MarmoManagerApp::m_prioBaixa</a></div><div class="ttdeci">QRadioButton * m_prioBaixa</div><div class="ttdef"><b>Definição</b> <a href="#l00064">main_window.h:64</a></div></div>
-<div class="ttc" id="aclassMarmoManagerApp_html_a71cdd84b1a2d5e2b74d3742f5ddc8d1b"><div class="ttname"><a href="classMarmoManagerApp.html#a71cdd84b1a2d5e2b74d3742f5ddc8d1b">MarmoManagerApp::m_updateResponsavel</a></div><div class="ttdeci">QLineEdit * m_updateResponsavel</div><div class="ttdef"><b>Definição</b> <a href="#l00079">main_window.h:79</a></div></div>
-<div class="ttc" id="aclassMarmoManagerApp_html_a778265e67540a03895aab7c69e3f148a"><div class="ttname"><a href="classMarmoManagerApp.html#a778265e67540a03895aab7c69e3f148a">MarmoManagerApp::m_searchInput</a></div><div class="ttdeci">QLineEdit * m_searchInput</div><div class="ttdef"><b>Definição</b> <a href="#l00072">main_window.h:72</a></div></div>
-<div class="ttc" id="aclassMarmoManagerApp_html_a871003c283fb550e298bafb52ce14c1a"><div class="ttname"><a href="classMarmoManagerApp.html#a871003c283fb550e298bafb52ce14c1a">MarmoManagerApp::getSelectedOsId</a></div><div class="ttdeci">int getSelectedOsId() const</div><div class="ttdef"><b>Definição</b> <a href="main__window_8cpp_source.html#l00220">main_window.cpp:220</a></div></div>
-<div class="ttc" id="aclassMarmoManagerApp_html_a87ab6463e5ccca0764d5cf3cb3edbf87"><div class="ttname"><a href="classMarmoManagerApp.html#a87ab6463e5ccca0764d5cf3cb3edbf87">MarmoManagerApp::m_cadStatus</a></div><div class="ttdeci">QComboBox * m_cadStatus</div><div class="ttdef"><b>Definição</b> <a href="#l00059">main_window.h:59</a></div></div>
-<div class="ttc" id="aclassMarmoManagerApp_html_a909b1d1c7f8aa4a36a26ebd43c695c14"><div class="ttname"><a href="classMarmoManagerApp.html#a909b1d1c7f8aa4a36a26ebd43c695c14">MarmoManagerApp::m_searchDataInicio</a></div><div class="ttdeci">QDateEdit * m_searchDataInicio</div><div class="ttdef"><b>Definição</b> <a href="#l00075">main_window.h:75</a></div></div>
-<div class="ttc" id="aclassMarmoManagerApp_html_a980978dc7049dfaddeed39eb809219e8"><div class="ttname"><a href="classMarmoManagerApp.html#a980978dc7049dfaddeed39eb809219e8">MarmoManagerApp::loadOSData</a></div><div class="ttdeci">void loadOSData()</div><div class="ttdef"><b>Definição</b> <a href="main__window_8cpp_source.html#l00191">main_window.cpp:191</a></div></div>
-<div class="ttc" id="aclassMarmoManagerApp_html_aa44a3d611e560389c79e2afe429fc712"><div class="ttname"><a href="classMarmoManagerApp.html#aa44a3d611e560389c79e2afe429fc712">MarmoManagerApp::m_prioMedia</a></div><div class="ttdeci">QRadioButton * m_prioMedia</div><div class="ttdef"><b>Definição</b> <a href="#l00063">main_window.h:63</a></div></div>
-<div class="ttc" id="aclassMarmoManagerApp_html_aa8e6f513ebcb72386dc597c94ab1ede5"><div class="ttname"><a href="classMarmoManagerApp.html#aa8e6f513ebcb72386dc597c94ab1ede5">MarmoManagerApp::m_osTable</a></div><div class="ttdeci">QTableWidget * m_osTable</div><div class="ttdef"><b>Definição</b> <a href="#l00077">main_window.h:77</a></div></div>
-<div class="ttc" id="aclassMarmoManagerApp_html_aaa4093f9a540417273a7a5849da18c27"><div class="ttname"><a href="classMarmoManagerApp.html#aaa4093f9a540417273a7a5849da18c27">MarmoManagerApp::setupConsultaTab</a></div><div class="ttdeci">void setupConsultaTab()</div><div class="ttdef"><b>Definição</b> <a href="main__window_8cpp_source.html#l00126">main_window.cpp:126</a></div></div>
-<div class="ttc" id="aclassMarmoManagerApp_html_aaaa5381ce4c2b5b1f7917fc534005e88"><div class="ttname"><a href="classMarmoManagerApp.html#aaaa5381ce4c2b5b1f7917fc534005e88">MarmoManagerApp::TestGUI</a></div><div class="ttdeci">friend class TestGUI</div><div class="ttdef"><b>Definição</b> <a href="#l00027">main_window.h:27</a></div></div>
-<div class="ttc" id="aclassMarmoManagerApp_html_aad97cb1b8b318c55b65b8e97fb2c926d"><div class="ttname"><a href="classMarmoManagerApp.html#aad97cb1b8b318c55b65b8e97fb2c926d">MarmoManagerApp::setupCadastroTab</a></div><div class="ttdeci">void setupCadastroTab()</div><div class="ttdef"><b>Definição</b> <a href="main__window_8cpp_source.html#l00032">main_window.cpp:32</a></div></div>
-<div class="ttc" id="aclassMarmoManagerApp_html_aaf5134e0cefaa2885c02f56cf5c9fcc6"><div class="ttname"><a href="classMarmoManagerApp.html#aaf5134e0cefaa2885c02f56cf5c9fcc6">MarmoManagerApp::m_searchDataFim</a></div><div class="ttdeci">QDateEdit * m_searchDataFim</div><div class="ttdef"><b>Definição</b> <a href="#l00076">main_window.h:76</a></div></div>
-<div class="ttc" id="aclassMarmoManagerApp_html_abaee48a4cfca02b7efc6d36adc68a662"><div class="ttname"><a href="classMarmoManagerApp.html#abaee48a4cfca02b7efc6d36adc68a662">MarmoManagerApp::m_updateStatusCombo</a></div><div class="ttdeci">QComboBox * m_updateStatusCombo</div><div class="ttdef"><b>Definição</b> <a href="#l00078">main_window.h:78</a></div></div>
-<div class="ttc" id="aclassMarmoManagerApp_html_abc7a8d665aa26cf475803cc8bb080fa3"><div class="ttname"><a href="classMarmoManagerApp.html#abc7a8d665aa26cf475803cc8bb080fa3">MarmoManagerApp::m_cadMedidas</a></div><div class="ttdeci">QLineEdit * m_cadMedidas</div><div class="ttdef"><b>Definição</b> <a href="#l00056">main_window.h:56</a></div></div>
-<div class="ttc" id="aclassMarmoManagerApp_html_abdb2159fa5062a8a4586def7783ca91d"><div class="ttname"><a href="classMarmoManagerApp.html#abdb2159fa5062a8a4586def7783ca91d">MarmoManagerApp::clearCadastroForm</a></div><div class="ttdeci">void clearCadastroForm()</div><div class="ttdef"><b>Definição</b> <a href="main__window_8cpp_source.html#l00114">main_window.cpp:114</a></div></div>
-<div class="ttc" id="aclassMarmoManagerApp_html_abe6179ce37dbb78c1dc320a9ce6bb658"><div class="ttname"><a href="classMarmoManagerApp.html#abe6179ce37dbb78c1dc320a9ce6bb658">MarmoManagerApp::salvarOS</a></div><div class="ttdeci">void salvarOS()</div><div class="ttdef"><b>Definição</b> <a href="main__window_8cpp_source.html#l00094">main_window.cpp:94</a></div></div>
-<div class="ttc" id="aclassMarmoManagerApp_html_ac8885e29a66da91cf7e5a77e7ae17b09"><div class="ttname"><a href="classMarmoManagerApp.html#ac8885e29a66da91cf7e5a77e7ae17b09">MarmoManagerApp::m_cadDescricao</a></div><div class="ttdeci">QTextEdit * m_cadDescricao</div><div class="ttdef"><b>Definição</b> <a href="#l00055">main_window.h:55</a></div></div>
-<div class="ttc" id="aclassMarmoManagerApp_html_ac8be6763e1f6cfcb79f984d6b802a347"><div class="ttname"><a href="classMarmoManagerApp.html#ac8be6763e1f6cfcb79f984d6b802a347">MarmoManagerApp::m_grupoPrioridade</a></div><div class="ttdeci">QButtonGroup * m_grupoPrioridade</div><div class="ttdef"><b>Definição</b> <a href="#l00061">main_window.h:61</a></div></div>
-<div class="ttc" id="aclassMarmoManagerApp_html_acd9f6bf80549180494c0a18085c0547f"><div class="ttname"><a href="classMarmoManagerApp.html#acd9f6bf80549180494c0a18085c0547f">MarmoManagerApp::m_tabCadastro</a></div><div class="ttdeci">QWidget * m_tabCadastro</div><div class="ttdef"><b>Definição</b> <a href="#l00049">main_window.h:49</a></div></div>
-<div class="ttc" id="aclassMarmoManagerApp_html_ad2bcafb94f5e6e15cbc1b191ff9b3a74"><div class="ttname"><a href="classMarmoManagerApp.html#ad2bcafb94f5e6e15cbc1b191ff9b3a74">MarmoManagerApp::m_difBaixa</a></div><div class="ttdeci">QRadioButton * m_difBaixa</div><div class="ttdef"><b>Definição</b> <a href="#l00069">main_window.h:69</a></div></div>
-<div class="ttc" id="aclassMarmoManagerApp_html_adae30c1037c530d8ad948713c7257834"><div class="ttname"><a href="classMarmoManagerApp.html#adae30c1037c530d8ad948713c7257834">MarmoManagerApp::m_difAlta</a></div><div class="ttdeci">QRadioButton * m_difAlta</div><div class="ttdef"><b>Definição</b> <a href="#l00067">main_window.h:67</a></div></div>
-<div class="ttc" id="aclassMarmoManagerApp_html_addfc031c02fc58d2463de544217b1ae6"><div class="ttname"><a href="classMarmoManagerApp.html#addfc031c02fc58d2463de544217b1ae6">MarmoManagerApp::m_cadContato</a></div><div class="ttdeci">QLineEdit * m_cadContato</div><div class="ttdef"><b>Definição</b> <a href="#l00054">main_window.h:54</a></div></div>
-<div class="ttc" id="aclassMarmoManagerApp_html_ae9274b8e82144862ae92889e0546eaa2"><div class="ttname"><a href="classMarmoManagerApp.html#ae9274b8e82144862ae92889e0546eaa2">MarmoManagerApp::atualizarStatus</a></div><div class="ttdeci">void atualizarStatus()</div><div class="ttdef"><b>Definição</b> <a href="main__window_8cpp_source.html#l00236">main_window.cpp:236</a></div></div>
-<div class="ttc" id="aclassMarmoManagerApp_html_aef1a624966bec84e3a0db5b82ad958f5"><div class="ttname"><a href="classMarmoManagerApp.html#aef1a624966bec84e3a0db5b82ad958f5">MarmoManagerApp::m_grupoDificuldade</a></div><div class="ttdeci">QButtonGroup * m_grupoDificuldade</div><div class="ttdef"><b>Definição</b> <a href="#l00066">main_window.h:66</a></div></div>
-<div class="ttc" id="aclassMarmoManagerApp_html_af9faa6ff4f367eb34150c48b131f03a0"><div class="ttname"><a href="classMarmoManagerApp.html#af9faa6ff4f367eb34150c48b131f03a0">MarmoManagerApp::verHistorico</a></div><div class="ttdeci">void verHistorico()</div><div class="ttdef"><b>Definição</b> <a href="main__window_8cpp_source.html#l00256">main_window.cpp:256</a></div></div>
-<div class="ttc" id="aclassMarmoManagerApp_html_afd73d59a29b6b020a0db3c260e90c196"><div class="ttname"><a href="classMarmoManagerApp.html#afd73d59a29b6b020a0db3c260e90c196">MarmoManagerApp::m_controller</a></div><div class="ttdeci">OSController m_controller</div><div class="ttdef"><b>Definição</b> <a href="#l00046">main_window.h:46</a></div></div>
-<div class="ttc" id="aclassMarmoManagerApp_html_afdee46c93ef87fb3548223cdc47189c8"><div class="ttname"><a href="classMarmoManagerApp.html#afdee46c93ef87fb3548223cdc47189c8">MarmoManagerApp::m_difMedia</a></div><div class="ttdeci">QRadioButton * m_difMedia</div><div class="ttdef"><b>Definição</b> <a href="#l00068">main_window.h:68</a></div></div>
-<div class="ttc" id="aclassOSController_html"><div class="ttname"><a href="classOSController.html">OSController</a></div><div class="ttdoc">Classe Controller na arquitetura MVC. Gerencia toda a lógica de negócios da aplicação.</div><div class="ttdef"><b>Definição</b> <a href="os__controller_8h_source.html#l00019">os_controller.h:19</a></div></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="preprocessor">#endif </span><span class="comment">// MAIN_WINDOW_H</span></div>
+<div class="ttc" id="aauth__controller_8h_html"><div class="ttname"><a href="auth__controller_8h.html">auth_controller.h</a></div><div class="ttdoc">Regras de negócio de autenticação, autorização e usuários.</div></div>
+<div class="ttc" id="aclassAuthController_html"><div class="ttname"><a href="classAuthController.html">AuthController</a></div><div class="ttdoc">Serviço da camada de negócios para controle de acesso.</div><div class="ttdef"><b>Definição</b> <a href="auth__controller_8h_source.html#l00023">auth_controller.h:23</a></div></div>
+<div class="ttc" id="aclassMarmoManagerApp_html"><div class="ttname"><a href="classMarmoManagerApp.html">MarmoManagerApp</a></div><div class="ttdoc">Classe principal de Interface Gráfica (View) para a aplicação.</div><div class="ttdef"><b>Definição</b> <a href="main__window_8h_source.html#l00026">main_window.h:26</a></div></div>
+<div class="ttc" id="aclassMarmoManagerApp_html_a9bc82cc1d02a8c2f3135368308b21ffb"><div class="ttname"><a href="classMarmoManagerApp.html#a9bc82cc1d02a8c2f3135368308b21ffb">MarmoManagerApp::logoutRequested</a></div><div class="ttdeci">void logoutRequested()</div><div class="ttdoc">Emitido quando o usuário solicita encerrar somente a sessão atual.</div></div>
+<div class="ttc" id="aclassOSController_html"><div class="ttname"><a href="classOSController.html">OSController</a></div><div class="ttdoc">Classe Controller na arquitetura MVC.</div><div class="ttdef"><b>Definição</b> <a href="os__controller_8h_source.html#l00022">os_controller.h:22</a></div></div>
 <div class="ttc" id="aos__controller_8h_html"><div class="ttname"><a href="os__controller_8h.html">os_controller.h</a></div><div class="ttdoc">Cabeçalho da classe OSController.</div></div>
+<div class="ttc" id="astructUserData_html"><div class="ttname"><a href="structUserData.html">UserData</a></div><div class="ttdoc">Dados públicos de um usuário, sem informações sensíveis.</div><div class="ttdef"><b>Definição</b> <a href="user__model_8h_source.html#l00015">user_model.h:15</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-</div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a href="dir_da5c6b39c0a2f54e57df6799511cd3ab.html">ui</a></li><li class="navelem"><a href="main__window_8h.html">main_window.h</a></li>
-    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_da5c6b39c0a2f54e57df6799511cd3ab.html">ui</a></li><li class="navelem"><a class="el" href="main__window_8h.html">main_window.h</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

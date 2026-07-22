@@ -4,17 +4,16 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
-<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MarmoManager: Código-Fonte de /home/arthurteixeira/Músicas/trabalho-grupo-eng-soft/trabalho-grupo-eng-soft/marmomanager_cpp/src/os_repository.cpp</title>
+<title>MarmoManager: Código-Fonte de /home/daniel/Área de trabalho/Engenharia_1/Sprint1-Grupo/marmomanager_cpp/src/os_repository.cpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<script type="text/javascript" src="clipboard.js"></script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="navtreedata.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript" src="cookie.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -31,31 +30,37 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">MarmoManager<span id="projectnumber">&#160;1.0</span>
+   <div id="projectname">MarmoManager<span id="projectnumber">&#160;1.1</span>
    </div>
-   <div id="projectbrief">Sistema em C++ e Qt de Gerenciamento de Ordens de Serviço</div>
+   <div id="projectbrief">Sistema em C++/Qt para gerenciamento de ordens de serviço</div>
   </td>
  </tr>
  </tbody>
 </table>
 </div>
 <!-- end header part -->
-<!-- Gerado por Doxygen 1.16.1 -->
+<!-- Gerado por Doxygen 1.9.8 -->
 <script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "search/",'.html');
-</script>
-<script type="text/javascript">
-$(function() { codefold.init(); });
+/* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
-  initMenu('',true,false,'search.php','Localizar',true);
-  $(function() { init_search(); });
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
 });
+/* @license-end */
 </script>
 <div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -63,14 +68,15 @@ $(function() {
       <div id="nav-sync" class="sync"></div>
     </div>
   </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
+  <div id="splitbar" style="-moz-user-select:none;"
        class="ui-resizable-handle">
   </div>
 </div>
 <script type="text/javascript">
-$(function(){initNavTree('os__repository_8cpp_source.html','',''); });
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('os__repository_8cpp_source.html',''); initResizable(); });
+/* @license-end */
 </script>
-<div id="container">
 <div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -97,7 +103,7 @@ $(function(){initNavTree('os__repository_8cpp_source.html','',''); });
   <div class="headertitle"><div class="title">os_repository.cpp</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="os__repository_8cpp.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="os__repository_8h.html">os_repository.h</a>&quot;</span></div>
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="os__repository_8h.html">os_repository.h</a>&quot;</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="database_8h.html">database.h</a>&quot;</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;QSqlQuery&gt;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;QVariant&gt;</span></div>
@@ -211,34 +217,33 @@ $(function(){initNavTree('os__repository_8cpp_source.html','',''); });
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="keywordflow">return</span> results;</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>}</div>
 </div>
-<div class="ttc" id="aclassDatabase_html_aa04e547554cc34fa4b6c5a9390021eab"><div class="ttname"><a href="classDatabase.html#aa04e547554cc34fa4b6c5a9390021eab">Database::getInstance</a></div><div class="ttdeci">static Database &amp; getInstance()</div><div class="ttdoc">Obtém a instância única do Banco de Dados.</div><div class="ttdef"><b>Definição</b> <a href="database_8cpp_source.html#l00007">database.cpp:7</a></div></div>
-<div class="ttc" id="aclassDatabase_html_aaf21db9254c8ed77d4d800802c987d87"><div class="ttname"><a href="classDatabase.html#aaf21db9254c8ed77d4d800802c987d87">Database::getConnection</a></div><div class="ttdeci">QSqlDatabase getConnection() const</div><div class="ttdoc">Recupera o objeto de conexão QSqlDatabase.</div><div class="ttdef"><b>Definição</b> <a href="database_8cpp_source.html#l00026">database.cpp:26</a></div></div>
-<div class="ttc" id="aclassOSRepository_html_a216ac5a1b6bd12065a6d6f7edaddbcd2"><div class="ttname"><a href="classOSRepository.html#a216ac5a1b6bd12065a6d6f7edaddbcd2">OSRepository::updateStatus</a></div><div class="ttdeci">void updateStatus(int osId, const QString &amp;novoStatus)</div><div class="ttdoc">Atualiza o status de uma OS existente.</div><div class="ttdef"><b>Definição</b> <a href="#l00039">os_repository.cpp:39</a></div></div>
-<div class="ttc" id="aclassOSRepository_html_a98f93993ca65a0b7c6bf0a48ec1efef1"><div class="ttname"><a href="classOSRepository.html#a98f93993ca65a0b7c6bf0a48ec1efef1">OSRepository::OSRepository</a></div><div class="ttdeci">OSRepository()</div><div class="ttdef"><b>Definição</b> <a href="#l00008">os_repository.cpp:8</a></div></div>
-<div class="ttc" id="aclassOSRepository_html_af02690680d93fe471b48a07ac58587a4"><div class="ttname"><a href="classOSRepository.html#af02690680d93fe471b48a07ac58587a4">OSRepository::fetchAll</a></div><div class="ttdeci">QVector&lt; OSData &gt; fetchAll(const QString &amp;buscaCliente=&quot;&quot;, const QString &amp;buscaStatus=&quot;Todos&quot;, const QString &amp;dataIni=&quot;&quot;, const QString &amp;dataFim=&quot;&quot;)</div><div class="ttdoc">Busca todas as OS que coincidem com os critérios.</div><div class="ttdef"><b>Definição</b> <a href="#l00052">os_repository.cpp:52</a></div></div>
-<div class="ttc" id="aclassOSRepository_html_af6139a9045e4f6c8ab9b04d9d4e0ee06"><div class="ttname"><a href="classOSRepository.html#af6139a9045e4f6c8ab9b04d9d4e0ee06">OSRepository::create</a></div><div class="ttdeci">int create(const QString &amp;cliente, const QString &amp;contato, const QString &amp;descricao, const QString &amp;medidas, const QString &amp;material, const QString &amp;prazo, const QString &amp;status, const QString &amp;prioridade, const QString &amp;dificuldade, const QString &amp;dataAbertura)</div><div class="ttdoc">Cria uma nova Ordem de Serviço (OS).</div><div class="ttdef"><b>Definição</b> <a href="#l00011">os_repository.cpp:11</a></div></div>
+<div class="ttc" id="aclassDatabase_html_aa04e547554cc34fa4b6c5a9390021eab"><div class="ttname"><a href="classDatabase.html#aa04e547554cc34fa4b6c5a9390021eab">Database::getInstance</a></div><div class="ttdeci">static Database &amp; getInstance()</div><div class="ttdoc">Obtém a instância única do Banco de Dados.</div><div class="ttdef"><b>Definição</b> <a href="database_8cpp_source.html#l00009">database.cpp:9</a></div></div>
+<div class="ttc" id="aclassDatabase_html_aaf21db9254c8ed77d4d800802c987d87"><div class="ttname"><a href="classDatabase.html#aaf21db9254c8ed77d4d800802c987d87">Database::getConnection</a></div><div class="ttdeci">QSqlDatabase getConnection() const</div><div class="ttdoc">Recupera o objeto de conexão QSqlDatabase.</div><div class="ttdef"><b>Definição</b> <a href="database_8cpp_source.html#l00031">database.cpp:31</a></div></div>
+<div class="ttc" id="aclassOSRepository_html_a216ac5a1b6bd12065a6d6f7edaddbcd2"><div class="ttname"><a href="classOSRepository.html#a216ac5a1b6bd12065a6d6f7edaddbcd2">OSRepository::updateStatus</a></div><div class="ttdeci">void updateStatus(int osId, const QString &amp;novoStatus)</div><div class="ttdoc">Atualiza o status de uma OS existente.</div><div class="ttdef"><b>Definição</b> <a href="os__repository_8cpp_source.html#l00039">os_repository.cpp:39</a></div></div>
+<div class="ttc" id="aclassOSRepository_html_a98f93993ca65a0b7c6bf0a48ec1efef1"><div class="ttname"><a href="classOSRepository.html#a98f93993ca65a0b7c6bf0a48ec1efef1">OSRepository::OSRepository</a></div><div class="ttdeci">OSRepository()</div><div class="ttdoc">Constrói um DAO sem estado; a conexão é obtida do Database.</div><div class="ttdef"><b>Definição</b> <a href="os__repository_8cpp_source.html#l00008">os_repository.cpp:8</a></div></div>
+<div class="ttc" id="aclassOSRepository_html_af02690680d93fe471b48a07ac58587a4"><div class="ttname"><a href="classOSRepository.html#af02690680d93fe471b48a07ac58587a4">OSRepository::fetchAll</a></div><div class="ttdeci">QVector&lt; OSData &gt; fetchAll(const QString &amp;buscaCliente=&quot;&quot;, const QString &amp;buscaStatus=&quot;Todos&quot;, const QString &amp;dataIni=&quot;&quot;, const QString &amp;dataFim=&quot;&quot;)</div><div class="ttdoc">Busca todas as OS que coincidem com os critérios.</div><div class="ttdef"><b>Definição</b> <a href="os__repository_8cpp_source.html#l00052">os_repository.cpp:52</a></div></div>
+<div class="ttc" id="aclassOSRepository_html_af6139a9045e4f6c8ab9b04d9d4e0ee06"><div class="ttname"><a href="classOSRepository.html#af6139a9045e4f6c8ab9b04d9d4e0ee06">OSRepository::create</a></div><div class="ttdeci">int create(const QString &amp;cliente, const QString &amp;contato, const QString &amp;descricao, const QString &amp;medidas, const QString &amp;material, const QString &amp;prazo, const QString &amp;status, const QString &amp;prioridade, const QString &amp;dificuldade, const QString &amp;dataAbertura)</div><div class="ttdoc">Cria uma nova Ordem de Serviço (OS).</div><div class="ttdef"><b>Definição</b> <a href="os__repository_8cpp_source.html#l00011">os_repository.cpp:11</a></div></div>
 <div class="ttc" id="adatabase_8h_html"><div class="ttname"><a href="database_8h.html">database.h</a></div><div class="ttdoc">Arquivo de cabeçalho para o Singleton do Banco de Dados.</div></div>
 <div class="ttc" id="aos__repository_8h_html"><div class="ttname"><a href="os__repository_8h.html">os_repository.h</a></div><div class="ttdoc">Cabeçalho para a classe OSRepository.</div></div>
 <div class="ttc" id="astructOSData_html"><div class="ttname"><a href="structOSData.html">OSData</a></div><div class="ttdoc">Representa um registro único de Ordem de Serviço.</div><div class="ttdef"><b>Definição</b> <a href="os__model_8h_source.html#l00016">os_model.h:16</a></div></div>
-<div class="ttc" id="astructOSData_html_a1d3482cb6ff964e0b0655dca9ea73e40"><div class="ttname"><a href="structOSData.html#a1d3482cb6ff964e0b0655dca9ea73e40">OSData::contato</a></div><div class="ttdeci">QString contato</div><div class="ttdef"><b>Definição</b> <a href="os__model_8h_source.html#l00019">os_model.h:19</a></div></div>
-<div class="ttc" id="astructOSData_html_a442258eb8d12c60ad94e856ef340d7e2"><div class="ttname"><a href="structOSData.html#a442258eb8d12c60ad94e856ef340d7e2">OSData::id</a></div><div class="ttdeci">int id</div><div class="ttdef"><b>Definição</b> <a href="os__model_8h_source.html#l00017">os_model.h:17</a></div></div>
-<div class="ttc" id="astructOSData_html_a5d2521eebdadfdf58dc9b77ac7da173e"><div class="ttname"><a href="structOSData.html#a5d2521eebdadfdf58dc9b77ac7da173e">OSData::material</a></div><div class="ttdeci">QString material</div><div class="ttdef"><b>Definição</b> <a href="os__model_8h_source.html#l00022">os_model.h:22</a></div></div>
-<div class="ttc" id="astructOSData_html_aa946424cd35e28dd2c60ea43e99c61bd"><div class="ttname"><a href="structOSData.html#aa946424cd35e28dd2c60ea43e99c61bd">OSData::prazo</a></div><div class="ttdeci">QString prazo</div><div class="ttdef"><b>Definição</b> <a href="os__model_8h_source.html#l00023">os_model.h:23</a></div></div>
-<div class="ttc" id="astructOSData_html_ab3ae999aaa4d67c7f0a79d6cceafa826"><div class="ttname"><a href="structOSData.html#ab3ae999aaa4d67c7f0a79d6cceafa826">OSData::dificuldade</a></div><div class="ttdeci">QString dificuldade</div><div class="ttdef"><b>Definição</b> <a href="os__model_8h_source.html#l00026">os_model.h:26</a></div></div>
-<div class="ttc" id="astructOSData_html_abd64de056f1b97223bbee4b0b75a795f"><div class="ttname"><a href="structOSData.html#abd64de056f1b97223bbee4b0b75a795f">OSData::descricao</a></div><div class="ttdeci">QString descricao</div><div class="ttdef"><b>Definição</b> <a href="os__model_8h_source.html#l00020">os_model.h:20</a></div></div>
-<div class="ttc" id="astructOSData_html_adebdedab567da0afb533bf8b6ac0787d"><div class="ttname"><a href="structOSData.html#adebdedab567da0afb533bf8b6ac0787d">OSData::status</a></div><div class="ttdeci">QString status</div><div class="ttdef"><b>Definição</b> <a href="os__model_8h_source.html#l00024">os_model.h:24</a></div></div>
-<div class="ttc" id="astructOSData_html_ae0be4376eabe0123dd85e591dcbd5924"><div class="ttname"><a href="structOSData.html#ae0be4376eabe0123dd85e591dcbd5924">OSData::cliente</a></div><div class="ttdeci">QString cliente</div><div class="ttdef"><b>Definição</b> <a href="os__model_8h_source.html#l00018">os_model.h:18</a></div></div>
-<div class="ttc" id="astructOSData_html_ae1ea6cd9db6950de0880db5ecbd23b40"><div class="ttname"><a href="structOSData.html#ae1ea6cd9db6950de0880db5ecbd23b40">OSData::prioridade</a></div><div class="ttdeci">QString prioridade</div><div class="ttdef"><b>Definição</b> <a href="os__model_8h_source.html#l00025">os_model.h:25</a></div></div>
-<div class="ttc" id="astructOSData_html_af8008c6fde01ad2320dab113a7ebd0f4"><div class="ttname"><a href="structOSData.html#af8008c6fde01ad2320dab113a7ebd0f4">OSData::medidas</a></div><div class="ttdeci">QString medidas</div><div class="ttdef"><b>Definição</b> <a href="os__model_8h_source.html#l00021">os_model.h:21</a></div></div>
-<div class="ttc" id="astructOSData_html_af91d8aeb8d179597d6548eb70f3f0f70"><div class="ttname"><a href="structOSData.html#af91d8aeb8d179597d6548eb70f3f0f70">OSData::dataAbertura</a></div><div class="ttdeci">QString dataAbertura</div><div class="ttdef"><b>Definição</b> <a href="os__model_8h_source.html#l00027">os_model.h:27</a></div></div>
+<div class="ttc" id="astructOSData_html_a1d3482cb6ff964e0b0655dca9ea73e40"><div class="ttname"><a href="structOSData.html#a1d3482cb6ff964e0b0655dca9ea73e40">OSData::contato</a></div><div class="ttdeci">QString contato</div><div class="ttdoc">Telefone, e-mail ou outro contato.</div><div class="ttdef"><b>Definição</b> <a href="os__model_8h_source.html#l00022">os_model.h:22</a></div></div>
+<div class="ttc" id="astructOSData_html_a442258eb8d12c60ad94e856ef340d7e2"><div class="ttname"><a href="structOSData.html#a442258eb8d12c60ad94e856ef340d7e2">OSData::id</a></div><div class="ttdeci">int id</div><div class="ttdoc">Chave primária da ordem de serviço.</div><div class="ttdef"><b>Definição</b> <a href="os__model_8h_source.html#l00018">os_model.h:18</a></div></div>
+<div class="ttc" id="astructOSData_html_a5d2521eebdadfdf58dc9b77ac7da173e"><div class="ttname"><a href="structOSData.html#a5d2521eebdadfdf58dc9b77ac7da173e">OSData::material</a></div><div class="ttdeci">QString material</div><div class="ttdoc">Material escolhido pelo cliente.</div><div class="ttdef"><b>Definição</b> <a href="os__model_8h_source.html#l00028">os_model.h:28</a></div></div>
+<div class="ttc" id="astructOSData_html_aa946424cd35e28dd2c60ea43e99c61bd"><div class="ttname"><a href="structOSData.html#aa946424cd35e28dd2c60ea43e99c61bd">OSData::prazo</a></div><div class="ttdeci">QString prazo</div><div class="ttdoc">Data prevista de entrega no formato ISO.</div><div class="ttdef"><b>Definição</b> <a href="os__model_8h_source.html#l00030">os_model.h:30</a></div></div>
+<div class="ttc" id="astructOSData_html_ab3ae999aaa4d67c7f0a79d6cceafa826"><div class="ttname"><a href="structOSData.html#ab3ae999aaa4d67c7f0a79d6cceafa826">OSData::dificuldade</a></div><div class="ttdeci">QString dificuldade</div><div class="ttdoc">Nível de dificuldade estimado.</div><div class="ttdef"><b>Definição</b> <a href="os__model_8h_source.html#l00036">os_model.h:36</a></div></div>
+<div class="ttc" id="astructOSData_html_abd64de056f1b97223bbee4b0b75a795f"><div class="ttname"><a href="structOSData.html#abd64de056f1b97223bbee4b0b75a795f">OSData::descricao</a></div><div class="ttdeci">QString descricao</div><div class="ttdoc">Descrição do serviço contratado.</div><div class="ttdef"><b>Definição</b> <a href="os__model_8h_source.html#l00024">os_model.h:24</a></div></div>
+<div class="ttc" id="astructOSData_html_adebdedab567da0afb533bf8b6ac0787d"><div class="ttname"><a href="structOSData.html#adebdedab567da0afb533bf8b6ac0787d">OSData::status</a></div><div class="ttdeci">QString status</div><div class="ttdoc">Estado atual da ordem de serviço.</div><div class="ttdef"><b>Definição</b> <a href="os__model_8h_source.html#l00032">os_model.h:32</a></div></div>
+<div class="ttc" id="astructOSData_html_ae0be4376eabe0123dd85e591dcbd5924"><div class="ttname"><a href="structOSData.html#ae0be4376eabe0123dd85e591dcbd5924">OSData::cliente</a></div><div class="ttdeci">QString cliente</div><div class="ttdoc">Nome do cliente solicitante.</div><div class="ttdef"><b>Definição</b> <a href="os__model_8h_source.html#l00020">os_model.h:20</a></div></div>
+<div class="ttc" id="astructOSData_html_ae1ea6cd9db6950de0880db5ecbd23b40"><div class="ttname"><a href="structOSData.html#ae1ea6cd9db6950de0880db5ecbd23b40">OSData::prioridade</a></div><div class="ttdeci">QString prioridade</div><div class="ttdoc">Prioridade operacional.</div><div class="ttdef"><b>Definição</b> <a href="os__model_8h_source.html#l00034">os_model.h:34</a></div></div>
+<div class="ttc" id="astructOSData_html_af8008c6fde01ad2320dab113a7ebd0f4"><div class="ttname"><a href="structOSData.html#af8008c6fde01ad2320dab113a7ebd0f4">OSData::medidas</a></div><div class="ttdeci">QString medidas</div><div class="ttdoc">Medidas informadas para produção.</div><div class="ttdef"><b>Definição</b> <a href="os__model_8h_source.html#l00026">os_model.h:26</a></div></div>
+<div class="ttc" id="astructOSData_html_af91d8aeb8d179597d6548eb70f3f0f70"><div class="ttname"><a href="structOSData.html#af91d8aeb8d179597d6548eb70f3f0f70">OSData::dataAbertura</a></div><div class="ttdeci">QString dataAbertura</div><div class="ttdoc">Data de abertura no formato ISO.</div><div class="ttdef"><b>Definição</b> <a href="os__model_8h_source.html#l00038">os_model.h:38</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-</div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a href="os__repository_8cpp.html">os_repository.cpp</a></li>
-    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><b>os_repository.cpp</b></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

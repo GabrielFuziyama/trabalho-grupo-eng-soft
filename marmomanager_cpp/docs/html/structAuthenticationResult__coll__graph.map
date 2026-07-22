@@ -1,0 +1,5 @@
+<map id="AuthenticationResult" name="AuthenticationResult">
+<area shape="rect" id="Node000001" title="Resposta completa produzida pela autenticação." alt="" coords="5,233,156,319"/>
+<area shape="rect" id="Node000002" href="$structUserData.html" title="Dados públicos de um usuário, sem informações sensíveis." alt="" coords="10,5,151,171"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="83,171,83,217,78,217,78,171"/>
+</map>
